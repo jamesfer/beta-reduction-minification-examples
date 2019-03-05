@@ -176,15 +176,13 @@ describe('parse', () => {
 
   it('should parse lots of nested groups', () => {
     const number1 = makeNumberLiteral(1);
-    expect(parse(['(', '(', '(', '(', '1', ')', ')', ')', ')'])).toEqual({
+    expect(parse(['(', '(', '(', '1', ')', ')', ')'])).toEqual({
       ...number1,
       tokens: [
         TokenSymbol.openParen,
         TokenSymbol.openParen,
         TokenSymbol.openParen,
-        TokenSymbol.openParen,
         ...number1.tokens,
-        TokenSymbol.closeParen,
         TokenSymbol.closeParen,
         TokenSymbol.closeParen,
         TokenSymbol.closeParen,
