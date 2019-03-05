@@ -3,11 +3,25 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {
+  "scripts": {
+    "test": "jest",
+    "lint": "tslint -p tsconfig.json src/**/*.ts"
+  },
+  "jest": {
+    "preset": "ts-jest"
+  },
+  "devDependencies": {
     "@babel/core": "^7.3.3",
+    "@types/jest": "^24.0.6",
+    "@types/node": "^11.9.5",
+    "0x": "^4.7.3",
     "benchmark": "^2.1.4",
     "google-closure-compiler": "^20190121.0.0",
+    "jest": "^24.1.0",
+    "ts-jest": "^24.0.0",
     "ts-node": "^8.0.2",
+    "tslint": "^5.13.0",
+    "tslint-config-airbnb": "^5.11.1",
     "typescript": "^3.3.3",
     "uglify-js": "^3.4.9"
   }
