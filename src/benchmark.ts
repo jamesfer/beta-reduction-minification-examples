@@ -9,8 +9,8 @@ const inputResults = inputs.map(input => ({
   totalTime: 0,
 }));
 
-for (let iteration = 0; iteration < iterationCount; iteration++) {
-  for (let test = 0; test < inputs.length; test++) {
+for (let iteration = 0; iteration < iterationCount; iteration += 1) {
+  for (let test = 0; test < inputs.length; test += 1) {
     const before = performance.now();
     parse(inputs[test]);
     const after = performance.now();
@@ -20,9 +20,7 @@ for (let iteration = 0; iteration < iterationCount; iteration++) {
 
 inputResults.forEach(({ input, totalTime }) => {
   console.log('Input:       ', input.join(''));
-  console.log('Total time:  ', ('' + totalTime).slice(0, 4));
-  console.log('Average time:', ('' + totalTime / iterationCount).slice(0, 4));
+  console.log('Total time:  ', `${totalTime}`.slice(0, 4));
+  console.log('Average time:', `${totalTime / iterationCount}`.slice(0, 4));
   console.log();
 });
-
-

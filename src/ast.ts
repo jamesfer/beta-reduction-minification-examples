@@ -1,5 +1,7 @@
 /**************************************************
+ *
  * Function utils
+ *
  **************************************************/
 
 function constant<T>(value: T): () => T {
@@ -14,15 +16,13 @@ function spread<T1, R>(fn: (a1: T1) => R): (args: [T1]) => R;
 function spread<T1, T2, R>(fn: (a1: T1, a2: T2) => R): (args: [T1, T2]) => R;
 function spread<T1, T2, T3, R>(fn: (a1: T1, a2: T2, a3: T3) => R): (args: [T1, T2, T3]) => R;
 function spread<T, R>(fn: (...args: T[]) => R): (args: T[]) => R {
-  return (args) => fn(...args);
+  return args => fn(...args);
 }
 
-
-
-
-
 /**************************************************
+ *
  * Monads
+ *
  **************************************************/
 
 /**
@@ -37,7 +37,7 @@ enum MaybeConstructor {
  * Nothing is a special value that indicates that an operation produced no value.
  */
 interface Nothing {
-  maybeConstructor: MaybeConstructor.Nothing,
+  maybeConstructor: MaybeConstructor.Nothing;
 }
 
 /**
@@ -52,8 +52,8 @@ const nothing: Nothing = {
  * Just indicates that the maybe monad actually does contain a value.
  */
 interface Just<T> {
-  maybeConstructor: MaybeConstructor.Just,
-  value: T
+  maybeConstructor: MaybeConstructor.Just;
+  value: T;
 }
 
 /**
@@ -94,21 +94,18 @@ function runMaybe<T>(monad: Maybe<T>): T | null {
   return monad.maybeConstructor === MaybeConstructor.Nothing ? null : monad.value;
 }
 
-
-
-
-
-
-
-
 interface FallbackList {
-  parent?: FallbackList,
-  matcher: ParseResult<any>,
-  tokens: Token[],
-  fallback: ParseResult<any>,
+  parent?: FallbackList;
+  matcher: ParseResult<any>;
+  tokens: Token[];
+  fallback: ParseResult<any>;
 }
 
-function fallbackExists(fallbackList: FallbackList | undefined, matcher: ParseResult<any>, tokens: Token[]): ParseResult<any> | undefined {
+function fallbackExists(
+  fallbackList: FallbackList | undefined,
+  matcher: ParseResult<any>,
+  tokens: Token[],
+): ParseResult<any> | undefined {
   return !fallbackList
     ? undefined
     : fallbackList.matcher === matcher && fallbackList.tokens === tokens
@@ -116,23 +113,35 @@ function fallbackExists(fallbackList: FallbackList | undefined, matcher: ParseRe
       : fallbackExists(fallbackList.parent, matcher, tokens);
 }
 
-function addFallback(parent: FallbackList | undefined, matcher: ParseResult<any>, tokens: Token[], fallback: ParseResult<any>): FallbackList {
+function addFallback(
+  parent: FallbackList | undefined,
+  matcher: ParseResult<any>,
+  tokens: Token[],
+  fallback: ParseResult<any>,
+): FallbackList {
   return { parent, matcher, tokens, fallback };
 }
 
+type ParseResult<V> = (previousCalls: FallbackList | undefined) => (state: Token[]) => (
+  Maybe<[Token[], V]>
+);
 
-
-
-
-
-
-type ParseResult<V> = (previousCalls: FallbackList | undefined) => (state: Token[]) => Maybe<[Token[], V]>;
-
-function liftA2<A, B, T>(fn: (a: A, b: B) => ParseResult<T>): (a: ParseResult<A>, b: ParseResult<B>) => ParseResult<T> {
+/**
+ * Converts a function from working on regular values to working on parse results.
+ */
+function liftA2<A, B, T>(
+  fn: (a: A, b: B) => ParseResult<T>,
+): (a: ParseResult<A>, b: ParseResult<B>) => ParseResult<T> {
   return (monadA, monadB) => bindResult(monadA, a => bindResult(monadB, b => fn(a, b)));
 }
 
-function bindResult<T, U>(monad: ParseResult<T>, operation: (value: T) => ParseResult<U>): ParseResult<U> {
+/**
+ * Unwraps the result and passes its value to an operation. Returns the result of the operation.
+ */
+function bindResult<T, U>(
+  monad: ParseResult<T>,
+  operation: (value: T) => ParseResult<U>,
+): ParseResult<U> {
   return previousCalls => tokens => (
     bindMaybe(monad(previousCalls)(tokens), result => (
       operation(result[1])(previousCalls)(result[0])
@@ -140,20 +149,39 @@ function bindResult<T, U>(monad: ParseResult<T>, operation: (value: T) => ParseR
   );
 }
 
-function bindResultA2<T1, T2, U>(monad1: ParseResult<T1>, monad2: ParseResult<T2>, operation: (value1: T1, value2: T2) => ParseResult<U>): ParseResult<U> {
+/**
+ * Like bindResult but will unwrap two results and pass them both to the operation.
+ */
+function bindResultA2<T1, T2, U>(
+  monad1: ParseResult<T1>,
+  monad2: ParseResult<T2>,
+  operation: (value1: T1, value2: T2) => ParseResult<U>,
+): ParseResult<U> {
   return bindResult(monad1, value1 => bindResult(monad2,  value2 => operation(value1, value2)));
 }
 
-function replaceResultIfNothing<T, U>(monad: ParseResult<T>, operation: ParseResult<T>): ParseResult<T> {
+/**
+ * If the first result is nothing, will replace it with the value of the second.
+ */
+function replaceResultIfNothing<T, U>(
+  monad: ParseResult<T>,
+  operation: ParseResult<T>,
+): ParseResult<T> {
   return previousCalls => tokens => (
     fallbackIfNothing(monad(previousCalls)(tokens), () => operation(previousCalls)(tokens))
   );
 }
 
+/**
+ * Wraps a plain value in a parse result
+ */
 function wrapResult<T>(value: T): ParseResult<T> {
   return constant((tokens: Token[]) => just<[Token[], T]>([tokens, value]));
 }
 
+/**
+ * A parse result with the value nothing.
+ */
 function createNothingResult(): ParseResult<any> {
   return constant(constant(nothing));
 }
@@ -161,56 +189,72 @@ function createNothingResult(): ParseResult<any> {
 /**
  * Helper function used within recurse.
  */
-function createInnerRecurse<T>(matcher: ParseResult<T>): (previousCalls: FallbackList, lastResult?: T | undefined) => ParseResult<any> {
-  return function recurse(recursivePreviousCalls: FallbackList, lastResult: T | undefined = undefined): ParseResult<any> {
+function createInnerRecurse<T>(
+  matcher: ParseResult<T>,
+): (fallbackList: FallbackList, lastResult?: T | undefined) => ParseResult<any> {
+  // This function needs to be named so we can call it recursively
+  return function recurse(
+    fallbackList: FallbackList,
+    lastResult: T | undefined = undefined,
+  ): ParseResult<any> {
     return replaceResultIfNothing(
-      bindResultA2(constant(matcher(recursivePreviousCalls)), askTokens(), (result, tokens) => recurse(
-        // Add new fallback
-        addFallback(recursivePreviousCalls, matcher, tokens, wrapResult(result)),
-        result,
+      bindResultA2(constant(matcher(fallbackList)), askTokens(), (result, tokens) => (
+        recurse(
+          // Add new fallback
+          addFallback(fallbackList, matcher, tokens, wrapResult(result)),
+          result,
+        )
       )),
       lastResult ? wrapResult(lastResult) : createNothingResult(),
-    )
-  }
+    );
+  };
 }
 
 /**
- * Supports basic protection from infinite recursion when writing left recurse patterns
+ * Supports basic protection from infinite recursion when writing left recurse patterns.
  */
 function leftRecurse<T, U>(baseCase: ParseResult<U>, matcher: ParseResult<T>): ParseResult<T | U> {
   const innerRecurse = createInnerRecurse(matcher);
-  return previousCalls => tokens => {
+  return previousCalls => (tokens) => {
     // Check if any protection is already in place
     const previousFallback = fallbackExists(previousCalls, matcher, tokens);
     return previousFallback !== undefined
       ? previousFallback(previousCalls)(tokens)
       // Recurse with a new fallback
-      : innerRecurse(addFallback(previousCalls, matcher, tokens, baseCase))(previousCalls)(tokens)
-  }
+      : innerRecurse(addFallback(previousCalls, matcher, tokens, baseCase))(previousCalls)(tokens);
+  };
 }
 
+/**
+ * Returns a parse result that contains the current list of tokens.
+ */
 function askTokens(): ParseResult<Token[]> {
   return constant((tokens: Token[]) => just<[Token[], Token[]]>([tokens, tokens]));
 }
 
+/**
+ * Returns a parse result that will set the remaining tokens.
+ */
 function setTokens(tokens: Token[]): ParseResult<undefined> {
   return constant(constant(just<[Token[], undefined]>([tokens, undefined])));
 }
 
-function runParser<T>(parser: ParseResult<T>, tokens: Token[], previousCalls: FallbackList | undefined = undefined): T | undefined {
+/**
+ * Executes a parse result and returns its inner value, or undefined.
+ */
+function runParser<T>(
+  parser: ParseResult<T>,
+  tokens: Token[],
+  previousCalls: FallbackList | undefined = undefined,
+): T | undefined {
   const result = runMaybe(parser(previousCalls)(tokens));
   return result ? result[1] : undefined;
 }
 
-
-
-
-
-
-
-
 /**************************************************
+ *
  * Language utilities
+ *
  **************************************************/
 
 /**
@@ -238,8 +282,8 @@ export enum TokenSymbol {
  * The number literal token can contain any integer number.
  */
 interface NumberLiteral {
-  type: ArtifactType.Token,
-  value: number,
+  type: ArtifactType.Token;
+  value: number;
 }
 
 /**
@@ -256,7 +300,6 @@ export function numberLit(value: number): NumberLiteral {
 type Token =
   | TokenSymbol
   | NumberLiteral;
-
 
 /**
  * Returns true if a token is a TokenSymbol.
@@ -309,8 +352,8 @@ function takeOne(predicate: (t: Token) => boolean): ParseResult<Token> {
 }
 
 interface Match<T> {
-  tokens: Token[],
-  result: T,
+  tokens: Token[];
+  result: T;
 }
 
 /**
@@ -331,15 +374,17 @@ function longestMatch<T>(matches: Match<T>[]): Match<T> {
  */
 function oneOf<R>(...matchers: ParseResult<R>[]): ParseResult<R> {
   // TODO clean up
-  return p => t => {
+  return fallbackList => (tokens) => {
     const allMatches = matchers.reduce<ParseResult<Match<R>[]>>(
       (all, current) => bindResult(all, array => (
         // Skip the matcher if it fails
         replaceResultIfNothing(
-          bindResultA2(constant(constant(current(p)(t))), askTokens(), (result, tokens) => (
+          bindResultA2(
+            constant(constant(current(fallbackList)(tokens))),
+            askTokens(),
             // Combine each of the results into an array
-            wrapResult([...array, { tokens, result }])
-          )),
+            (result, tokens) => wrapResult([...array, { tokens, result }]),
+          ),
           all,
         )
       )),
@@ -356,20 +401,22 @@ function oneOf<R>(...matchers: ParseResult<R>[]): ParseResult<R> {
         : bindResult(
           wrapResult(longestMatch(matches)),
           // Update the tokens state with the result of the longest match
-          longest => bindResult(setTokens(longest.tokens), constant(wrapResult(longest.result)))
+          longest => bindResult(setTokens(longest.tokens), constant(wrapResult(longest.result))),
         ),
     );
 
-    return selectLongestMatch(p)(t);
-  }
+    return selectLongestMatch(fallbackList)(tokens);
+  };
 }
 
 /**
  * Matches all of the given matchers in order or returns nothing if any of them fail.
  */
+/* tslint:disable:max-line-length */
 function chain<T1>(m1: ParseResult<T1>): ParseResult<[T1]>;
 function chain<T1, T2>(m1: ParseResult<T1>, m2: ParseResult<T2>): ParseResult<[T1, T2]>;
 function chain<T1, T2, T3>(m1: ParseResult<T1>, m2: ParseResult<T2>, m3: ParseResult<T3>): ParseResult<[T1, T2, T3]>;
+/* tslint:enable:max-line-length */
 function chain<R>(...matchers: ParseResult<R>[]): ParseResult<R[]> {
   return matchers.reduce(
     liftA2<R[], R, R[]>((previous, current) => wrapResult([...previous, current])),
@@ -377,18 +424,11 @@ function chain<R>(...matchers: ParseResult<R>[]): ParseResult<R[]> {
   );
 }
 
-
-
-
-
-
-
-
-
 /**************************************************
+ *
  * Language utilities
+ *
  **************************************************/
-
 
 /**
  * The three kinds of expressions in the language.
@@ -403,32 +443,32 @@ enum ExpressionType {
  * An identifier expression is used whenever a token that references a function is used.
  */
 interface IdentifierExpression {
-  type: ArtifactType.Expression,
-  expressionType: ExpressionType.Identifier,
-  name: string,
-  tokens: Token[],
+  type: ArtifactType.Expression;
+  expressionType: ExpressionType.Identifier;
+  name: string;
+  tokens: Token[];
 }
 
 /**
  * An operation expression is like a function call.
  */
 interface OperationExpression {
-  type: ArtifactType.Expression,
-  expressionType: ExpressionType.Operation,
-  left: Expression,
-  right: Expression,
-  op: Expression,
-  tokens: Token[],
+  type: ArtifactType.Expression;
+  expressionType: ExpressionType.Operation;
+  left: Expression;
+  right: Expression;
+  op: Expression;
+  tokens: Token[];
 }
 
 /**
  * The number literal expression just wraps a number literal token.
  */
 interface NumberLiteralExpression {
-  type: ArtifactType.Expression,
-  expressionType: ExpressionType.NumberLiteral,
-  value: number,
-  tokens: Token[],
+  type: ArtifactType.Expression;
+  expressionType: ExpressionType.NumberLiteral;
+  value: number;
+  tokens: Token[];
 }
 
 /**
@@ -460,13 +500,17 @@ export function numberLiteralExpression(number: NumberLiteral): NumberLiteralExp
     expressionType: ExpressionType.NumberLiteral,
     value: number.value,
     tokens: [number],
-  }
+  };
 }
 
 /**
  * Convenient constructor for making an operation expression.
  */
-export function operationExpression(left: Expression, op: Expression, right: Expression): OperationExpression {
+export function operationExpression(
+  left: Expression,
+  op: Expression,
+  right: Expression,
+): OperationExpression {
   return {
     left,
     op,
@@ -480,21 +524,19 @@ export function operationExpression(left: Expression, op: Expression, right: Exp
 /**
  * Convenient constructor for making a group expression.
  */
-export function groupExpression(leftParen: Token, expression: Expression, rightParen: Token): Expression {
-  return {
-    ...expression,
-    tokens: [leftParen, ...expression.tokens, rightParen],
-  };
+export function groupExpression(
+  leftParen: Token,
+  expression: Expression,
+  rightParen: Token,
+): Expression {
+  return { ...expression, tokens: [leftParen, ...expression.tokens, rightParen] };
 }
 
-
-
-
-
 /**************************************************
+ *
  * AST expression patterns
+ *
  **************************************************/
-
 
 const plus = map(takeOne(isSymbol(TokenSymbol.plus)), identifierExpression);
 const minus = map(takeOne(isSymbol(TokenSymbol.minus)), identifierExpression);
@@ -531,14 +573,13 @@ const sumPrecedence = oneOf(sumOperation, productPrecedence);
 
 const expression = sumPrecedence;
 
-
 /**
  * Converts an array of strings into a list of tokens that are then run through the ast expression
  * parsers.
  */
 export function parse(strings: string[]): Expression | Token | undefined {
   // Parse each of the strings into a token
-  const tokens: Token[] = strings.map(string => {
+  const tokens: Token[] = strings.map((string) => {
     if (/^[0-9]+$/.test(string)) {
       return numberLit(+string);
     }
@@ -550,4 +591,3 @@ export function parse(strings: string[]): Expression | Token | undefined {
 
   return runParser(expression, tokens);
 }
-
