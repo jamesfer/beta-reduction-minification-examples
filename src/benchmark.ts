@@ -1,9 +1,15 @@
 import { performance } from 'perf_hooks';
 import { parse } from './ast';
-import { inputs } from './benchmark-inputs';
+
+const inputs: string[][] = [
+  ['1', '+', '1'],
+  ['(', '34', '-', '23', ')', '*', '2'],
+  ['4', '/', '10', '^', '(', '23', '+', '2', '*', '5', ')'],
+  ['2', '/', '5', '/', '7', '/', '8', '/', '1', '/', '3'],
+  ['(', '5', '-', '5', ')', '*', '(', '3', '+', '4', ')', '/', '1'],
+];
 
 const iterationCount = 10;
-
 const inputResults = inputs.map(input => ({
   input,
   totalTime: 0,
