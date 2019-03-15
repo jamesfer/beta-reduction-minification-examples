@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+outDir="dist"
+
+# Compile typescript
+echo "Compiling typescript"
+echo " - es5"
+yarn --silent tsc --outDir "$outDir" --module commonjs --target es5 src/ast.ts
+mv "$outDir/ast.js" "$outDir/ast.es5.js"
+
+echo " - es2015"
+yarn --silent tsc --outDir "$outDir" --module commonjs --target es2015 src/ast.ts
+mv "$outDir/ast.js" "$outDir/ast.es2015.js"
+
+
+# Minify
+files=("dist/ast")
+for file in ${files[@]}; do
+  echo "$file"
+
+  # Custom babel
+  echo " - Beta reduction"
+  mkdir -p "$outDir/beta-reduction"
+  yarn --silent babel --presets babel-preset-minify --plugins babel-plugin-beta-reduction --minified --no-comments -o "$outDir/beta-reduction/${file##*/}.js" "$file.es2015.js"
+
+  # Uglify js
+  echo " - Uglify"
+  mkdir -p "$outDir/uglify"
+  yarn --silent uglifyjs "$file.es5.js" -o "$outDir/uglify/${file##*/}.js" --compress="pure_funcs=distance" --mangle
+
+  # Terser
+  echo " - Terser"
+  mkdir -p "$outDir/terser"
+  yarn --silent terser "$file.es2015.js" -o "$outDir/terser/${file##*/}.js" --compress="pure_funcs=distance" --mangle
+
+  # Babel minify
+  echo " - Babel"
+  mkdir -p "$outDir/babel"
+  yarn --silent babel --presets babel-preset-minify --minified --no-comments -o "$outDir/babel/${file##*/}.js" "$file.es2015.js"
+
+  # Google closure
+#  echo " - Closure"
+#  mkdir -p "$outDir/closure"
+#  yarn --silent google-closure-compiler --compilation_level=ADVANCED --js="$file.es5.js" --js_output_file="$outDir/google/${file##*/}"
+done
+
+
+# Compress
+
+## Profile
+#NODE_ENV=production node --prof dist/benchmark.js
+#
+## Parse
+#node --prof-process $(ls | grep isolate) > result.txt
+
+# Flame graph
+#yarn 0x dist/benchmark.js

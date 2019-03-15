@@ -4,8 +4,5 @@
     "moduleResolution": "node",
     "outDir": "dist",
     "strict": true
-  },
-  "files": [
-    "src/benchmark.ts"
-  ]
+  }
 }

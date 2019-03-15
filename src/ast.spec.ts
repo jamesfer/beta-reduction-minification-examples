@@ -8,6 +8,7 @@ import {
   parse,
   TokenSymbol,
 } from './ast';
+import { parsers } from './parsers';
 
 const plusIdentifier = identifierExpression(TokenSymbol.plus);
 const minusIdentifier = identifierExpression(TokenSymbol.minus);
@@ -20,14 +21,10 @@ function makeNumberLiteral(number: number) {
 }
 
 function makeGroup(expression: Expression): Expression {
-  return groupExpression(
-    TokenSymbol.openParen,
-    expression,
-    TokenSymbol.closeParen,
-  )
+  return groupExpression(TokenSymbol.openParen, expression, TokenSymbol.closeParen);
 }
 
-describe('parse', () => {
+describe.each(parsers)('%s parser', () => {
   it('should parse simple numbers', () => {
     expect(parse(['1'])).toEqual(makeNumberLiteral(1));
   });
