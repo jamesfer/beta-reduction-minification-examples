@@ -1,0 +1,693 @@
+Statistical profiling result from isolate-0x105800000-v8.log, (140953 ticks, 6304 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   1612    1.1%          /usr/lib/system/libsystem_kernel.dylib
+    263    0.2%          /usr/lib/system/libsystem_pthread.dylib
+     74    0.1%          /usr/lib/system/libsystem_platform.dylib
+     54    0.0%          /usr/lib/system/libsystem_malloc.dylib
+     39    0.0%          /usr/lib/libc++abi.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+  20924   14.8%   15.1%  Builtin: CompileLazy
+  11129    7.9%    8.0%  Builtin: CallFunction_ReceiverIsNullOrUndefined
+  10873    7.7%    7.8%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:52:27
+   6599    4.7%    4.8%  Builtin: Call_ReceiverIsNullOrUndefined
+   6523    4.6%    4.7%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:244:22
+   6471    4.6%    4.7%  LazyCompile: *previousCalls /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:52:10
+   6417    4.6%    4.6%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:242:26
+   5675    4.0%    4.1%  Builtin: ArgumentsAdaptorTrampoline
+   2172    1.5%    1.6%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:245:40
+   1898    1.3%    1.4%  LazyCompile: *a /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:269:65
+   1742    1.2%    1.3%  LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:243:74
+   1368    1.0%    1.0%  LazyCompile: *previousCalls /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:244:5
+   1270    0.9%    0.9%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:213:34
+   1216    0.9%    0.9%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:71:10
+    977    0.7%    0.7%  LazyCompile: *token /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:359:27
+    902    0.6%    0.6%  LazyCompile: *fallbackList /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:242:10
+    846    0.6%    0.6%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:89:16
+    785    0.6%    0.6%  LazyCompile: *bindResult /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:245:34
+    690    0.5%    0.5%  Builtin: CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit
+    630    0.4%    0.5%  LazyCompile: *token /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:356:28
+    555    0.4%    0.4%  Builtin: StrictEqual
+    514    0.4%    0.4%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:89:10
+    463    0.3%    0.3%  LazyCompile: *matches /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:253:17
+    457    0.3%    0.3%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:71:16
+    404    0.3%    0.3%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:223:12
+    400    0.3%    0.3%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:128:27
+    267    0.2%    0.2%  LazyCompile: *previousCalls /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:128:10
+    253    0.2%    0.2%  LazyCompile: *fallbackExists /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:39:24
+    251    0.2%    0.2%  Builtin: ArrayPrototypeSlice
+    216    0.2%    0.2%  LazyCompile: *matches.length /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:255:14
+    193    0.1%    0.1%  LazyCompile: *value1 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:245:77
+    177    0.1%    0.1%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:223:18
+    175    0.1%    0.1%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:102:29
+    170    0.1%    0.1%  LazyCompile: *matches.length.longest /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:258:5
+    141    0.1%    0.1%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:255:20
+    134    0.1%    0.1%  LazyCompile: *value2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:245:111
+    133    0.1%    0.1%  Builtin: StringEqual
+    124    0.1%    0.1%  Builtin: GrowFastSmiOrObjectElements
+    100    0.1%    0.1%  Builtin: ExtractFastJSArray
+     98    0.1%    0.1%  LazyCompile: *b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:269:89
+     90    0.1%    0.1%  LazyCompile: *wrapResult /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:70:20
+     86    0.1%    0.1%  LazyCompile: *bindResult /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:51:20
+     67    0.0%    0.0%  Builtin: RecordWrite
+     66    0.0%    0.0%  LazyCompile: *token /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:355:27
+     65    0.0%    0.0%  LazyCompile: *longestMatch /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:232:22
+     64    0.0%    0.0%  LazyCompile: *a /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:207:30
+     47    0.0%    0.0%  LazyCompile: *bindResult /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:261:9
+     37    0.0%    0.0%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:258:33
+     29    0.0%    0.0%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:215:39
+     28    0.0%    0.0%  Builtin: InterpreterEntryTrampoline
+     27    0.0%    0.0%  LazyCompile: *lazy /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:365:73
+     25    0.0%    0.0%  LazyCompile: *token /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:360:28
+     25    0.0%    0.0%  LazyCompile: *bindResult /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:103:34
+     23    0.0%    0.0%  LazyCompile: *lazy /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:367:68
+     21    0.0%    0.0%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:216:18
+     20    0.0%    0.0%  LazyCompile: *previousCalls /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:102:12
+     18    0.0%    0.0%  LazyCompile: *lazy /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:361:41
+     17    0.0%    0.0%  LazyCompile: *bindResult /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:258:27
+     15    0.0%    0.0%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:220:25
+     14    0.0%    0.0%  Builtin: AllocateInNewSpace
+      9    0.0%    0.0%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:216:12
+      5    0.0%    0.0%  LazyCompile: ~b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:269:89
+      3    0.0%    0.0%  LazyCompile: *value /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:221:12
+      3    0.0%    0.0%  Builtin: FastNewClosure
+      2    0.0%    0.0%  Script: ~<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/benchmark.js:1:11
+      2    0.0%    0.0%  RegExp: ^[0-9]+$
+      2    0.0%    0.0%  LazyCompile: ~parse /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:375:15
+      2    0.0%    0.0%  Builtin: ArrayMap
+      2    0.0%    0.0%  Builtin: ArrayIteratorPrototypeNext
+      1    0.0%    0.0%  LazyCompile: ~value2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:245:111
+      1    0.0%    0.0%  LazyCompile: ~value /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:221:12
+      1    0.0%    0.0%  LazyCompile: ~tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:213:34
+      1    0.0%    0.0%  LazyCompile: ~token /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:360:28
+      1    0.0%    0.0%  LazyCompile: ~strings.map.string /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:377:30
+      1    0.0%    0.0%  LazyCompile: ~runParser /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:148:19
+      1    0.0%    0.0%  LazyCompile: ~now perf_hooks.js:369:6
+      1    0.0%    0.0%  LazyCompile: ~hrtime internal/process/per_thread.js:102:18
+      1    0.0%    0.0%  LazyCompile: ~array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/beta-reduction/ast.js:243:74
+      1    0.0%    0.0%  LazyCompile: ~Module._load internal/modules/cjs/loader.js:530:24
+      1    0.0%    0.0%  Builtin: StoreIC
+      1    0.0%    0.0%  Builtin: RegExpPrototypeTestFast
+      1    0.0%    0.0%  Builtin: KeyedLoadIC
+      1    0.0%    0.0%  Builtin: InterpreterPushUndefinedAndArgsThenCall
+      1    0.0%    0.0%  Builtin: Call_ReceiverIsAny
+      1    0.0%    0.0%  Builtin: CallFunction_ReceiverIsAny
+      1    0.0%    0.0%  Builtin: ArrayIncludesSmiOrObject
+
+ [C++]:
+   ticks  total  nonlib   name
+   4341    3.1%    3.1%  T v8::internal::Heap::Scavenge()
+   3073    2.2%    2.2%  T _setiopolicy_np
+   2514    1.8%    1.8%  T v8::internal::Object::GetPropertyWithAccessor(v8::internal::LookupIterator*)
+   2155    1.5%    1.6%  t v8::internal::LookupIterator::State v8::internal::LookupIterator::LookupInRegularHolder<false>(v8::internal::Map*, v8::internal::JSReceiver*)
+   1951    1.4%    1.4%  t v8::internal::PagedSpace::Available()
+   1298    0.9%    0.9%  t v8::internal::Scavenger::ScavengeObject(v8::internal::HeapObjectReference**, v8::internal::HeapObject*)
+   1275    0.9%    0.9%  T __kernelrpc_mach_port_request_notification
+   1258    0.9%    0.9%  T v8::internal::LookupIterator::PropertyOrElement(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, bool*, v8::internal::LookupIterator::Configuration)
+   1023    0.7%    0.7%  T v8::internal::Accessors::ArrayLengthGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+    933    0.7%    0.7%  T v8::internal::Bitmap::Clear()
+    827    0.6%    0.6%  t v8::internal::PropertyCallbackArguments::BasicCallNamedGetterCallback(void (*)(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&), v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>)
+    824    0.6%    0.6%  t v8::internal::LookupIterator::LookupIterator(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Name>, v8::internal::LookupIterator::Configuration)
+    637    0.5%    0.5%  t void v8::internal::BodyDescriptorBase::IteratePointers<v8::internal::ScavengeVisitor>(v8::internal::HeapObject*, int, int, v8::internal::ScavengeVisitor*)
+    632    0.4%    0.5%  T v8::internal::Runtime::GetObjectProperty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, bool*)
+    597    0.4%    0.4%  T v8::internal::LookupIterator::FetchValue() const
+    540    0.4%    0.4%  T v8::internal::Object::GetProperty(v8::internal::LookupIterator*, v8::internal::OnNonExistent)
+    537    0.4%    0.4%  T void v8::internal::LookupIterator::Start<false>()
+    532    0.4%    0.4%  T _thread_get_state
+    528    0.4%    0.4%  T v8::internal::Scavenger::Process(v8::internal::OneshotBarrier*)
+    517    0.4%    0.4%  T v8::internal::Runtime_GetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+    490    0.3%    0.4%  t v8::internal::(anonymous namespace)::ObjectLiteralHelper::Create(v8::internal::Isolate*, v8::internal::Handle<v8::internal::HeapObject>, int, v8::internal::PretenureFlag)
+    471    0.3%    0.3%  T v8::internal::Logger::ApiNamedPropertyAccess(char const*, v8::internal::JSObject*, v8::internal::Object*)
+    454    0.3%    0.3%  T v8::internal::JSObject::MigrateToMap(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Map>, int)
+    420    0.3%    0.3%  T v8::internal::PropertyCallbackArguments::PropertyCallbackArguments(v8::internal::Isolate*, v8::internal::Object*, v8::internal::Object*, v8::internal::JSObject*, v8::internal::ShouldThrow)
+    290    0.2%    0.2%  T v8::internal::Map::TransitionToDataProperty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyAttributes, v8::internal::PropertyConstness, v8::internal::Object::StoreFromKeyed)
+    261    0.2%    0.2%  t void v8::internal::BodyDescriptorApply<v8::internal::CallIterateBody, void, v8::internal::Map*, v8::internal::HeapObject*, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*>(v8::internal::InstanceType, v8::internal::Map*, v8::internal::HeapObject*, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*)
+    261    0.2%    0.2%  T v8::internal::RootScavengeVisitor::ScavengePointer(v8::internal::Object**)
+    258    0.2%    0.2%  T node::NodePlatform::MonotonicallyIncreasingTime()
+    250    0.2%    0.2%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>::Pop(int, std::__1::pair<v8::internal::HeapObject*, int>*)
+    236    0.2%    0.2%  T v8::internal::SerializerDeserializer::Iterate(v8::internal::Isolate*, v8::internal::RootVisitor*)
+    225    0.2%    0.2%  T v8::internal::Object::AddDataProperty(v8::internal::LookupIterator*, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyAttributes, v8::internal::ShouldThrow, v8::internal::Object::StoreFromKeyed)
+    220    0.2%    0.2%  T _ioctl
+    218    0.2%    0.2%  T v8::internal::LookupIterator::PrepareTransitionToDataProperty(v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyAttributes, v8::internal::Object::StoreFromKeyed)
+    204    0.1%    0.1%  T v8::internal::LookupIterator::ApplyTransitionToDataProperty(v8::internal::Handle<v8::internal::JSReceiver>)
+    198    0.1%    0.1%  t v8::internal::(anonymous namespace)::UpdateDescriptorForValue(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Map>, int, v8::internal::PropertyConstness, v8::internal::Handle<v8::internal::Object>)
+    196    0.1%    0.1%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>::Worklist(int)
+    178    0.1%    0.1%  T v8::internal::JSObject::DefineOwnPropertyIgnoreAttributes(v8::internal::LookupIterator*, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyAttributes, v8::internal::ShouldThrow, v8::internal::JSObject::AccessorInfoHandling)
+    155    0.1%    0.1%  t v8::internal::JSObject::WriteToField(int, v8::internal::PropertyDetails, v8::internal::Object*)
+    147    0.1%    0.1%  t _tiny_malloc_should_clear
+    143    0.1%    0.1%  t v8::internal::HeapObject::SizeFromMap(v8::internal::Map*) const
+    139    0.1%    0.1%  T v8::internal::NewSpace::UpdateLinearAllocationArea()
+    131    0.1%    0.1%  T v8::internal::JSObject::SetOwnPropertyIgnoreAttributes(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyAttributes)
+    127    0.1%    0.1%  t _tiny_malloc_from_free_list
+    122    0.1%    0.1%  T ___pthread_init
+    118    0.1%    0.1%  T v8::internal::SemiSpace::FixPagesFlags(long, long)
+    117    0.1%    0.1%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>::Push(int, std::__1::pair<v8::internal::HeapObject*, int>)
+    114    0.1%    0.1%  T v8::internal::TransitionsAccessor::Initialize()
+    111    0.1%    0.1%  T v8::internal::TransitionsAccessor::IsMatchingMap(v8::internal::Map*, v8::internal::Name*, v8::internal::PropertyKind, v8::internal::PropertyAttributes)
+    109    0.1%    0.1%  t __malloc_initialize
+    108    0.1%    0.1%  t _small_malloc_should_clear
+    106    0.1%    0.1%  t v8::internal::LocalAllocator::AllocateInLAB(int, v8::internal::AllocationAlignment)
+    106    0.1%    0.1%  T v8::internal::RootScavengeVisitor::VisitRootPointer(v8::internal::Root, char const*, v8::internal::Object**)
+    101    0.1%    0.1%  T v8::internal::ItemParallelJob::Run(std::__1::shared_ptr<v8::internal::Counters>)
+     97    0.1%    0.1%  t _tiny_size
+     97    0.1%    0.1%  T v8::internal::Factory::ObjectLiteralMapFromCache(v8::internal::Handle<v8::internal::NativeContext>, int)
+     91    0.1%    0.1%  T v8::internal::StandardFrame::IterateCompiledFrame(v8::internal::RootVisitor*) const
+     90    0.1%    0.1%  t v8::internal::Heap::AllocateRaw(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
+     85    0.1%    0.1%  t void v8::internal::JSFunction::BodyDescriptor::IterateBody<v8::internal::IterateAndScavengePromotedObjectsVisitor>(v8::internal::Map*, v8::internal::HeapObject*, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*)
+     85    0.1%    0.1%  T v8::internal::Runtime_CreateObjectLiteralWithoutAllocationSite(int, v8::internal::Object**, v8::internal::Isolate*)
+     85    0.1%    0.1%  T v8::internal::LookupIterator::GetAccessors() const
+     82    0.1%    0.1%  t _tiny_free_no_lock
+     77    0.1%    0.1%  T v8::internal::LookupIterator::WriteDataValue(v8::internal::Handle<v8::internal::Object>, bool)
+     77    0.1%    0.1%  T v8::internal::ArrayBufferTracker::ProcessBuffers(v8::internal::Page*, v8::internal::ArrayBufferTracker::ProcessingMode)
+     76    0.1%    0.1%  t v8::internal::JSObject::RawFastPropertyAtPut(v8::internal::FieldIndex, v8::internal::Object*)
+     75    0.1%    0.1%  t void v8::internal::LookupIterator::NextInternal<false>(v8::internal::Map*, v8::internal::JSReceiver*)
+     75    0.1%    0.1%  T v8::internal::JSObject::NotifyMapChange(v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Map>, v8::internal::Isolate*)
+     73    0.1%    0.1%  t std::__1::__hash_iterator<std::__1::__hash_node<unsigned long, void*>*> std::__1::__hash_table<unsigned long, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long>, std::__1::allocator<unsigned long> >::find<unsigned long>(unsigned long const&)
+     64    0.0%    0.0%  T v8::internal::Factory::InitializeJSObjectFromMap(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Map>)
+     63    0.0%    0.0%  T v8::internal::TransitionArray::SearchDetails(int, v8::internal::PropertyKind, v8::internal::PropertyAttributes, int*)
+     60    0.0%    0.0%  T v8::internal::TransitionsAccessor::SearchTransition(v8::internal::Name*, v8::internal::PropertyKind, v8::internal::PropertyAttributes)
+     59    0.0%    0.0%  T v8::internal::RootScavengeVisitor::VisitRootPointers(v8::internal::Root, char const*, v8::internal::Object**, v8::internal::Object**)
+     57    0.0%    0.0%  t v8::internal::FieldIndex::FieldEncoding(v8::internal::Representation)
+     55    0.0%    0.0%  T v8::internal::InnerPointerToCodeCache::GetCacheEntry(unsigned long)
+     52    0.0%    0.0%  T __pthread_exit_if_canceled
+     51    0.0%    0.0%  T v8::internal::Scavenger::IterateAndScavengePromotedObject(v8::internal::HeapObject*, int)
+     49    0.0%    0.0%  t v8::internal::NewSpace::AllocatedSinceLastGC()
+     49    0.0%    0.0%  t ___vfprintf
+     49    0.0%    0.0%  T v8::internal::Factory::AllocateRawWithAllocationSite(v8::internal::Handle<v8::internal::Map>, v8::internal::PretenureFlag, v8::internal::Handle<v8::internal::AllocationSite>)
+     48    0.0%    0.0%  t void v8::internal::BodyDescriptorBase::IteratePointers<v8::internal::IterateAndScavengePromotedObjectsVisitor>(v8::internal::HeapObject*, int, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*)
+     46    0.0%    0.0%  T v8::base::Semaphore::Wait()
+     44    0.0%    0.0%  t std::__1::__hash_const_iterator<std::__1::__hash_node<std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, std::__1::__unordered_map_hasher<v8::internal::MemoryChunk*, std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, v8::internal::MemoryChunk::Hasher, true>, std::__1::__unordered_map_equal<v8::internal::MemoryChunk*, std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, std::__1::equal_to<v8::internal::MemoryChunk*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8::internal::MemoryChunk*, long> > >::find<v8::internal::MemoryChunk*>(v8::internal::MemoryChunk* const&) const
+     40    0.0%    0.0%  t void v8::internal::BodyDescriptorBase::IterateBodyImpl<v8::internal::ScavengeVisitor>(v8::internal::Map*, v8::internal::HeapObject*, int, int, v8::internal::ScavengeVisitor*)
+     38    0.0%    0.0%  t _uv__hrtime
+     37    0.0%    0.0%  T v8::internal::CancelableTaskManager::TryAbort(unsigned long long)
+     36    0.0%    0.0%  T v8::internal::Space::AllocationStep(int, unsigned long, int)
+     36    0.0%    0.0%  T v8::internal::Heap::CreateFillerObjectAt(unsigned long, int, v8::internal::ClearRecordedSlots, v8::internal::ClearFreedMemoryMode)
+     35    0.0%    0.0%  t v8::internal::FixStaleLeftTrimmedHandlesVisitor::VisitRootPointers(v8::internal::Root, char const*, v8::internal::Object**, v8::internal::Object**)
+     35    0.0%    0.0%  t __pthread_mutex_check_init_slow
+     35    0.0%    0.0%  T v8::internal::ObjectBoilerplateDescription::name(int) const
+     35    0.0%    0.0%  T v8::internal::MemoryChunk::Initialize(v8::internal::Heap*, unsigned long, unsigned long, unsigned long, unsigned long, v8::internal::Executability, v8::internal::Space*, v8::internal::VirtualMemory*)
+     34    0.0%    0.0%  t std::__1::__hash_table<unsigned long long, std::__1::hash<unsigned long long>, std::__1::equal_to<unsigned long long>, std::__1::allocator<unsigned long long> >::__rehash(unsigned long)
+     34    0.0%    0.0%  T v8::internal::StackFrame::ComputeType(v8::internal::StackFrameIteratorBase const*, v8::internal::StackFrame::State*)
+     34    0.0%    0.0%  T v8::internal::ObjectBoilerplateDescription::value(int) const
+     32    0.0%    0.0%  t _free_small
+     31    0.0%    0.0%  T v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*)
+     31    0.0%    0.0%  T v8::internal::Factory::InitializeJSObjectBody(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Map>, int)
+     29    0.0%    0.0%  T _fcntl
+     27    0.0%    0.0%  T v8::internal::PagedSpace::TearDown()
+     26    0.0%    0.0%  T v8::internal::GCTracer::Scope::~Scope()
+     25    0.0%    0.0%  T v8::internal::AllocationObserver::AllocationStep(int, unsigned long, unsigned long)
+     25    0.0%    0.0%  T _getpid
+     24    0.0%    0.0%  t v8::internal::StatsCounter::Increment()
+     24    0.0%    0.0%  T v8::internal::TransitionArray::Search(v8::internal::PropertyKind, v8::internal::Name*, v8::internal::PropertyAttributes, int*)
+     23    0.0%    0.0%  t v8::internal::SlotSet::FreeEmptyBuckets()
+     23    0.0%    0.0%  t _small_malloc_from_free_list
+     23    0.0%    0.0%  T v8::internal::Scavenger::ScavengePage(v8::internal::MemoryChunk*)
+     22    0.0%    0.0%  t _malloc_print_configure
+     22    0.0%    0.0%  T v8::internal::StackFrameIterator::Advance()
+     22    0.0%    0.0%  T v8::internal::NewSpace::EnsureAllocation(int, v8::internal::AllocationAlignment)
+     22    0.0%    0.0%  T v8::internal::Heap::GetFillToAlign(unsigned long, v8::internal::AllocationAlignment)
+     22    0.0%    0.0%  T _getattrlistbulk
+     21    0.0%    0.0%  t v8::internal::tracing::ScopedTracer::~ScopedTracer()
+     20    0.0%    0.0%  t _create_scalable_szone
+     20    0.0%    0.0%  T v8::internal::V8::GetCurrentPlatform()
+     20    0.0%    0.0%  T v8::internal::PagedSpace::FreeLinearAllocationArea()
+     20    0.0%    0.0%  T v8::internal::Map::UnwrapFieldType(v8::internal::MaybeObject*)
+     20    0.0%    0.0%  T v8::internal::FieldType::cast(v8::internal::Object*)
+     20    0.0%    0.0%  T node::native_module::NativeModuleLoader::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     20    0.0%    0.0%  T _pthread_getname_np
+     19    0.0%    0.0%  T v8::internal::Heap::GarbageCollectionEpilogue()
+     19    0.0%    0.0%  T v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
+     19    0.0%    0.0%  T v8::internal::Heap::AllocateRawWithLightRetry(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
+     19    0.0%    0.0%  T v8::internal::Factory::NewJSObjectFromMap(v8::internal::Handle<v8::internal::Map>, v8::internal::PretenureFlag, v8::internal::Handle<v8::internal::AllocationSite>)
+     18    0.0%    0.0%  t _nano_common_configure
+     18    0.0%    0.0%  T v8::internal::StackFrame::IteratePc(v8::internal::RootVisitor*, unsigned long*, unsigned long*, v8::internal::Code*)
+     18    0.0%    0.0%  T v8::internal::NewSpace::AddFreshPage()
+     18    0.0%    0.0%  T v8::internal::FieldType::NowContains(v8::internal::Object*)
+     18    0.0%    0.0%  T ___gethex_D2A
+     17    0.0%    0.0%  t void v8::internal::BodyDescriptorBase::IterateBodyImpl<v8::internal::IterateAndScavengePromotedObjectsVisitor>(v8::internal::Map*, v8::internal::HeapObject*, int, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*)
+     17    0.0%    0.0%  T v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace)
+     17    0.0%    0.0%  T ___rec_search
+     16    0.0%    0.0%  t std::__1::unordered_map<unsigned long long, v8::internal::Cancelable*, std::__1::hash<unsigned long long>, std::__1::equal_to<unsigned long long>, std::__1::allocator<std::__1::pair<unsigned long long const, v8::internal::Cancelable*> > >::operator[](unsigned long long const&)
+     16    0.0%    0.0%  t _mvm_allocate_pages_securely
+     16    0.0%    0.0%  T v8::internal::SpaceWithLinearArea::InlineAllocationStep(unsigned long, unsigned long, unsigned long, unsigned long)
+     16    0.0%    0.0%  T v8::internal::Map::Update(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Map>)
+     16    0.0%    0.0%  T v8::base::Mutex::Lock()
+     15    0.0%    0.0%  T v8::internal::PagedSpace::PagedSpace(v8::internal::Heap*, v8::internal::AllocationSpace, v8::internal::Executability)
+     15    0.0%    0.0%  T v8::internal::LookupIterator::NotFound(v8::internal::JSReceiver*) const
+     14    0.0%    0.0%  t v8::internal::ScavengingTask::RunInParallel()
+     14    0.0%    0.0%  T v8::internal::GCTracer::Scope::Scope(v8::internal::GCTracer*, v8::internal::GCTracer::Scope::ScopeId)
+     13    0.0%    0.0%  t std::__1::deque<std::__1::unique_ptr<node::inspector::Request, std::__1::default_delete<node::inspector::Request> >, std::__1::allocator<std::__1::unique_ptr<node::inspector::Request, std::__1::default_delete<node::inspector::Request> > > >::push_back(std::__1::unique_ptr<node::inspector::Request, std::__1::default_delete<node::inspector::Request> >&&)
+     13    0.0%    0.0%  T v8::internal::wasm::WasmCodeManager::LookupNativeModule(unsigned long) const
+     13    0.0%    0.0%  T v8::internal::Heap::ProcessPretenuringFeedback()
+     13    0.0%    0.0%  T v8::internal::Heap::MonotonicallyIncreasingTimeInMs()
+     13    0.0%    0.0%  T v8::internal::Heap::CanExpandOldGeneration(unsigned long)
+     13    0.0%    0.0%  T v8::internal::GCTracer::AverageSpeed(v8::base::RingBuffer<std::__1::pair<unsigned long long, double> > const&, std::__1::pair<unsigned long long, double> const&, double)
+     13    0.0%    0.0%  T v8::base::Mutex::Unlock()
+     13    0.0%    0.0%  T _free
+     12    0.0%    0.0%  t v8::internal::UnbufferedCharacterStream<v8::internal::OnHeapStream>::can_access_heap()
+     12    0.0%    0.0%  t v8::internal::PagedSpace::AllocateRaw(int, v8::internal::AllocationAlignment)
+     12    0.0%    0.0%  T v8::internal::SafepointEntry::HasRegisters() const
+     12    0.0%    0.0%  T v8::internal::PagedSpace::AddPage(v8::internal::Page*)
+     12    0.0%    0.0%  T v8::internal::NewSpace::UpdateInlineAllocationLimit(unsigned long)
+     12    0.0%    0.0%  T v8::internal::NewSpace::ResetLinearAllocationArea()
+     12    0.0%    0.0%  T v8::internal::GCTracer::BackgroundScope::BackgroundScope(v8::internal::GCTracer*, v8::internal::GCTracer::BackgroundScope::ScopeId)
+     12    0.0%    0.0%  T _pthread_override_qos_class_start_np
+     11    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::__unordered_map_hasher<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, v8::internal::LocalArrayBufferTracker::Hasher, true>, std::__1::__unordered_map_equal<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::equal_to<v8::internal::JSArrayBuffer*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation> > >::swap(std::__1::__hash_table<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::__unordered_map_hasher<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, v8::internal::LocalArrayBufferTracker::Hasher, true>, std::__1::__unordered_map_equal<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::equal_to<v8::internal::JSArrayBuffer*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation> > >&)
+     11    0.0%    0.0%  t _tiny_free_list_add_ptr
+     11    0.0%    0.0%  t __pthread_body
+     11    0.0%    0.0%  T v8::internal::PagedSpace::SizeOfObjects()
+     11    0.0%    0.0%  T v8::internal::PagedSpace::MergeCompactionSpace(v8::internal::CompactionSpace*)
+     11    0.0%    0.0%  T v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags)
+     11    0.0%    0.0%  T v8::internal::ConcurrentMarking::ClearLiveness(v8::internal::MemoryChunk*)
+     11    0.0%    0.0%  T v8::base::Semaphore::Signal()
+     11    0.0%    0.0%  T _uv_hrtime
+     10    0.0%    0.0%  t v8::internal::MaybeHandle<v8::internal::JSObject> v8::internal::(anonymous namespace)::CreateLiteralWithoutAllocationSite<v8::internal::(anonymous namespace)::ObjectLiteralHelper>(v8::internal::Isolate*, v8::internal::Handle<v8::internal::HeapObject>, int)
+     10    0.0%    0.0%  t v8::internal::IdleScavengeObserver::Step(int, unsigned long, unsigned long)
+     10    0.0%    0.0%  t int v8::internal::LinearSearch<(v8::internal::SearchMode)0, v8::internal::TransitionArray>(v8::internal::TransitionArray*, v8::internal::Name*, int, int*)
+     10    0.0%    0.0%  t _small_size
+     10    0.0%    0.0%  T v8::internal::wasm::WasmCodeManager::LookupCode(unsigned long) const
+     10    0.0%    0.0%  T v8::internal::StandardFrame::ComputeCallerState(v8::internal::StackFrame::State*) const
+     10    0.0%    0.0%  T v8::internal::SpaceWithLinearArea::ComputeLimit(unsigned long, unsigned long, unsigned long)
+     10    0.0%    0.0%  T v8::internal::ItemParallelJob::~ItemParallelJob()
+     10    0.0%    0.0%  T v8::internal::ItemParallelJob::Task::RunInternal()
+     10    0.0%    0.0%  T ___fread
+      9    0.0%    0.0%  t void v8::internal::Worklist<v8::internal::HeapObject*, 64>::Segment::Update<v8::internal::IncrementalMarking::UpdateMarkingWorklistAfterScavenge()::$_0>(v8::internal::IncrementalMarking::UpdateMarkingWorklistAfterScavenge()::$_0)
+      9    0.0%    0.0%  t v8::internal::LocalAllocator::Finalize()
+      9    0.0%    0.0%  t v8::internal::AllocationMemento* v8::internal::Heap::FindAllocationMemento<(v8::internal::Heap::FindMementoMode)1>(v8::internal::Map*, v8::internal::HeapObject*)
+      9    0.0%    0.0%  t std::__1::__deque_base<void*, std::__1::allocator<void*> >::clear()
+      9    0.0%    0.0%  t node::TaskQueue<node::DelayedTask>::Push(std::__1::unique_ptr<node::DelayedTask, std::__1::default_delete<node::DelayedTask> >)
+      9    0.0%    0.0%  t _free_tiny
+      9    0.0%    0.0%  T v8::internal::Heap::OldGenerationCapacity()
+      9    0.0%    0.0%  T v8::internal::Heap::MergeAllocationSitePretenuringFeedback(std::__1::unordered_map<v8::internal::AllocationSite*, unsigned long, std::__1::hash<v8::internal::AllocationSite*>, std::__1::equal_to<v8::internal::AllocationSite*>, std::__1::allocator<std::__1::pair<v8::internal::AllocationSite* const, unsigned long> > > const&)
+      9    0.0%    0.0%  T v8::internal::GCTracer::BackgroundScope::~BackgroundScope()
+      9    0.0%    0.0%  T v8::internal::FreeList::Reset()
+      9    0.0%    0.0%  T _pthread_kill
+      9    0.0%    0.0%  T _pthread_get_stacksize_np
+      9    0.0%    0.0%  T __pthread_qos_override_end_direct
+      8    0.0%    0.0%  t void std::__1::vector<std::__1::unique_ptr<node::fs::FileHandleReadWrap, std::__1::default_delete<node::fs::FileHandleReadWrap> >, std::__1::allocator<std::__1::unique_ptr<node::fs::FileHandleReadWrap, std::__1::default_delete<node::fs::FileHandleReadWrap> > > >::__emplace_back_slow_path<std::__1::unique_ptr<node::fs::FileHandleReadWrap, std::__1::default_delete<node::fs::FileHandleReadWrap> > >(std::__1::unique_ptr<node::fs::FileHandleReadWrap, std::__1::default_delete<node::fs::FileHandleReadWrap> >&&)
+      8    0.0%    0.0%  t v8::internal::LargeObjectSpace::SizeOfObjects()
+      8    0.0%    0.0%  t _szone_size
+      8    0.0%    0.0%  T v8::internal::Sweeper::StartSweeperTasks()
+      8    0.0%    0.0%  T v8::internal::StackFrame::GetCallerState(v8::internal::StackFrame::State*) const
+      8    0.0%    0.0%  T v8::internal::PauseAllocationObserversScope::~PauseAllocationObserversScope()
+      8    0.0%    0.0%  T v8::internal::ObjectBoilerplateDescription::backing_store_size() const
+      8    0.0%    0.0%  T v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags)
+      8    0.0%    0.0%  T v8::internal::ArrayBufferCollector::AddGarbageAllocations(std::__1::vector<v8::internal::JSArrayBuffer::Allocation, std::__1::allocator<v8::internal::JSArrayBuffer::Allocation> >)
+      8    0.0%    0.0%  T v8::base::ConditionVariable::~ConditionVariable()
+      7    0.0%    0.0%  t v8::internal::OneshotBarrier::Wait()
+      7    0.0%    0.0%  t _malloc_zone_register_while_locked
+      7    0.0%    0.0%  t __pthread_bsdthread_init
+      7    0.0%    0.0%  T v8::internal::SpaceWithLinearArea::StartNextInlineAllocationStep()
+      7    0.0%    0.0%  T v8::internal::SemiSpace::set_age_mark(unsigned long)
+      7    0.0%    0.0%  T v8::internal::ScavengeJob::ScheduleIdleTaskIfNeeded(v8::internal::Heap*, int)
+      7    0.0%    0.0%  T v8::internal::Object* v8::internal::VisitWeakList<v8::internal::Context>(v8::internal::Heap*, v8::internal::Object*, v8::internal::WeakObjectRetainer*)
+      7    0.0%    0.0%  T v8::internal::Histogram::AddSample(int)
+      7    0.0%    0.0%  T v8::internal::GCTracer::Stop(v8::internal::GarbageCollector)
+      7    0.0%    0.0%  T v8::internal::GCTracer::Print() const
+      7    0.0%    0.0%  T v8::internal::ArrayBufferTracker::PrepareToFreeDeadInNewSpace(v8::internal::Heap*)
+      7    0.0%    0.0%  T node::WorkerThreadsTaskRunner::PostTask(std::__1::unique_ptr<v8::Task, std::__1::default_delete<v8::Task> >)
+      7    0.0%    0.0%  T node::NodePlatform::CallOnWorkerThread(std::__1::unique_ptr<v8::Task, std::__1::default_delete<v8::Task> >)
+      7    0.0%    0.0%  T _pthread_rwlock_destroy
+      7    0.0%    0.0%  T ___rec_ret
+      6    0.0%    0.0%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>::~Worklist()
+      6    0.0%    0.0%  t int v8::internal::BinarySearch<(v8::internal::SearchMode)0, v8::internal::TransitionArray>(v8::internal::TransitionArray*, v8::internal::Name*, int, int*)
+      6    0.0%    0.0%  t ___vfwscanf
+      6    0.0%    0.0%  T v8::internal::StackFrameIteratorBase::SingletonFor(v8::internal::StackFrame::Type)
+      6    0.0%    0.0%  T v8::internal::Heap::CallGCEpilogueCallbacks(v8::GCType, v8::GCCallbackFlags)
+      6    0.0%    0.0%  T v8::internal::GCTracer::Start(v8::internal::GarbageCollector, v8::internal::GarbageCollectionReason, char const*)
+      6    0.0%    0.0%  T v8::internal::GCTracer::AddSurvivalRatio(double)
+      6    0.0%    0.0%  T v8::internal::FreeList::RemoveCategory(v8::internal::FreeListCategory*)
+      5    0.0%    0.0%  t std::__1::deque<v8::internal::Page*, std::__1::allocator<v8::internal::Page*> >::shrink_to_fit()
+      5    0.0%    0.0%  t std::__1::__hash_table<node::Environment::CleanupHookCallback, node::Environment::CleanupHookCallback::Hash, node::Environment::CleanupHookCallback::Equal, std::__1::allocator<node::Environment::CleanupHookCallback> >::remove(std::__1::__hash_const_iterator<std::__1::__hash_node<node::Environment::CleanupHookCallback, void*>*>)
+      5    0.0%    0.0%  t bool v8::internal::LiveObjectVisitor::VisitBlackObjects<v8::internal::EvacuateOldSpaceVisitor, v8::internal::MajorNonAtomicMarkingState>(v8::internal::MemoryChunk*, v8::internal::MajorNonAtomicMarkingState*, v8::internal::EvacuateOldSpaceVisitor*, v8::internal::LiveObjectVisitor::IterationMode, v8::internal::HeapObject**)
+      5    0.0%    0.0%  t _mmap(void*, unsigned long, int, int, int, long long)
+      5    0.0%    0.0%  t __pthread_main_thread_init
+      5    0.0%    0.0%  T v8::internal::Sweeper::PauseOrCompleteScope::~PauseOrCompleteScope()
+      5    0.0%    0.0%  T v8::internal::SpaceWithLinearArea::ResumeAllocationObservers()
+      5    0.0%    0.0%  T v8::internal::Scavenger::Finalize()
+      5    0.0%    0.0%  T v8::internal::ObjectBoilerplateDescription::size() const
+      5    0.0%    0.0%  T v8::internal::IncrementalMarking::UpdateMarkedBytesAfterScavenge(unsigned long)
+      5    0.0%    0.0%  T v8::internal::Heap::OldGenerationSizeOfObjects()
+      5    0.0%    0.0%  T v8::internal::Heap::ExternalStringTable::UpdateNewSpaceReferences(v8::internal::String* (*)(v8::internal::Heap*, v8::internal::Object**))
+      5    0.0%    0.0%  T node::NodePlatform::IdleTasksEnabled(v8::Isolate*)
+      5    0.0%    0.0%  T _pthread_set_qos_class_self_np
+      4    0.0%    0.0%  t v8::internal::Space::CommittedMemory()
+      4    0.0%    0.0%  t v8::internal::ScavengeWeakObjectRetainer::RetainAs(v8::internal::Object*)
+      4    0.0%    0.0%  t v8::internal::PageScavengingItem* v8::internal::ItemParallelJob::Task::GetItem<v8::internal::PageScavengingItem>()
+      4    0.0%    0.0%  t v8::internal::NewSpace::Size()
+      4    0.0%    0.0%  t v8::internal::(anonymous namespace)::GetPageAllocator()
+      4    0.0%    0.0%  t v8::base::RingBuffer<std::__1::pair<unsigned long long, double> >::Push(std::__1::pair<unsigned long long, double> const&)
+      4    0.0%    0.0%  t v8::Platform::CallBlockingTaskOnWorkerThread(std::__1::unique_ptr<v8::Task, std::__1::default_delete<v8::Task> >)
+      4    0.0%    0.0%  t std::__1::vector<v8::internal::GlobalHandles::Node*, std::__1::allocator<v8::internal::GlobalHandles::Node*> >::resize(unsigned long)
+      4    0.0%    0.0%  t std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::resize(unsigned long)
+      4    0.0%    0.0%  t _szone_calloc
+      4    0.0%    0.0%  t __pthread_mutex_firstfit_unlock_slow
+      4    0.0%    0.0%  T v8::internal::StackFrameIteratorBase::StackFrameIteratorBase(v8::internal::Isolate*, bool)
+      4    0.0%    0.0%  T v8::internal::SpaceIterator::has_next()
+      4    0.0%    0.0%  T v8::internal::Space::ResumeAllocationObservers()
+      4    0.0%    0.0%  T v8::internal::Scavenger::Scavenger(v8::internal::Heap*, bool, v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>*, v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>*, int)
+      4    0.0%    0.0%  T v8::internal::ScavengeJob::ScheduleIdleTask(v8::internal::Heap*)
+      4    0.0%    0.0%  T v8::internal::PagedSpaces::next()
+      4    0.0%    0.0%  T v8::internal::PagedSpace::RemovePage(v8::internal::Page*)
+      4    0.0%    0.0%  T v8::internal::Logger::ResourceEvent(char const*, char const*)
+      4    0.0%    0.0%  T v8::internal::LocalAllocationBuffer::Close()
+      4    0.0%    0.0%  T v8::internal::JavaScriptFrame::Iterate(v8::internal::RootVisitor*) const
+      4    0.0%    0.0%  T v8::internal::JavaScriptFrame::GetCallerStackPointer() const
+      4    0.0%    0.0%  T v8::internal::IncrementalMarking::UpdateMarkingWorklistAfterScavenge()
+      4    0.0%    0.0%  T v8::internal::Heap::UpdateSurvivalStatistics(int)
+      4    0.0%    0.0%  T v8::internal::Heap::IterateStrongRoots(v8::internal::RootVisitor*, v8::internal::VisitMode)
+      4    0.0%    0.0%  T v8::internal::Heap::CommittedOldGenerationMemory()
+      4    0.0%    0.0%  T v8::internal::HandleScopeImplementer::IterateThis(v8::internal::RootVisitor*)
+      4    0.0%    0.0%  T v8::internal::GlobalHandles::MarkNewSpaceWeakUnmodifiedObjectsPending(bool (*)(v8::internal::Heap*, v8::internal::Object**))
+      4    0.0%    0.0%  T v8::internal::GlobalHandles::IdentifyWeakUnmodifiedObjects(bool (*)(v8::internal::Object**))
+      4    0.0%    0.0%  T v8::internal::GlobalHandles::DispatchPendingPhantomCallbacks(bool)
+      4    0.0%    0.0%  T v8::internal::GCTracer::CombinedMarkCompactSpeedInBytesPerMillisecond()
+      4    0.0%    0.0%  T v8::internal::CompactionSpace::SlowRefillLinearAllocationArea(int)
+      4    0.0%    0.0%  T v8::internal::CancelableTask::CancelableTask(v8::internal::Isolate*)
+      4    0.0%    0.0%  T v8::internal::ArrayBufferCollector::FreeAllocationsOnBackgroundThread()
+      4    0.0%    0.0%  T v8::base::OS::CommitPageSize()
+      4    0.0%    0.0%  T v8::base::Mutex::~Mutex()
+      4    0.0%    0.0%  T _umask
+      3    0.0%    0.0%  t void v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, v8::internal::HeapObjectReference**>, 64>::Segment::Update<v8::internal::IncrementalMarking::UpdateWeakReferencesAfterScavenge()::$_1>(v8::internal::IncrementalMarking::UpdateWeakReferencesAfterScavenge()::$_1)
+      3    0.0%    0.0%  t v8::internal::SlotSet::FreeToBeFreedBuckets()
+      3    0.0%    0.0%  t v8::internal::ScavengingTask::~ScavengingTask()
+      3    0.0%    0.0%  t v8::internal::PagedSpace::~PagedSpace()
+      3    0.0%    0.0%  t v8::internal::NewSpace::SupportsInlineAllocation()
+      3    0.0%    0.0%  t v8::internal::NewSpace::SizeOfObjects()
+      3    0.0%    0.0%  t v8::internal::LocalAllocator::NewLocalAllocationBuffer()
+      3    0.0%    0.0%  t v8::CallGCCallbackWithoutData(v8::Isolate*, v8::GCType, v8::GCCallbackFlags, void*)
+      3    0.0%    0.0%  t std::__1::deque<v8::internal::Page*, std::__1::allocator<v8::internal::Page*> >::__move_assign(std::__1::deque<v8::internal::Page*, std::__1::allocator<v8::internal::Page*> >&, std::__1::integral_constant<bool, true>)
+      3    0.0%    0.0%  t std::__1::__vector_base<std::__1::unique_ptr<node::fs::FileHandleReadWrap, std::__1::default_delete<node::fs::FileHandleReadWrap> >, std::__1::allocator<std::__1::unique_ptr<node::fs::FileHandleReadWrap, std::__1::default_delete<node::fs::FileHandleReadWrap> > > >::~__vector_base()
+      3    0.0%    0.0%  t std::__1::__split_buffer<std::__1::unique_ptr<node::fs::FileHandleReadWrap, std::__1::default_delete<node::fs::FileHandleReadWrap> >, std::__1::allocator<std::__1::unique_ptr<node::fs::FileHandleReadWrap, std::__1::default_delete<node::fs::FileHandleReadWrap> > >&>::~__split_buffer()
+      3    0.0%    0.0%  t std::__1::__hash_table<v8::internal::CodeEventListener*, std::__1::hash<v8::internal::CodeEventListener*>, std::__1::equal_to<v8::internal::CodeEventListener*>, std::__1::allocator<v8::internal::CodeEventListener*> >::__rehash(unsigned long)
+      3    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<v8::internal::AllocationSite*, unsigned long>, std::__1::__unordered_map_hasher<v8::internal::AllocationSite*, std::__1::__hash_value_type<v8::internal::AllocationSite*, unsigned long>, std::__1::hash<v8::internal::AllocationSite*>, true>, std::__1::__unordered_map_equal<v8::internal::AllocationSite*, std::__1::__hash_value_type<v8::internal::AllocationSite*, unsigned long>, std::__1::equal_to<v8::internal::AllocationSite*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8::internal::AllocationSite*, unsigned long> > >::~__hash_table()
+      3    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<v8::internal::AllocationSite*, unsigned long>, std::__1::__unordered_map_hasher<v8::internal::AllocationSite*, std::__1::__hash_value_type<v8::internal::AllocationSite*, unsigned long>, std::__1::hash<v8::internal::AllocationSite*>, true>, std::__1::__unordered_map_equal<v8::internal::AllocationSite*, std::__1::__hash_value_type<v8::internal::AllocationSite*, unsigned long>, std::__1::equal_to<v8::internal::AllocationSite*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8::internal::AllocationSite*, unsigned long> > >::rehash(unsigned long)
+      3    0.0%    0.0%  t _mprotect(void*, unsigned long, int)
+      3    0.0%    0.0%  t _flush_queues
+      3    0.0%    0.0%  T v8::internal::Sweeper::FilterSweepingPagesScope::FilterSweepingPagesScope(v8::internal::Sweeper*, v8::internal::Sweeper::PauseOrCompleteScope const&)
+      3    0.0%    0.0%  T v8::internal::StoreBuffer::SetMode(v8::internal::StoreBuffer::StoreBufferMode)
+      3    0.0%    0.0%  T v8::internal::StoreBuffer::MoveAllEntriesToRememberedSet()
+      3    0.0%    0.0%  T v8::internal::SpaceWithLinearArea::PauseAllocationObservers()
+      3    0.0%    0.0%  T v8::internal::Scavenger::AddPageToSweeperIfNecessary(v8::internal::MemoryChunk*)
+      3    0.0%    0.0%  T v8::internal::RootScavengeVisitor::RootScavengeVisitor(v8::internal::Scavenger*)
+      3    0.0%    0.0%  T v8::internal::OptimizedFrame::Iterate(v8::internal::RootVisitor*) const
+      3    0.0%    0.0%  T v8::internal::LargeObjectSpace::Available()
+      3    0.0%    0.0%  T v8::internal::JSObject::FastPropertyAt(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Representation, v8::internal::FieldIndex)
+      3    0.0%    0.0%  T v8::internal::IncrementalMarking::Observer::Step(int, unsigned long, unsigned long)
+      3    0.0%    0.0%  T v8::internal::Heap::SizeOfObjects()
+      3    0.0%    0.0%  T v8::internal::Heap::NumberOfScavengeTasks()
+      3    0.0%    0.0%  T v8::internal::Heap::GarbageCollectionPrologue()
+      3    0.0%    0.0%  T v8::internal::GlobalHandles::IterateNewSpaceWeakUnmodifiedRootsForFinalizers(v8::internal::RootVisitor*)
+      3    0.0%    0.0%  T v8::internal::FreeListCategory::SearchForNodeInList(unsigned long, unsigned long*)
+      3    0.0%    0.0%  T v8::internal::FreeListCategory::Free(unsigned long, unsigned long, v8::internal::FreeMode)
+      3    0.0%    0.0%  T v8::internal::CompilationCache::Iterate(v8::internal::RootVisitor*)
+      3    0.0%    0.0%  T v8::internal::Code::CopyFromNoFlush(v8::internal::Heap*, v8::internal::CodeDesc const&)
+      3    0.0%    0.0%  T node::performance::MarkGarbageCollectionEnd(v8::Isolate*, v8::GCType, v8::GCCallbackFlags, void*)
+      3    0.0%    0.0%  T _swprintf_l
+      3    0.0%    0.0%  T ___quorem_D2A
+      3    0.0%    0.0%  T ___gdtoa
+      2    0.0%    0.0%  t v8::internal::Space::~Space()
+      2    0.0%    0.0%  t v8::internal::RootVisitor::Synchronize(v8::internal::VisitorSynchronization::SyncTag)
+      2    0.0%    0.0%  t v8::internal::RegExpAtom::IsTextElement()
+      2    0.0%    0.0%  t v8::internal::PagedSpace::Waste()
+      2    0.0%    0.0%  t v8::internal::PagedSpace::Size()
+      2    0.0%    0.0%  t v8::internal::EvacuateNewSpacePageVisitor<(v8::internal::PageEvacuationMode)1>::~EvacuateNewSpacePageVisitor()
+      2    0.0%    0.0%  t v8::internal::(anonymous namespace)::JSObjectWalkVisitor<v8::internal::AllocationSiteUsageContext>::StructureWalk(v8::internal::Handle<v8::internal::JSObject>)
+      2    0.0%    0.0%  t v8::base::Optional<v8::internal::AsyncTimedHistogram>::Init(v8::internal::AsyncTimedHistogram&&)
+      2    0.0%    0.0%  t v8::EmbedderGraph::Node::IsEmbedderNode()
+      2    0.0%    0.0%  t std::__1::__split_buffer<v8::internal::Page**, std::__1::allocator<v8::internal::Page**> >::shrink_to_fit()
+      2    0.0%    0.0%  t std::__1::__split_buffer<v8::internal::Page**, std::__1::allocator<v8::internal::Page**> >::operator=(std::__1::__split_buffer<v8::internal::Page**, std::__1::allocator<v8::internal::Page**> >&&)
+      2    0.0%    0.0%  t std::__1::__hash_table<v8::internal::CompilerDispatcherJob*, std::__1::hash<v8::internal::CompilerDispatcherJob*>, std::__1::equal_to<v8::internal::CompilerDispatcherJob*>, std::__1::allocator<v8::internal::CompilerDispatcherJob*> >::clear()
+      2    0.0%    0.0%  t std::__1::__deque_base<v8::internal::Page*, std::__1::allocator<v8::internal::Page*> >::~__deque_base()
+      2    0.0%    0.0%  t std::__1::__deque_base<unsigned int*, std::__1::allocator<unsigned int*> >::~__deque_base()
+      2    0.0%    0.0%  t node::PosixSymbolDebuggingContext::~PosixSymbolDebuggingContext()
+      2    0.0%    0.0%  t __pthread_terminate
+      2    0.0%    0.0%  T v8::internal::Sweeper::PauseOrCompleteScope::PauseOrCompleteScope(v8::internal::Sweeper*)
+      2    0.0%    0.0%  T v8::internal::Relocatable::PostGarbageCollectionProcessing(v8::internal::Isolate*)
+      2    0.0%    0.0%  T v8::internal::Relocatable::Iterate(v8::internal::Isolate*, v8::internal::RootVisitor*)
+      2    0.0%    0.0%  T v8::internal::PauseAllocationObserversScope::PauseAllocationObserversScope(v8::internal::Heap*)
+      2    0.0%    0.0%  T v8::internal::PagedSpace::InitializePage(v8::internal::MemoryChunk*, v8::internal::Executability)
+      2    0.0%    0.0%  T v8::internal::MarkCompactCollector::ReleaseEvacuationCandidates()
+      2    0.0%    0.0%  T v8::internal::LocalAllocationBuffer::LocalAllocationBuffer(v8::internal::LocalAllocationBuffer const&)
+      2    0.0%    0.0%  T v8::internal::JSObject::ValidateElements(v8::internal::JSObject*)
+      2    0.0%    0.0%  T v8::internal::ItemParallelJob::Task::~Task()
+      2    0.0%    0.0%  T v8::internal::Isolate::Iterate(v8::internal::RootVisitor*, v8::internal::ThreadLocalTop*)
+      2    0.0%    0.0%  T v8::internal::IncrementalMarkingJob::ScheduleTask(v8::internal::Heap*)
+      2    0.0%    0.0%  T v8::internal::IncrementalMarking::CanBeActivated()
+      2    0.0%    0.0%  T v8::internal::Heap::IncrementalMarkingLimitReached()
+      2    0.0%    0.0%  T v8::internal::Heap::GCTypePriorityTimer(v8::internal::GarbageCollector)
+      2    0.0%    0.0%  T v8::internal::Heap::ConfigureInitialOldGenerationSize()
+      2    0.0%    0.0%  T v8::internal::GlobalHandles::PostGarbageCollectionProcessing(v8::internal::GarbageCollector, v8::GCCallbackFlags)
+      2    0.0%    0.0%  T v8::internal::GlobalHandles::IterateNewSpaceStrongAndDependentRoots(v8::internal::RootVisitor*)
+      2    0.0%    0.0%  T v8::internal::GlobalHandles::InvokeSecondPassPhantomCallbacks()
+      2    0.0%    0.0%  T v8::internal::GCTracer::CurrentOldGenerationAllocationThroughputInBytesPerMillisecond() const
+      2    0.0%    0.0%  T v8::internal::FreeList::Free(unsigned long, unsigned long, v8::internal::FreeMode)
+      2    0.0%    0.0%  T v8::internal::FreeList::FindNodeIn(v8::internal::FreeListCategoryType, unsigned long, unsigned long*)
+      2    0.0%    0.0%  T v8::internal::FreeList::EvictFreeListItems(v8::internal::Page*)
+      2    0.0%    0.0%  T v8::internal::FreeList::Allocate(unsigned long, unsigned long*)
+      2    0.0%    0.0%  T v8::internal::FastGetOwnValuesOrEntries(v8::internal::Isolate*, v8::internal::Handle<v8::internal::JSReceiver>, bool, v8::internal::Handle<v8::internal::FixedArray>*)
+      2    0.0%    0.0%  T v8::internal::Factory::TryNewCode(v8::internal::CodeDesc const&, v8::internal::Code::Kind, v8::internal::Handle<v8::internal::Object>, int, v8::internal::MaybeHandle<v8::internal::ByteArray>, v8::internal::MaybeHandle<v8::internal::DeoptimizationData>, v8::internal::Movability, unsigned int, bool, int, int, int)
+      2    0.0%    0.0%  T v8::internal::Factory::InitializeMap(v8::internal::Map*, v8::internal::InstanceType, int, v8::internal::ElementsKind, int)
+      2    0.0%    0.0%  T v8::internal::ExitFrame::Iterate(v8::internal::RootVisitor*) const
+      2    0.0%    0.0%  T v8::internal::EntryFrame::GetCallerState(v8::internal::StackFrame::State*) const
+      2    0.0%    0.0%  T v8::internal::CommitPageSize()
+      2    0.0%    0.0%  T v8::internal::CancelableTaskManager::Register(v8::internal::Cancelable*)
+      2    0.0%    0.0%  T v8::internal::Cancelable::~Cancelable()
+      2    0.0%    0.0%  T v8::base::OS::GetCurrentProcessId()
+      2    0.0%    0.0%  T node::dtrace_gc_start(v8::Isolate*, v8::GCType, v8::GCCallbackFlags)
+      2    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T _uv_mutex_lock
+      2    0.0%    0.0%  T _uv_cond_signal
+      2    0.0%    0.0%  T _pthread_get_stackaddr_np
+      2    0.0%    0.0%  T __simple_getenv
+      2    0.0%    0.0%  T __pthread_workqueue_override_start_direct_check_owner
+      2    0.0%    0.0%  T ___rec_put
+      2    0.0%    0.0%  T ___rec_iput
+      1    0.0%    0.0%  t void v8::internal::MarkCompactCollector::ProcessMarkingWorklistInternal<(v8::internal::MarkCompactCollector::MarkingWorklistProcessingMode)0>()
+      1    0.0%    0.0%  t void std::__1::vector<v8::internal::Signature<v8::internal::wasm::ValueType>*, v8::internal::ZoneAllocator<v8::internal::Signature<v8::internal::wasm::ValueType>*> >::__push_back_slow_path<v8::internal::Signature<v8::internal::wasm::ValueType>* const&>(v8::internal::Signature<v8::internal::wasm::ValueType>* const&&&)
+      1    0.0%    0.0%  t void std::__1::vector<v8::internal::Page*, std::__1::allocator<v8::internal::Page*> >::__push_back_slow_path<v8::internal::Page* const&>(v8::internal::Page* const&&&)
+      1    0.0%    0.0%  t void std::__1::vector<v8::internal::Object*, std::__1::allocator<v8::internal::Object*> >::__push_back_slow_path<v8::internal::Object* const&>(v8::internal::Object* const&&&)
+      1    0.0%    0.0%  t v8::internal::wasm::StreamingDecoder::DecodeSectionID::is_finishing_allowed() const
+      1    0.0%    0.0%  t v8::internal::wasm::Decoder::onFirstError()
+      1    0.0%    0.0%  t v8::internal::wasm::AsyncCompileJob::CompileWrappers::~CompileWrappers()
+      1    0.0%    0.0%  t v8::internal::wasm::AsyncCompileJob::CompileFailed::~CompileFailed()
+      1    0.0%    0.0%  t v8::internal::interpreter::BytecodeGenerator::VisitNoStackOverflowCheck(v8::internal::AstNode*)
+      1    0.0%    0.0%  t v8::internal::compiler::RangeType::New(v8::internal::compiler::RangeType::Limits, v8::internal::Zone*)
+      1    0.0%    0.0%  t v8::internal::compiler::(anonymous namespace)::UpdateOutLiveness(v8::internal::interpreter::Bytecode, v8::internal::compiler::BytecodeLivenessState&, v8::internal::compiler::BytecodeLivenessState*, v8::internal::interpreter::BytecodeArrayAccessor const&, v8::internal::compiler::BytecodeLivenessMap const&)
+      1    0.0%    0.0%  t v8::internal::Worklist<v8::internal::TransitionArray*, 64>::Push(int, v8::internal::TransitionArray*)
+      1    0.0%    0.0%  t v8::internal::Worklist<v8::internal::HeapObject*, 64>::Pop(int, v8::internal::HeapObject**)
+      1    0.0%    0.0%  t v8::internal::WeakListVisitor<v8::internal::Context>::VisitLiveObject(v8::internal::Heap*, v8::internal::Context*, v8::internal::WeakObjectRetainer*)
+      1    0.0%    0.0%  t v8::internal::Space::StartNextInlineAllocationStep()
+      1    0.0%    0.0%  t v8::internal::RememberedSet<(v8::internal::RememberedSetType)0>::FreeEmptyBuckets(v8::internal::MemoryChunk*)
+      1    0.0%    0.0%  t v8::internal::RegExpEmpty::~RegExpEmpty()
+      1    0.0%    0.0%  t v8::internal::ProfilingMigrationObserver::Move(v8::internal::AllocationSpace, v8::internal::HeapObject*, v8::internal::HeapObject*, int)
+      1    0.0%    0.0%  t v8::internal::ParserBase<v8::internal::Parser>::ValidateBindingPattern(bool*)
+      1    0.0%    0.0%  t v8::internal::ParserBase<v8::internal::Parser>::ParseStatement(v8::internal::ZoneList<v8::internal::AstRawString const*>*, v8::internal::ZoneList<v8::internal::AstRawString const*>*, v8::internal::AllowLabelledFunctionStatement, bool*)
+      1    0.0%    0.0%  t v8::internal::ParserBase<v8::internal::Parser>::ParseExpressionCoverGrammar(bool, bool*)
+      1    0.0%    0.0%  t v8::internal::PagedSpace::SupportsInlineAllocation()
+      1    0.0%    0.0%  t v8::internal::NewSpace::CommittedMemory()
+      1    0.0%    0.0%  t v8::internal::LocalAllocator::LocalAllocator(v8::internal::Heap*)
+      1    0.0%    0.0%  t v8::internal::KeywordOrIdentifierToken(unsigned char const*, int)
+      1    0.0%    0.0%  t v8::internal::ItemParallelJob::AddTask(v8::internal::ItemParallelJob::Task*)
+      1    0.0%    0.0%  t v8::internal::InternalizedStringTableCleaner::VisitPointers(v8::internal::HeapObject*, v8::internal::Object**, v8::internal::Object**)
+      1    0.0%    0.0%  t v8::internal::IfStatementSourceRanges::~IfStatementSourceRanges()
+      1    0.0%    0.0%  t v8::internal::HeapObjectAllocationTracker::MoveEvent(unsigned long, unsigned long, int)
+      1    0.0%    0.0%  t v8::internal::FunctionCallbackArguments::Call(v8::internal::CallHandlerInfo*)
+      1    0.0%    0.0%  t v8::internal::ExternalCodeEventListener::CodeDisableOptEvent(v8::internal::AbstractCode*, v8::internal::SharedFunctionInfo*)
+      1    0.0%    0.0%  t v8::internal::(anonymous namespace)::AppendCodeCreateHeader(v8::internal::Log::MessageBuilder&, v8::internal::CodeEventListener::LogEventsAndTags, v8::internal::AbstractCode::Kind, unsigned char*, int, v8::base::ElapsedTimer*)
+      1    0.0%    0.0%  t v8::base::Optional<v8::internal::AsyncTimedHistogram>::operator=(v8::base::Optional<v8::internal::AsyncTimedHistogram>&&)
+      1    0.0%    0.0%  t v8::base::Optional<v8::internal::AsyncTimedHistogram>::InitOrAssign(v8::internal::AsyncTimedHistogram&&)
+      1    0.0%    0.0%  t v8::base::List<v8::internal::MemoryChunk>::Remove(v8::internal::MemoryChunk*)
+      1    0.0%    0.0%  t unsigned long std::__1::__hash_table<unsigned long, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long>, std::__1::allocator<unsigned long> >::__erase_unique<unsigned long>(unsigned long const&)
+      1    0.0%    0.0%  t std::__1::vector<v8::internal::ExpressionClassifier<v8::internal::ParserTypes<v8::internal::PreParser> >::Error, v8::internal::ZoneAllocator<v8::internal::ExpressionClassifier<v8::internal::ParserTypes<v8::internal::PreParser> >::Error> >::resize(unsigned long)
+      1    0.0%    0.0%  t std::__1::vector<v8::internal::AllocationTracker::UnresolvedLocation*, std::__1::allocator<v8::internal::AllocationTracker::UnresolvedLocation*> >::shrink_to_fit()
+      1    0.0%    0.0%  t std::__1::vector<char*, std::__1::allocator<char*> >::resize(unsigned long)
+      1    0.0%    0.0%  t std::__1::pair<std::__1::__tree_iterator<std::__1::__value_type<std::__1::tuple<v8::internal::FeedbackSlotKind, int, void const*>, v8::internal::FeedbackSlot>, std::__1::__tree_node<std::__1::__value_type<std::__1::tuple<v8::internal::FeedbackSlotKind, int, void const*>, v8::internal::FeedbackSlot>, void*>*, long>, bool> std::__1::__tree<std::__1::__value_type<std::__1::tuple<v8::internal::FeedbackSlotKind, int, void const*>, v8::internal::FeedbackSlot>, std::__1::__map_value_compare<std::__1::tuple<v8::internal::FeedbackSlotKind, int, void const*>, std::__1::__value_type<std::__1::tuple<v8::internal::FeedbackSlotKind, int, void const*>, v8::internal::FeedbackSlot>, std::__1::less<std::__1::tuple<v8::internal::FeedbackSlotKind, int, void const*> >, true>, v8::internal::ZoneAllocator<std::__1::__value_type<std::__1::tuple<v8::internal::FeedbackSlotKind, int, void const*>, v8::internal::FeedbackSlot> > >::__emplace_unique_key_args<std::__1::tuple<v8::internal::FeedbackSlotKind, int, void const*>, std::__1::pair<std::__1::tuple<v8::internal::FeedbackSlotKind, int, void const*>, v8::internal::FeedbackSlot>&>(std::__1::tuple<v8::internal::FeedbackSlotKind, int, void const*> const&, std::__1::pair<std::__1::tuple<v8::internal::FeedbackSlotKind, int, void const*>, v8::internal::FeedbackSlot>&&&)
+      1    0.0%    0.0%  t std::__1::deque<v8::internal::compiler::Node*, v8::internal::RecyclingZoneAllocator<v8::internal::compiler::Node*> >::push_back(v8::internal::compiler::Node* const&)
+      1    0.0%    0.0%  t std::__1::__split_buffer<int*, std::__1::allocator<int*> >::~__split_buffer()
+      1    0.0%    0.0%  t std::__1::__shared_ptr_pointer<v8::internal::wasm::SignatureMap*, std::__1::default_delete<v8::internal::wasm::SignatureMap>, std::__1::allocator<v8::internal::wasm::SignatureMap> >::__on_zero_shared_weak()
+      1    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, v8::internal::wasm::WireBytesRef>, std::__1::__unordered_map_hasher<unsigned int, std::__1::__hash_value_type<unsigned int, v8::internal::wasm::WireBytesRef>, std::__1::hash<unsigned int>, true>, std::__1::__unordered_map_equal<unsigned int, std::__1::__hash_value_type<unsigned int, v8::internal::wasm::WireBytesRef>, std::__1::equal_to<unsigned int>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned int, v8::internal::wasm::WireBytesRef> > >::~__hash_table()
+      1    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<nghttp2_rcbuf*, v8::Eternal<v8::String> >, std::__1::__unordered_map_hasher<nghttp2_rcbuf*, std::__1::__hash_value_type<nghttp2_rcbuf*, v8::Eternal<v8::String> >, std::__1::hash<nghttp2_rcbuf*>, true>, std::__1::__unordered_map_equal<nghttp2_rcbuf*, std::__1::__hash_value_type<nghttp2_rcbuf*, v8::Eternal<v8::String> >, std::__1::equal_to<nghttp2_rcbuf*>, true>, std::__1::allocator<std::__1::__hash_value_type<nghttp2_rcbuf*, v8::Eternal<v8::String> > > >::~__hash_table()
+      1    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<int, v8::internal::Handle<v8::internal::String> >, std::__1::__unordered_map_hasher<int, std::__1::__hash_value_type<int, v8::internal::Handle<v8::internal::String> >, std::__1::hash<int>, true>, std::__1::__unordered_map_equal<int, std::__1::__hash_value_type<int, v8::internal::Handle<v8::internal::String> >, std::__1::equal_to<int>, true>, std::__1::allocator<std::__1::__hash_value_type<int, v8::internal::Handle<v8::internal::String> > > >::~__hash_table()
+      1    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<char const*, v8::internal::NativeGroupRetainedObjectInfo*>, std::__1::__unordered_map_hasher<char const*, std::__1::__hash_value_type<char const*, v8::internal::NativeGroupRetainedObjectInfo*>, v8::internal::SeededStringHasher, false>, std::__1::__unordered_map_equal<char const*, std::__1::__hash_value_type<char const*, v8::internal::NativeGroupRetainedObjectInfo*>, v8::internal::StringEquals, true>, std::__1::allocator<std::__1::__hash_value_type<char const*, v8::internal::NativeGroupRetainedObjectInfo*> > >::~__hash_table()
+      1    0.0%    0.0%  t std::__1::__hash_table<node::inspector::protocol::DispatcherBase::WeakPtr*, std::__1::hash<node::inspector::protocol::DispatcherBase::WeakPtr*>, std::__1::equal_to<node::inspector::protocol::DispatcherBase::WeakPtr*>, std::__1::allocator<node::inspector::protocol::DispatcherBase::WeakPtr*> >::clear()
+      1    0.0%    0.0%  t std::__1::__hash_table<node::Environment::CleanupHookCallback, node::Environment::CleanupHookCallback::Hash, node::Environment::CleanupHookCallback::Equal, std::__1::allocator<node::Environment::CleanupHookCallback> >::erase(std::__1::__hash_const_iterator<std::__1::__hash_node<node::Environment::CleanupHookCallback, void*>*>)
+      1    0.0%    0.0%  t std::__1::__deque_base<v8::internal::compiler::BasicBlock*, v8::internal::RecyclingZoneAllocator<v8::internal::compiler::BasicBlock*> >::clear()
+      1    0.0%    0.0%  t node::PromiseWrap::MemoryInfo(node::MemoryTracker*) const
+      1    0.0%    0.0%  t node::Hrtime(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t _mvm_allocate_pages
+      1    0.0%    0.0%  t _map_images_nolock
+      1    0.0%    0.0%  t _dorounding
+      1    0.0%    0.0%  t __read_images
+      1    0.0%    0.0%  t __pthread_mutex_firstfit_lock_wait
+      1    0.0%    0.0%  t ___printf_comp
+      1    0.0%    0.0%  T v8::internal::compiler::Type::NormalizeRangeAndBitset(v8::internal::compiler::Type, unsigned int*, v8::internal::Zone*)
+      1    0.0%    0.0%  T v8::internal::compiler::PipelineCompilationJob::RegisterWeakObjectsInOptimizedCode(v8::internal::Handle<v8::internal::Code>, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::compiler::NodeCache<long long, v8::base::hash<long long>, std::__1::equal_to<long long> >::Find(v8::internal::Zone*, long long)
+      1    0.0%    0.0%  T v8::internal::compiler::JSInliner::ReduceJSCall(v8::internal::compiler::Node*)
+      1    0.0%    0.0%  T v8::internal::compiler::GraphReducer::Reduce(v8::internal::compiler::Node*)
+      1    0.0%    0.0%  T v8::internal::compiler::CodeGenerator::GenerateDeoptimizationData()
+      1    0.0%    0.0%  T v8::internal::compiler::CodeGenerator::AssembleSourcePosition(v8::internal::compiler::Instruction*)
+      1    0.0%    0.0%  T v8::internal::compiler::BytecodeGraphBuilder::TryBuildSimplifiedLoadNamed(v8::internal::compiler::Operator const*, v8::internal::compiler::Node*, v8::internal::FeedbackSlot)
+      1    0.0%    0.0%  T v8::internal::TimedHistogram::Stop(v8::base::ElapsedTimer*, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Sweeper::FilterSweepingPagesScope::~FilterSweepingPagesScope()
+      1    0.0%    0.0%  T v8::internal::Sweeper::EnsureIterabilityCompleted()
+      1    0.0%    0.0%  T v8::internal::String::CalculateLineEnds(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, bool)
+      1    0.0%    0.0%  T v8::internal::StackFrameIterator::StackFrameIterator(v8::internal::Isolate*, v8::internal::ThreadLocalTop*)
+      1    0.0%    0.0%  T v8::internal::SpaceIterator::next()
+      1    0.0%    0.0%  T v8::internal::SpaceIterator::SpaceIterator(v8::internal::Heap*)
+      1    0.0%    0.0%  T v8::internal::Space::PauseAllocationObservers()
+      1    0.0%    0.0%  T v8::internal::Runtime_ObjectValues(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_CreateObjectLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::PagedSpace::UpdateInlineAllocationLimit(unsigned long)
+      1    0.0%    0.0%  T v8::internal::PagedSpace::SetLinearAllocationArea(unsigned long, unsigned long)
+      1    0.0%    0.0%  T v8::internal::PagedSpace::RemovePageSafe(int)
+      1    0.0%    0.0%  T v8::internal::PagedSpace::ReleasePage(v8::internal::Page*)
+      1    0.0%    0.0%  T v8::internal::PagedSpace::RefillLinearAllocationAreaFromFreeList(unsigned long)
+      1    0.0%    0.0%  T v8::internal::PagedSpace::RefillFreeList()
+      1    0.0%    0.0%  T v8::internal::PagedSpace::RawSlowRefillLinearAllocationArea(int)
+      1    0.0%    0.0%  T v8::internal::PagedSpace::DecreaseLimit(unsigned long)
+      1    0.0%    0.0%  T v8::internal::Page* v8::internal::MemoryAllocator::AllocatePage<(v8::internal::MemoryAllocator::AllocationMode)0, v8::internal::PagedSpace>(unsigned long, v8::internal::PagedSpace*, v8::internal::Executability)
+      1    0.0%    0.0%  T v8::internal::OptimizingCompileDispatcher::InstallOptimizedFunctions()
+      1    0.0%    0.0%  T v8::internal::OFStreamBase::xsputn(char const*, long)
+      1    0.0%    0.0%  T v8::internal::NewSpace::Grow()
+      1    0.0%    0.0%  T v8::internal::MemoryChunk::SetOldGenerationPageFlags(bool)
+      1    0.0%    0.0%  T v8::internal::MemoryAllocator::PreFreeMemory(v8::internal::MemoryChunk*)
+      1    0.0%    0.0%  T v8::internal::MemoryAllocator::AllocateChunk(unsigned long, unsigned long, v8::internal::Executability, v8::internal::Space*)
+      1    0.0%    0.0%  T v8::internal::MemoryAllocator::AllocateAlignedMemory(unsigned long, unsigned long, unsigned long, v8::internal::Executability, void*, v8::internal::VirtualMemory*)
+      1    0.0%    0.0%  T v8::internal::MarkCompactCollector::PostProcessEvacuationCandidates()
+      1    0.0%    0.0%  T v8::internal::MarkCompactCollector::EvacuatePagesInParallel()
+      1    0.0%    0.0%  T v8::internal::MarkCompactCollector::CollectEvacuationCandidates(v8::internal::PagedSpace*)
+      1    0.0%    0.0%  T v8::internal::MarkCompactCollector::AddEvacuationCandidate(v8::internal::Page*)
+      1    0.0%    0.0%  T v8::internal::Logger::NewEvent(char const*, void*, unsigned long)
+      1    0.0%    0.0%  T v8::internal::Log::MessageBuilder::WriteToLogFile()
+      1    0.0%    0.0%  T v8::internal::Log::MessageBuilder::AppendCharacter(char)
+      1    0.0%    0.0%  T v8::internal::Log::MessageBuilder& v8::internal::Log::MessageBuilder::operator<<<char const*>(char const*)
+      1    0.0%    0.0%  T v8::internal::LocalAllocationBuffer::LocalAllocationBuffer(v8::internal::Heap*, v8::internal::LinearAllocationArea)
+      1    0.0%    0.0%  T v8::internal::KeyedLoadIC::LoadElementHandler(v8::internal::Handle<v8::internal::Map>, v8::internal::KeyedAccessLoadMode)
+      1    0.0%    0.0%  T v8::internal::JSObject::MakePrototypesFast(v8::internal::Handle<v8::internal::Object>, v8::internal::WhereToStart, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::ItemParallelJob::ItemParallelJob(v8::internal::CancelableTaskManager*, v8::base::Semaphore*)
+      1    0.0%    0.0%  T v8::internal::Isolate::Iterate(v8::internal::RootVisitor*)
+      1    0.0%    0.0%  T v8::internal::IncrementalMarking::WhiteToGreyAndPush(v8::internal::HeapObject*)
+      1    0.0%    0.0%  T v8::internal::IncrementalMarking::ActivateIncrementalWriteBarrier()
+      1    0.0%    0.0%  T v8::internal::Heap::builtin(int)
+      1    0.0%    0.0%  T v8::internal::Heap::YoungGenerationMutatorUtilization()
+      1    0.0%    0.0%  T v8::internal::Heap::UpdateTotalGCTime(double)
+      1    0.0%    0.0%  T v8::internal::Heap::UpdateMaximumCommitted()
+      1    0.0%    0.0%  T v8::internal::Heap::StartIncrementalMarkingIfAllocationLimitIsReached(int, v8::GCCallbackFlags)
+      1    0.0%    0.0%  T v8::internal::Heap::ShouldExpandOldGenerationOnSlowAllocation()
+      1    0.0%    0.0%  T v8::internal::Heap::GarbageCollectionReasonToString(v8::internal::GarbageCollectionReason)
+      1    0.0%    0.0%  T v8::internal::Heap::EnsureFillerObjectAtTop()
+      1    0.0%    0.0%  T v8::internal::Heap::ComputeFastPromotionMode()
+      1    0.0%    0.0%  T v8::internal::Heap::CallGCPrologueCallbacks(v8::GCType, v8::GCCallbackFlags)
+      1    0.0%    0.0%  T v8::internal::GlobalHandles::UpdateListOfNewSpaceNodes()
+      1    0.0%    0.0%  T v8::internal::GlobalHandles::IterateNewSpaceWeakUnmodifiedRootsForPhantomHandles(v8::internal::RootVisitor*, bool (*)(v8::internal::Heap*, v8::internal::Object**))
+      1    0.0%    0.0%  T v8::internal::GetOwnValuesOrEntries(v8::internal::Isolate*, v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::PropertyFilter, bool, bool)
+      1    0.0%    0.0%  T v8::internal::GCTracer::SurvivalEventsRecorded() const
+      1    0.0%    0.0%  T v8::internal::GCTracer::AllocationThroughputInBytesPerMillisecond(double) const
+      1    0.0%    0.0%  T v8::internal::FullEvacuator::RawEvacuatePage(v8::internal::Page*, long*)
+      1    0.0%    0.0%  T v8::internal::FeedbackVectorSpec::AddSlot(v8::internal::FeedbackSlotKind)
+      1    0.0%    0.0%  T v8::internal::Factory::NewFixedArray(int, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  T v8::internal::Factory::AllocateRawArray(int, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  T v8::internal::Deserializer<v8::internal::DefaultDeserializerAllocator>::ReadData(v8::internal::MaybeObject**, v8::internal::MaybeObject**, int, unsigned long)
+      1    0.0%    0.0%  T v8::internal::DeclarationScope::DeclareDefaultFunctionVariables(v8::internal::AstValueFactory*)
+      1    0.0%    0.0%  T v8::internal::Debug::Iterate(v8::internal::RootVisitor*)
+      1    0.0%    0.0%  T v8::internal::ConcurrentMarking::Stop(v8::internal::ConcurrentMarking::StopRequest)
+      1    0.0%    0.0%  T v8::internal::CancelableTaskManager::RemoveFinishedTask(unsigned long long)
+      1    0.0%    0.0%  T v8::internal::Bootstrapper::Iterate(v8::internal::RootVisitor*)
+      1    0.0%    0.0%  T v8::base::PageAllocator::CommitPageSize()
+      1    0.0%    0.0%  T v8::base::OS::AllocatePageSize()
+      1    0.0%    0.0%  T v8::base::OS::Allocate(void*, unsigned long, unsigned long, v8::base::OS::MemoryPermission)
+      1    0.0%    0.0%  T v8::base::ConditionVariable::NotifyOne()
+      1    0.0%    0.0%  T std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::push_back(char)
+      1    0.0%    0.0%  T std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > std::__1::operator+<char, std::__1::char_traits<char>, std::__1::allocator<char> >(char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+      1    0.0%    0.0%  T std::__1::__call_once(unsigned long volatile&, void*, void (*)(void*))
+      1    0.0%    0.0%  T node::native_module::NativeModuleLoader::SourceObjectGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::dtrace_gc_done(v8::Isolate*, v8::GCType, v8::GCCallbackFlags)
+      1    0.0%    0.0%  T node::contextify::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T _uv_mutex_unlock
+      1    0.0%    0.0%  T _semaphore_create
+      1    0.0%    0.0%  T _scandir$INODE64
+      1    0.0%    0.0%  T _pthread_setname_np
+      1    0.0%    0.0%  T _pthread_rwlockattr_destroy
+      1    0.0%    0.0%  T _pthread_key_init_np
+      1    0.0%    0.0%  T _malloc_zone_from_ptr
+      1    0.0%    0.0%  T _mach_absolute_time
+      1    0.0%    0.0%  T _freopen
+      1    0.0%    0.0%  T _cgetnext
+      1    0.0%    0.0%  T __kernelrpc_mach_port_guard_trap
+      1    0.0%    0.0%  T __kernelrpc_mach_port_get_refs
+      1    0.0%    0.0%  T ___rec_seq
+      1    0.0%    0.0%  T ___iopolicysys
+      1    0.0%    0.0%  T ___dtoa
+
+ [Summary]:
+   ticks  total  nonlib   name
+  95163   67.5%   68.5%  JavaScript
+  37439   26.6%   27.0%  C++
+  22653   16.1%   16.3%  GC
+   2042    1.4%          Shared libraries
+   6304    4.5%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+  11978   71.1%    8.5%  T v8::internal::Runtime_GetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+   4132   24.5%    2.9%  T v8::internal::Runtime_CreateObjectLiteralWithoutAllocationSite(int, v8::internal::Object**, v8::internal::Isolate*)
+    447    2.7%    0.3%  T v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*)
+     72    0.4%    0.1%  t v8::internal::LookupIterator::State v8::internal::LookupIterator::LookupInRegularHolder<false>(v8::internal::Map*, v8::internal::JSReceiver*)
+     60    0.4%    0.0%  T v8::internal::Map::TransitionToDataProperty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyAttributes, v8::internal::PropertyConstness, v8::internal::Object::StoreFromKeyed)
+     27    0.2%    0.0%  T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     25    0.1%    0.0%  T v8::internal::Object::GetPropertyWithAccessor(v8::internal::LookupIterator*)
+     21    0.1%    0.0%  t v8::internal::(anonymous namespace)::ObjectLiteralHelper::Create(v8::internal::Isolate*, v8::internal::Handle<v8::internal::HeapObject>, int, v8::internal::PretenureFlag)
+     17    0.1%    0.0%  T v8::internal::Runtime_StackGuard(int, v8::internal::Object**, v8::internal::Isolate*)
+     17    0.1%    0.0%  T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+     11    0.1%    0.0%  T v8::internal::Runtime_ObjectValues(int, v8::internal::Object**, v8::internal::Isolate*)
+     10    0.1%    0.0%  T v8::internal::Runtime_CompileOptimized_Concurrent(int, v8::internal::Object**, v8::internal::Isolate*)
+      6    0.0%    0.0%  T v8::internal::Runtime_InterpreterDeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      5    0.0%    0.0%  t v8::internal::(anonymous namespace)::UpdateDescriptorForValue(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Map>, int, v8::internal::PropertyConstness, v8::internal::Handle<v8::internal::Object>)
+      5    0.0%    0.0%  T v8::internal::Runtime_CreateObjectLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.0%    0.0%  T v8::internal::Runtime_NewObject(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  t v8::internal::PropertyCallbackArguments::BasicCallNamedGetterCallback(void (*)(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&), v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>)
+      2    0.0%    0.0%  T v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  T v8::internal::IncrementalMarking::RecordWriteSlow(v8::internal::HeapObject*, v8::internal::HeapObjectReference**, v8::internal::Object*)
+      1    0.0%    0.0%  T v8::internal::Space::AllocationStep(int, unsigned long, int)
+      1    0.0%    0.0%  T v8::internal::Runtime_SetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_KeyedStoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_KeyedLoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_Interrupt(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_DeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_DefineClass(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_CreateArrayLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Object::AddDataProperty(v8::internal::LookupIterator*, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyAttributes, v8::internal::ShouldThrow, v8::internal::Object::StoreFromKeyed)
+      1    0.0%    0.0%  T v8::internal::IncrementalMarking::WhiteToGreyAndPush(v8::internal::HeapObject*)
+      1    0.0%    0.0%  T v8::internal::FastGetOwnValuesOrEntries(v8::internal::Isolate*, v8::internal::Handle<v8::internal::JSReceiver>, bool, v8::internal::Handle<v8::internal::FixedArray>*)
+      1    0.0%    0.0%  T v8::internal::Builtin_NumberPrototypeToString(int, v8::internal::Object**, v8::internal::Isolate*)
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+
+<--- Last few GCs --->
+
+[94089:0x105800000]    35516 ms: Scavenge 1378.9 (1416.7) -> 1378.9 (1420.2) MB, 6.9 / 0.0 ms  (average mu = 0.143, current mu = 0.082) allocation failure 
+[94089:0x105800000]    35527 ms: Scavenge 1381.1 (1420.2) -> 1381.2 (1423.2) MB, 7.5 / 0.0 ms  (average mu = 0.143, current mu = 0.082) allocation failure 
+[94089:0x105800000]    35538 ms: Scavenge 1383.0 (1423.2) -> 1382.9 (1427.2) MB, 7.5 / 0.0 ms  (average mu = 0.143, current mu = 0.082) allocation failure 
+
+
+<--- JS stacktrace --->
+
+==== JS stack trace =========================================
+
+    0: ExitFrame [pc: 0xb6cba94fc7d]
+    1: StubFrame [pc: 0xb6cba90fcbc]
+Security context: 0x3a6df271d949 <JSObject>
+    2: /* anonymous */ [0x3a6d56c58871] [evalmachine.<anonymous>:~2171] [pc=0xb6cbabc1785](this=0x3a6dee5022e9 <JSGlobal Object>,0x3a6df9cdd189 <JSObject>,0x3a6d5fc7bd21 <JSObject>)
+    3: /* anonymous */ [0x3a6d4cd4ef89] [evalmachine.<anonymous>:~1722] [pc=0xb6cbabc1f1c](this=0x3a6d5029e179 <CallTree map = 0x3a6de0fcea11>...
+

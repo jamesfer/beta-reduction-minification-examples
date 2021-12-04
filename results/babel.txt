@@ -1,0 +1,1309 @@
+Statistical profiling result from isolate-0x104801800-v8.log, (11687 ticks, 331 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    137    1.2%          /usr/lib/system/libsystem_kernel.dylib
+     27    0.2%          /usr/lib/system/libsystem_pthread.dylib
+     16    0.1%          /usr/lib/system/libsystem_platform.dylib
+      5    0.0%          /usr/lib/libc++abi.dylib
+      3    0.0%          /usr/lib/system/libsystem_malloc.dylib
+      1    0.0%          /usr/lib/system/libmacho.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+   1654   14.2%   14.4%  Builtin: CompileLazy
+   1347   11.5%   11.7%  LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    998    8.5%    8.7%  LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+    805    6.9%    7.0%  Builtin: CallFunction_ReceiverIsNullOrUndefined
+    639    5.5%    5.6%  LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+    607    5.2%    5.3%  LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:840
+    533    4.6%    4.6%  Builtin: Call_ReceiverIsNullOrUndefined
+    487    4.2%    4.2%  Builtin: ArgumentsAdaptorTrampoline
+    321    2.7%    2.8%  LazyCompile: *b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1090
+    318    2.7%    2.8%  LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+    230    2.0%    2.0%  LazyCompile: *a.length.a /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2907
+    223    1.9%    1.9%  LazyCompile: *b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2394
+    152    1.3%    1.3%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:158
+    140    1.2%    1.2%  LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1006
+     91    0.8%    0.8%  LazyCompile: *bindResultA2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2748
+     89    0.8%    0.8%  LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:780
+     89    0.8%    0.8%  LazyCompile: *a /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2830
+     89    0.8%    0.8%  LazyCompile: *a /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1209
+     80    0.7%    0.7%  Builtin: ArrayPrototypeSlice
+     69    0.6%    0.6%  LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     65    0.6%    0.6%  Builtin: GrowFastSmiOrObjectElements
+     57    0.5%    0.5%  Builtin: ExtractFastJSArray
+     49    0.4%    0.4%  LazyCompile: *b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2625
+     44    0.4%    0.4%  LazyCompile: *isNumberLiteral /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2144
+     44    0.4%    0.4%  Builtin: StrictEqual
+     38    0.3%    0.3%  LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:193
+     32    0.3%    0.3%  LazyCompile: *a.reduce.liftA2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:3035
+     30    0.3%    0.3%  LazyCompile: *a /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:934
+     23    0.2%    0.2%  Builtin: RecordWrite
+     18    0.2%    0.2%  LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1475
+     14    0.1%    0.1%  LazyCompile: *fallbackExists /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:566
+     13    0.1%    0.1%  LazyCompile: *numberLiteralExpression /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:3425
+     13    0.1%    0.1%  LazyCompile: *b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:950
+     12    0.1%    0.1%  LazyCompile: *b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2111
+     12    0.1%    0.1%  Builtin: InterpreterEntryTrampoline
+     10    0.1%    0.1%  LazyCompile: *operationExpression /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:3563
+     10    0.1%    0.1%  Builtin: ObjectAssign
+      9    0.1%    0.1%  LazyCompile: *groupExpression /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:3737
+      8    0.1%    0.1%  LazyCompile: *a /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:796
+      8    0.1%    0.1%  Builtin: StringEqual
+      6    0.1%    0.1%  LazyCompile: *lazy /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:4673
+      5    0.0%    0.0%  LazyCompile: *b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1273
+      4    0.0%    0.0%  LazyCompile: *lazy /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:4346
+      4    0.0%    0.0%  LazyCompile: *bindResultA2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1356
+      4    0.0%    0.0%  Builtin: CallFunction_ReceiverIsAny
+      3    0.0%    0.0%  LazyCompile: ~bindResultA2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2748
+      3    0.0%    0.0%  LazyCompile: *lazy /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:4885
+      3    0.0%    0.0%  LazyCompile: *b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:230
+      3    0.0%    0.0%  Builtin: Call_ReceiverIsAny
+      3    0.0%    0.0%  Builtin: ArrayIncludesSmiOrObject
+      2    0.0%    0.0%  Script: ~<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/benchmark.js:1:11
+      2    0.0%    0.0%  LazyCompile: ~runMaybe /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:496
+      2    0.0%    0.0%  LazyCompile: ~b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2625
+      2    0.0%    0.0%  Builtin: StoreIC
+      2    0.0%    0.0%  Builtin: FastNewClosure
+      2    0.0%    0.0%  Builtin: ArrayMap
+      2    0.0%    0.0%  Builtin: AllocateInNewSpace
+      1    0.0%    0.0%  Stub: StoreFastElementStub
+      1    0.0%    0.0%  LazyCompile: ~wrapConsole internal/util/inspector.js:35:21
+      1    0.0%    0.0%  LazyCompile: ~processTicksAndRejections internal/process/next_tick.js:54:35
+      1    0.0%    0.0%  LazyCompile: ~parse /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:5062
+      1    0.0%    0.0%  LazyCompile: ~numberLit /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2039
+      1    0.0%    0.0%  LazyCompile: ~now perf_hooks.js:133:13
+      1    0.0%    0.0%  LazyCompile: ~normalizeString path.js:52:25
+      1    0.0%    0.0%  LazyCompile: ~bindResult /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:827
+      1    0.0%    0.0%  LazyCompile: ~b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2111
+      1    0.0%    0.0%  LazyCompile: ~b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1273
+      1    0.0%    0.0%  LazyCompile: *wrapResult /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1070
+      1    0.0%    0.0%  LazyCompile: *parse /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:5062
+      1    0.0%    0.0%  LazyCompile: *nextTokenIs /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2193
+      1    0.0%    0.0%  LazyCompile: *identifierExpression /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:3293
+      1    0.0%    0.0%  Builtin: CallWithArrayLike
+      1    0.0%    0.0%  Builtin: CallApiCallback_Argc1
+      1    0.0%    0.0%  Builtin: CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit
+      1    0.0%    0.0%  Builtin: ArrayIteratorPrototypeNext
+
+ [C++]:
+   ticks  total  nonlib   name
+    421    3.6%    3.7%  T _setiopolicy_np
+    165    1.4%    1.4%  t v8::internal::Scavenger::ScavengeObject(v8::internal::HeapObjectReference**, v8::internal::HeapObject*)
+    109    0.9%    0.9%  T __kernelrpc_mach_port_request_notification
+     78    0.7%    0.7%  t void v8::internal::BodyDescriptorBase::IteratePointers<v8::internal::ScavengeVisitor>(v8::internal::HeapObject*, int, int, v8::internal::ScavengeVisitor*)
+     60    0.5%    0.5%  T v8::internal::Scavenger::Process(v8::internal::OneshotBarrier*)
+     40    0.3%    0.3%  T v8::internal::Bitmap::Clear()
+     37    0.3%    0.3%  T v8::internal::Heap::Scavenge()
+     33    0.3%    0.3%  T _thread_get_state
+     32    0.3%    0.3%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>::Pop(int, std::__1::pair<v8::internal::HeapObject*, int>*)
+     28    0.2%    0.2%  T node::NodePlatform::MonotonicallyIncreasingTime()
+     27    0.2%    0.2%  t _tiny_free_no_lock
+     27    0.2%    0.2%  T node::native_module::NativeModuleLoader::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     26    0.2%    0.2%  t v8::internal::HeapObject::SizeFromMap(v8::internal::Map*) const
+     21    0.2%    0.2%  t _tiny_malloc_should_clear
+     20    0.2%    0.2%  t void v8::internal::BodyDescriptorApply<v8::internal::CallIterateBody, void, v8::internal::Map*, v8::internal::HeapObject*, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*>(v8::internal::InstanceType, v8::internal::Map*, v8::internal::HeapObject*, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*)
+     15    0.1%    0.1%  t _tiny_malloc_from_free_list
+     14    0.1%    0.1%  T v8::internal::RootScavengeVisitor::ScavengePointer(v8::internal::Object**)
+     13    0.1%    0.1%  t v8::internal::LocalAllocator::AllocateInLAB(int, v8::internal::AllocationAlignment)
+     13    0.1%    0.1%  T v8::internal::SerializerDeserializer::Iterate(v8::internal::Isolate*, v8::internal::RootVisitor*)
+     13    0.1%    0.1%  T v8::internal::ItemParallelJob::Run(std::__1::shared_ptr<v8::internal::Counters>)
+     12    0.1%    0.1%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>::Worklist(int)
+     10    0.1%    0.1%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>::Push(int, std::__1::pair<v8::internal::HeapObject*, int>)
+     10    0.1%    0.1%  T ___pthread_init
+      9    0.1%    0.1%  t ___vfprintf
+      9    0.1%    0.1%  T v8::internal::Heap::GetFillToAlign(unsigned long, v8::internal::AllocationAlignment)
+      9    0.1%    0.1%  T _getattrlistbulk
+      8    0.1%    0.1%  t v8::internal::SlotSet::FreeEmptyBuckets()
+      8    0.1%    0.1%  t _tiny_size
+      8    0.1%    0.1%  T v8::internal::SemiSpace::FixPagesFlags(long, long)
+      8    0.1%    0.1%  T v8::internal::NewSpace::UpdateLinearAllocationArea()
+      7    0.1%    0.1%  t void v8::internal::BodyDescriptorBase::IteratePointers<v8::internal::IterateAndScavengePromotedObjectsVisitor>(v8::internal::HeapObject*, int, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*)
+      7    0.1%    0.1%  t _small_malloc_should_clear
+      6    0.1%    0.1%  t v8::internal::PagedSpace::Available()
+      6    0.1%    0.1%  t v8::internal::AllocationMemento* v8::internal::Heap::FindAllocationMemento<(v8::internal::Heap::FindMementoMode)1>(v8::internal::Map*, v8::internal::HeapObject*)
+      6    0.1%    0.1%  t __malloc_initialize
+      6    0.1%    0.1%  T v8::internal::CancelableTaskManager::TryAbort(unsigned long long)
+      6    0.1%    0.1%  T v8::internal::ArrayBufferTracker::ProcessBuffers(v8::internal::Page*, v8::internal::ArrayBufferTracker::ProcessingMode)
+      5    0.0%    0.0%  t void v8::internal::JSFunction::BodyDescriptor::IterateBody<v8::internal::IterateAndScavengePromotedObjectsVisitor>(v8::internal::Map*, v8::internal::HeapObject*, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*)
+      5    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::__unordered_map_hasher<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, v8::internal::LocalArrayBufferTracker::Hasher, true>, std::__1::__unordered_map_equal<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::equal_to<v8::internal::JSArrayBuffer*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation> > >::swap(std::__1::__hash_table<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::__unordered_map_hasher<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, v8::internal::LocalArrayBufferTracker::Hasher, true>, std::__1::__unordered_map_equal<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::equal_to<v8::internal::JSArrayBuffer*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation> > >&)
+      5    0.0%    0.0%  t _free_small
+      5    0.0%    0.0%  t __pthread_mutex_check_init_slow
+      5    0.0%    0.0%  T v8::internal::StandardFrame::IterateCompiledFrame(v8::internal::RootVisitor*) const
+      5    0.0%    0.0%  T v8::internal::SpaceWithLinearArea::InlineAllocationStep(unsigned long, unsigned long, unsigned long, unsigned long)
+      5    0.0%    0.0%  T v8::internal::IncrementalMarking::WhiteToGreyAndPush(v8::internal::HeapObject*)
+      5    0.0%    0.0%  T _fcntl
+      4    0.0%    0.0%  t void v8::internal::BodyDescriptorBase::IterateBodyImpl<v8::internal::ScavengeVisitor>(v8::internal::Map*, v8::internal::HeapObject*, int, int, v8::internal::ScavengeVisitor*)
+      4    0.0%    0.0%  T v8::internal::V8::GetCurrentPlatform()
+      4    0.0%    0.0%  T v8::internal::GCTracer::Scope::~Scope()
+      4    0.0%    0.0%  T _pthread_getname_np
+      3    0.0%    0.0%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>::~Worklist()
+      3    0.0%    0.0%  t v8::internal::IdleScavengeObserver::Step(int, unsigned long, unsigned long)
+      3    0.0%    0.0%  t v8::internal::Heap::AllocateRaw(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
+      3    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<unsigned long, void*>*> std::__1::__hash_table<unsigned long, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long>, std::__1::allocator<unsigned long> >::find<unsigned long>(unsigned long const&)
+      3    0.0%    0.0%  t std::__1::__hash_const_iterator<std::__1::__hash_node<std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, std::__1::__unordered_map_hasher<v8::internal::MemoryChunk*, std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, v8::internal::MemoryChunk::Hasher, true>, std::__1::__unordered_map_equal<v8::internal::MemoryChunk*, std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, std::__1::equal_to<v8::internal::MemoryChunk*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8::internal::MemoryChunk*, long> > >::find<v8::internal::MemoryChunk*>(v8::internal::MemoryChunk* const&) const
+      3    0.0%    0.0%  t _uv__hrtime
+      3    0.0%    0.0%  t _szone_size
+      3    0.0%    0.0%  t _nano_common_configure
+      3    0.0%    0.0%  t _mvm_allocate_pages_securely
+      3    0.0%    0.0%  t _malloc_print_configure
+      3    0.0%    0.0%  T v8::internal::SpaceWithLinearArea::ComputeLimit(unsigned long, unsigned long, unsigned long)
+      3    0.0%    0.0%  T v8::internal::Scavenger::IterateAndScavengePromotedObject(v8::internal::HeapObject*, int)
+      3    0.0%    0.0%  T v8::internal::RootScavengeVisitor::VisitRootPointer(v8::internal::Root, char const*, v8::internal::Object**)
+      3    0.0%    0.0%  T v8::internal::PagedSpace::TearDown()
+      3    0.0%    0.0%  T v8::internal::GCTracer::AverageSpeed(v8::base::RingBuffer<std::__1::pair<unsigned long long, double> > const&, std::__1::pair<unsigned long long, double> const&, double)
+      3    0.0%    0.0%  T v8::base::Semaphore::Wait()
+      3    0.0%    0.0%  T v8::base::Mutex::Lock()
+      3    0.0%    0.0%  T _pthread_kill
+      3    0.0%    0.0%  T __pthread_exit_if_canceled
+      3    0.0%    0.0%  T ___rec_search
+      3    0.0%    0.0%  T ___quorem_D2A
+      2    0.0%    0.0%  t v8::internal::tracing::ScopedTracer::~ScopedTracer()
+      2    0.0%    0.0%  t v8::internal::ScavengingTask::~ScavengingTask()
+      2    0.0%    0.0%  t v8::internal::ScavengingTask::RunInParallel()
+      2    0.0%    0.0%  t v8::internal::ScavengeWeakObjectRetainer::RetainAs(v8::internal::Object*)
+      2    0.0%    0.0%  t v8::internal::ParserBase<v8::internal::Parser>::ParseAssignmentExpression(bool, bool*)
+      2    0.0%    0.0%  t v8::internal::PagedSpace::AllocateRaw(int, v8::internal::AllocationAlignment)
+      2    0.0%    0.0%  t v8::internal::LocalAllocator::Finalize()
+      2    0.0%    0.0%  t v8::internal::FixStaleLeftTrimmedHandlesVisitor::VisitRootPointers(v8::internal::Root, char const*, v8::internal::Object**, v8::internal::Object**)
+      2    0.0%    0.0%  t std::__1::deque<std::__1::unique_ptr<node::inspector::Request, std::__1::default_delete<node::inspector::Request> >, std::__1::allocator<std::__1::unique_ptr<node::inspector::Request, std::__1::default_delete<node::inspector::Request> > > >::push_back(std::__1::unique_ptr<node::inspector::Request, std::__1::default_delete<node::inspector::Request> >&&)
+      2    0.0%    0.0%  t _mvm_allocate_pages
+      2    0.0%    0.0%  t _malloc_zone_register_while_locked
+      2    0.0%    0.0%  T v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  T v8::internal::RootScavengeVisitor::VisitRootPointers(v8::internal::Root, char const*, v8::internal::Object**, v8::internal::Object**)
+      2    0.0%    0.0%  T v8::internal::NewSpace::UpdateInlineAllocationLimit(unsigned long)
+      2    0.0%    0.0%  T v8::internal::NewSpace::EnsureAllocation(int, v8::internal::AllocationAlignment)
+      2    0.0%    0.0%  T v8::internal::Isolate::Iterate(v8::internal::RootVisitor*, v8::internal::ThreadLocalTop*)
+      2    0.0%    0.0%  T v8::internal::IncrementalMarking::Step(unsigned long, v8::internal::IncrementalMarking::CompletionAction, v8::internal::StepOrigin, v8::internal::WorklistToProcess)
+      2    0.0%    0.0%  T v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags)
+      2    0.0%    0.0%  T v8::internal::Heap::GarbageCollectionEpilogue()
+      2    0.0%    0.0%  T v8::internal::FastGetOwnValuesOrEntries(v8::internal::Isolate*, v8::internal::Handle<v8::internal::JSReceiver>, bool, v8::internal::Handle<v8::internal::FixedArray>*)
+      2    0.0%    0.0%  T v8::internal::Factory::InitializeJSObjectFromMap(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Map>)
+      2    0.0%    0.0%  T v8::internal::ArrayBufferCollector::FreeAllocationsOnBackgroundThread()
+      2    0.0%    0.0%  T v8::ArrayBuffer::GetContents()
+      2    0.0%    0.0%  T node::performance::MarkGarbageCollectionEnd(v8::Isolate*, v8::GCType, v8::GCCallbackFlags, void*)
+      2    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T _getpid
+      2    0.0%    0.0%  T __simple_getenv
+      2    0.0%    0.0%  T ___gethex_D2A
+      2    0.0%    0.0%  T ___fread
+      1    0.0%    0.0%  t void v8::internal::Worklist<v8::internal::HeapObject*, 64>::Segment::Update<v8::internal::IncrementalMarking::UpdateMarkingWorklistAfterScavenge()::$_0>(v8::internal::IncrementalMarking::UpdateMarkingWorklistAfterScavenge()::$_0)
+      1    0.0%    0.0%  t v8::internal::compiler::Typer::Visitor::Reduce(v8::internal::compiler::Node*)
+      1    0.0%    0.0%  t v8::internal::StatsCounter::Increment()
+      1    0.0%    0.0%  t v8::internal::Space::~Space()
+      1    0.0%    0.0%  t v8::internal::Scavenger::EvacuateShortcutCandidate(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::ConsString*, int)
+      1    0.0%    0.0%  t v8::internal::PointersUpdatingVisitor::VisitPointers(v8::internal::HeapObject*, v8::internal::Object**, v8::internal::Object**)
+      1    0.0%    0.0%  t v8::internal::ParserBase<v8::internal::Parser>::ParseBreakStatement(v8::internal::ZoneList<v8::internal::AstRawString const*>*, bool*)
+      1    0.0%    0.0%  t v8::internal::PagedSpace::~PagedSpace()
+      1    0.0%    0.0%  t v8::internal::PagedSpace::Size()
+      1    0.0%    0.0%  t v8::internal::OneshotBarrier::Wait()
+      1    0.0%    0.0%  t v8::internal::NewSpace::AllocatedSinceLastGC()
+      1    0.0%    0.0%  t v8::internal::MaybeHandle<v8::internal::Object> v8::internal::(anonymous namespace)::HandleApiCallHelper<false>(v8::internal::Isolate*, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::FunctionTemplateInfo>, v8::internal::Handle<v8::internal::Object>, v8::internal::BuiltinArguments)
+      1    0.0%    0.0%  t v8::internal::IncrementalMarkingRootMarkingVisitor::~IncrementalMarkingRootMarkingVisitor()
+      1    0.0%    0.0%  t v8::internal::ExpressionClassifier<v8::internal::ParserTypes<v8::internal::PreParser> >::RecordArrowFormalParametersError(v8::internal::Scanner::Location const&, v8::internal::MessageTemplate::Template, char const*)
+      1    0.0%    0.0%  t v8::internal::Builtin_Impl_HandleApiCall(v8::internal::BuiltinArguments, v8::internal::Isolate*)
+      1    0.0%    0.0%  t v8::internal::(anonymous namespace)::ElementsAccessorBase<v8::internal::(anonymous namespace)::FastHoleyObjectElementsAccessor, v8::internal::(anonymous namespace)::ElementsKindTraits<(v8::internal::ElementsKind)3> >::GetCapacity(v8::internal::JSObject*, v8::internal::FixedArrayBase*)
+      1    0.0%    0.0%  t v8::CallGCCallbackWithoutData(v8::Isolate*, v8::GCType, v8::GCCallbackFlags, void*)
+      1    0.0%    0.0%  t std::__1::vector<char*, std::__1::allocator<char*> >::resize(unsigned long)
+      1    0.0%    0.0%  t std::__1::unordered_map<unsigned long long, v8::internal::Cancelable*, std::__1::hash<unsigned long long>, std::__1::equal_to<unsigned long long>, std::__1::allocator<std::__1::pair<unsigned long long const, v8::internal::Cancelable*> > >::operator[](unsigned long long const&)
+      1    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, std::__1::__unordered_map_hasher<v8::internal::MemoryChunk*, std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, v8::internal::MemoryChunk::Hasher, true>, std::__1::__unordered_map_equal<v8::internal::MemoryChunk*, std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, std::__1::equal_to<v8::internal::MemoryChunk*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8::internal::MemoryChunk*, long> > >::~__hash_table()
+      1    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<int, v8::internal::Handle<v8::internal::String> >, std::__1::__unordered_map_hasher<int, std::__1::__hash_value_type<int, v8::internal::Handle<v8::internal::String> >, std::__1::hash<int>, true>, std::__1::__unordered_map_equal<int, std::__1::__hash_value_type<int, v8::internal::Handle<v8::internal::String> >, std::__1::equal_to<int>, true>, std::__1::allocator<std::__1::__hash_value_type<int, v8::internal::Handle<v8::internal::String> > > >::~__hash_table()
+      1    0.0%    0.0%  t std::__1::__hash_table<node::Environment::CleanupHookCallback, node::Environment::CleanupHookCallback::Hash, node::Environment::CleanupHookCallback::Equal, std::__1::allocator<node::Environment::CleanupHookCallback> >::remove(std::__1::__hash_const_iterator<std::__1::__hash_node<node::Environment::CleanupHookCallback, void*>*>)
+      1    0.0%    0.0%  t std::__1::__deque_base<void*, std::__1::allocator<void*> >::clear()
+      1    0.0%    0.0%  t std::__1::__deque_base<v8::internal::Page*, std::__1::allocator<v8::internal::Page*> >::~__deque_base()
+      1    0.0%    0.0%  t node::TaskQueue<node::DelayedTask>::Push(std::__1::unique_ptr<node::DelayedTask, std::__1::default_delete<node::DelayedTask> >)
+      1    0.0%    0.0%  t _szone_calloc
+      1    0.0%    0.0%  t _create_scalable_szone
+      1    0.0%    0.0%  t __read_images
+      1    0.0%    0.0%  t __pthread_mutex_firstfit_unlock_slow
+      1    0.0%    0.0%  t __pthread_main_thread_init
+      1    0.0%    0.0%  t _CFBasicHashFindBucket
+      1    0.0%    0.0%  T v8::internal::wasm::WasmEngine::GetWasmEngine()
+      1    0.0%    0.0%  T v8::internal::wasm::WasmCodeManager::LookupNativeModule(unsigned long) const
+      1    0.0%    0.0%  T v8::internal::interpreter::BytecodeRegisterOptimizer::Flush()
+      1    0.0%    0.0%  T v8::internal::compiler::SharedFunctionInfoRef::internal_formal_parameter_count() const
+      1    0.0%    0.0%  T v8::internal::compiler::PipelineCompilationJob::RegisterWeakObjectsInOptimizedCode(v8::internal::Handle<v8::internal::Code>, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::compiler::ObjectRef::object() const
+      1    0.0%    0.0%  T v8::internal::compiler::JSCallReducer::ReduceArrayReduce(v8::internal::compiler::Node*, v8::internal::compiler::JSCallReducer::ArrayReduceDirection, v8::internal::Handle<v8::internal::SharedFunctionInfo>)
+      1    0.0%    0.0%  T v8::internal::compiler::CommonOperatorBuilder::HeapConstant(v8::internal::Handle<v8::internal::HeapObject> const&)
+      1    0.0%    0.0%  T v8::internal::compiler::AccessInfoFactory::ComputePropertyAccessInfo(v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Name>, v8::internal::compiler::AccessMode, v8::internal::compiler::PropertyAccessInfo*)
+      1    0.0%    0.0%  T v8::internal::Zone::New(unsigned long)
+      1    0.0%    0.0%  T v8::internal::VSNPrintF(v8::internal::Vector<char>, char const*, __va_list_tag*)
+      1    0.0%    0.0%  T v8::internal::TextNode::TextEmitPass(v8::internal::RegExpCompiler*, v8::internal::TextNode::TextEmitPassType, bool, v8::internal::Trace*, bool, int*)
+      1    0.0%    0.0%  T v8::internal::Sweeper::FilterSweepingPagesScope::~FilterSweepingPagesScope()
+      1    0.0%    0.0%  T v8::internal::String::ToCString(v8::internal::AllowNullsFlag, v8::internal::RobustnessFlag, int*)
+      1    0.0%    0.0%  T v8::internal::String::IsOneByteEqualTo(v8::internal::Vector<unsigned char const>)
+      1    0.0%    0.0%  T v8::internal::StackFrameIterator::Advance()
+      1    0.0%    0.0%  T v8::internal::StackFrame::GetCallerState(v8::internal::StackFrame::State*) const
+      1    0.0%    0.0%  T v8::internal::StackFrame::ComputeType(v8::internal::StackFrameIteratorBase const*, v8::internal::StackFrame::State*)
+      1    0.0%    0.0%  T v8::internal::SpaceIterator::next()
+      1    0.0%    0.0%  T v8::internal::SourcePositionTableBuilder::AddEntry(v8::internal::PositionTableEntry const&)
+      1    0.0%    0.0%  T v8::internal::SharedFunctionInfo::HasBreakInfo() const
+      1    0.0%    0.0%  T v8::internal::SemiSpace::set_age_mark(unsigned long)
+      1    0.0%    0.0%  T v8::internal::Scope::CheckConflictingVarDeclarations()
+      1    0.0%    0.0%  T v8::internal::ScavengeJob::ScheduleIdleTask(v8::internal::Heap*)
+      1    0.0%    0.0%  T v8::internal::Scanner::ScanIdentifierOrKeywordInner(v8::internal::Scanner::LiteralScope*)
+      1    0.0%    0.0%  T v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_CreateObjectLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Relocatable::PostGarbageCollectionProcessing(v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Relocatable::Iterate(v8::internal::Isolate*, v8::internal::RootVisitor*)
+      1    0.0%    0.0%  T v8::internal::PagedSpace::SizeOfObjects()
+      1    0.0%    0.0%  T v8::internal::PagedSpace::FreeLinearAllocationArea()
+      1    0.0%    0.0%  T v8::internal::PagedSpace::AddPage(v8::internal::Page*)
+      1    0.0%    0.0%  T v8::internal::Object* v8::internal::VisitWeakList<v8::internal::Context>(v8::internal::Heap*, v8::internal::Object*, v8::internal::WeakObjectRetainer*)
+      1    0.0%    0.0%  T v8::internal::Map::NextFreePropertyIndex() const
+      1    0.0%    0.0%  T v8::internal::Map::InstallDescriptors(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Map>, int, v8::internal::Handle<v8::internal::DescriptorArray>, v8::internal::Handle<v8::internal::LayoutDescriptor>)
+      1    0.0%    0.0%  T v8::internal::Log::MessageBuilder::AppendCharacter(char)
+      1    0.0%    0.0%  T v8::internal::LargeObjectSpace::Available()
+      1    0.0%    0.0%  T v8::internal::JSObject::MigrateToMap(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Map>, int)
+      1    0.0%    0.0%  T v8::internal::JSObject::FastPropertyAt(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Representation, v8::internal::FieldIndex)
+      1    0.0%    0.0%  T v8::internal::ItemParallelJob::~ItemParallelJob()
+      1    0.0%    0.0%  T v8::internal::ItemParallelJob::Task::~Task()
+      1    0.0%    0.0%  T v8::internal::InnerPointerToCodeCache::GetCacheEntry(unsigned long)
+      1    0.0%    0.0%  T v8::internal::IncrementalMarking::UpdateMarkedBytesAfterScavenge(unsigned long)
+      1    0.0%    0.0%  T v8::internal::IncrementalMarking::StepSizeToMakeProgress()
+      1    0.0%    0.0%  T v8::internal::IncrementalMarking::RecordWriteFromCode(v8::internal::HeapObject*, v8::internal::MaybeObject**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::IdentityMapBase::Hash(v8::internal::Object*) const
+      1    0.0%    0.0%  T v8::internal::Histogram::AddSample(int)
+      1    0.0%    0.0%  T v8::internal::Heap::set_builtin(int, v8::internal::HeapObject*)
+      1    0.0%    0.0%  T v8::internal::Heap::UpdateSurvivalStatistics(int)
+      1    0.0%    0.0%  T v8::internal::Heap::ProcessPretenuringFeedback()
+      1    0.0%    0.0%  T v8::internal::Heap::OldGenerationCapacity()
+      1    0.0%    0.0%  T v8::internal::Heap::MonotonicallyIncreasingTimeInMs()
+      1    0.0%    0.0%  T v8::internal::Heap::MergeAllocationSitePretenuringFeedback(std::__1::unordered_map<v8::internal::AllocationSite*, unsigned long, std::__1::hash<v8::internal::AllocationSite*>, std::__1::equal_to<v8::internal::AllocationSite*>, std::__1::allocator<std::__1::pair<v8::internal::AllocationSite* const, unsigned long> > > const&)
+      1    0.0%    0.0%  T v8::internal::Heap::CreateFillerObjectAt(unsigned long, int, v8::internal::ClearRecordedSlots, v8::internal::ClearFreedMemoryMode)
+      1    0.0%    0.0%  T v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags)
+      1    0.0%    0.0%  T v8::internal::Heap::CanExpandOldGeneration(unsigned long)
+      1    0.0%    0.0%  T v8::internal::HashTable<v8::internal::CompilationCacheTable, v8::internal::CompilationCacheShape>::FindEntry(v8::internal::Isolate*, v8::internal::HashTableKey*)
+      1    0.0%    0.0%  T v8::internal::HandleScopeImplementer::IterateThis(v8::internal::RootVisitor*)
+      1    0.0%    0.0%  T v8::internal::GlobalHandles::PostGarbageCollectionProcessing(v8::internal::GarbageCollector, v8::GCCallbackFlags)
+      1    0.0%    0.0%  T v8::internal::GCTracer::Start(v8::internal::GarbageCollector, v8::internal::GarbageCollectionReason, char const*)
+      1    0.0%    0.0%  T v8::internal::GCTracer::Scope::Scope(v8::internal::GCTracer*, v8::internal::GCTracer::Scope::ScopeId)
+      1    0.0%    0.0%  T v8::internal::GCTracer::BackgroundScope::~BackgroundScope()
+      1    0.0%    0.0%  T v8::internal::GCTracer::BackgroundScope::BackgroundScope(v8::internal::GCTracer*, v8::internal::GCTracer::BackgroundScope::ScopeId)
+      1    0.0%    0.0%  T v8::internal::GCTracer::AverageSurvivalRatio() const
+      1    0.0%    0.0%  T v8::internal::Factory::TryNewCode(v8::internal::CodeDesc const&, v8::internal::Code::Kind, v8::internal::Handle<v8::internal::Object>, int, v8::internal::MaybeHandle<v8::internal::ByteArray>, v8::internal::MaybeHandle<v8::internal::DeoptimizationData>, v8::internal::Movability, unsigned int, bool, int, int, int)
+      1    0.0%    0.0%  T v8::internal::Factory::NewFixedArrayWithFiller(v8::internal::Heap::RootListIndex, int, v8::internal::Object*, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  T v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace)
+      1    0.0%    0.0%  T v8::internal::ExitFrame::Iterate(v8::internal::RootVisitor*) const
+      1    0.0%    0.0%  T v8::internal::DescriptorArray::CopyUpToAddAttributes(v8::internal::Isolate*, v8::internal::Handle<v8::internal::DescriptorArray>, int, v8::internal::PropertyAttributes, int)
+      1    0.0%    0.0%  T v8::internal::Context::AddOptimizedCode(v8::internal::Code*)
+      1    0.0%    0.0%  T v8::internal::CompactionSpace::SlowRefillLinearAllocationArea(int)
+      1    0.0%    0.0%  T v8::internal::CancelableTask::CancelableTask(v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::ArrayBufferCollector::AddGarbageAllocations(std::__1::vector<v8::internal::JSArrayBuffer::Allocation, std::__1::allocator<v8::internal::JSArrayBuffer::Allocation> >)
+      1    0.0%    0.0%  T v8::internal::AllocationObserver::AllocationStep(int, unsigned long, unsigned long)
+      1    0.0%    0.0%  T v8::internal::AccountingAllocator::GetSegment(unsigned long)
+      1    0.0%    0.0%  T v8::base::Semaphore::Signal()
+      1    0.0%    0.0%  T v8::base::Mutex::Unlock()
+      1    0.0%    0.0%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::NodePlatform::IdleTasksEnabled(v8::Isolate*)
+      1    0.0%    0.0%  T _swprintf_l
+      1    0.0%    0.0%  T _putchar
+      1    0.0%    0.0%  T _pthread_rwlock_destroy
+      1    0.0%    0.0%  T _pthread_get_stackaddr_np
+      1    0.0%    0.0%  T _mach_port_construct
+      1    0.0%    0.0%  T _getipv4sourcefilter
+      1    0.0%    0.0%  T _freopen
+      1    0.0%    0.0%  T _free
+      1    0.0%    0.0%  T __pthread_qos_override_end_direct
+      1    0.0%    0.0%  T ___rec_ret
+      1    0.0%    0.0%  T ___rec_iput
+      1    0.0%    0.0%  T ___gdtoa
+      1    0.0%    0.0%  A __objc_empty_vtable
+
+ [Summary]:
+   ticks  total  nonlib   name
+   9540   81.6%   83.0%  JavaScript
+   1627   13.9%   14.2%  C++
+   1670   14.3%   14.5%  GC
+    189    1.6%          Shared libraries
+    331    2.8%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     33   26.0%    0.3%  T v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*)
+     32   25.2%    0.3%  T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     13   10.2%    0.1%  T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+     10    7.9%    0.1%  T v8::internal::Runtime_CompileOptimized_Concurrent(int, v8::internal::Object**, v8::internal::Isolate*)
+      7    5.5%    0.1%  T v8::internal::Runtime_StackGuard(int, v8::internal::Object**, v8::internal::Isolate*)
+      7    5.5%    0.1%  T v8::internal::Runtime_ObjectValues(int, v8::internal::Object**, v8::internal::Isolate*)
+      5    3.9%    0.0%  T v8::internal::IncrementalMarking::WhiteToGreyAndPush(v8::internal::HeapObject*)
+      3    2.4%    0.0%  T v8::internal::Runtime_InterpreterDeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    1.6%    0.0%  T v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    1.6%    0.0%  T v8::internal::Runtime_KeyedStoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    1.6%    0.0%  T v8::internal::IncrementalMarking::RecordWriteSlow(v8::internal::HeapObject*, v8::internal::HeapObjectReference**, v8::internal::Object*)
+      2    1.6%    0.0%  T v8::ArrayBuffer::GetContents()
+      1    0.8%    0.0%  t __malloc_initialize
+      1    0.8%    0.0%  T v8::internal::Runtime_SetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.8%    0.0%  T v8::internal::Runtime_RegExpExec(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.8%    0.0%  T v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.8%    0.0%  T v8::internal::Runtime_DeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.8%    0.0%  T v8::internal::Runtime_DefineClass(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.8%    0.0%  T v8::internal::Runtime_CreateRegExpLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.8%    0.0%  T v8::internal::Runtime_CreateObjectLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.8%    0.0%  T v8::internal::IncrementalMarking::RecordWriteFromCode(v8::internal::HeapObject*, v8::internal::MaybeObject**, v8::internal::Isolate*)
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   1654   14.2%  Builtin: CompileLazy
+   1234   74.6%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    611   49.5%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    245   40.1%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    180   73.5%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    114   63.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     54   30.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     12    6.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     62   25.3%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     62  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      3    1.2%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      3  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+    219   35.8%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+    113   51.6%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    113  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     86   39.3%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     86  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     20    9.1%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     20  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+    101   16.5%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     98   97.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     79   80.6%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     14   14.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5    5.1%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      3    3.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      3  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     46    7.5%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     46  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     25   54.3%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     13   28.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      8   17.4%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+    314   25.4%      LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+    154   49.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    154  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    154  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    130   41.4%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+    130  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    130  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     29    9.2%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     29  100.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     29  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    244   19.8%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+    239   98.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    137   57.3%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     67   48.9%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     61   44.5%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      9    6.6%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     67   28.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     65   97.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      2    3.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     35   14.6%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     35  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5    2.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      5  100.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     65    5.3%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     65  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     31   47.7%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     19   61.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     12   38.7%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     20   30.8%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     20  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     14   21.5%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     14  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    166   10.0%    LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     79   47.6%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     79  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     79  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     79  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     66   39.8%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     66  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     66  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     26   39.4%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     26   39.4%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     14   21.2%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     21   12.7%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     21  100.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     21  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     16   76.2%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5   23.8%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+    137    8.3%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+    131   95.6%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     66   50.4%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     29   43.9%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     29  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     29   43.9%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     29  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      8   12.1%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      8  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     41   31.3%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     40   97.6%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     18   45.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     17   42.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5   12.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      1    2.4%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      1  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     24   18.3%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     24  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     23   95.8%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      1    4.2%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      6    4.4%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      6  100.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      6  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5   83.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1   16.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     69    4.2%    LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     69  100.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     36   52.2%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     20   55.6%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     20  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      9   25.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      9  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      7   19.4%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      7  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     19   27.5%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     19  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      9   47.4%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      7   36.8%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      3   15.8%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     14   20.3%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     14  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     14  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     37    2.2%    LazyCompile: *b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:950
+     37  100.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     37  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     37  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     31   83.8%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      6   16.2%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+
+   1347   11.5%  LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    810   60.1%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    405   50.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    310   76.5%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    208   67.1%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    117   56.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     77   37.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     14    6.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     87   28.1%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     87  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     15    4.8%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     12   80.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      3   20.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     85   21.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     85  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     37   43.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     28   32.9%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     20   23.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     10    2.5%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      8   80.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      8  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      2   20.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      2  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    172   21.2%      LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     90   52.3%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     90  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     90  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     66   38.4%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     66  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     66  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     16    9.3%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     16  100.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     16  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    159   19.6%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+    159  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     65   40.9%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     44   67.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     21   32.3%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     64   40.3%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     64  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     30   18.9%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     30  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     74    9.1%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     70   94.6%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     57   81.4%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     27   47.4%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     26   45.6%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      4    7.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     10   14.3%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      8   80.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      2   20.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      3    4.3%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      3  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      4    5.4%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      4  100.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      4  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    257   19.1%    LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+    135   52.5%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    134   99.3%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    134  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    134  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     99   38.5%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     99  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     99  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     45   45.5%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     31   31.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     23   23.2%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     23    8.9%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     23  100.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     23  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     19   82.6%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      4   17.4%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+    182   13.5%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+    177   97.3%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    120   67.8%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     59   49.2%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     59  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     47   39.2%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     47  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     14   11.7%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     14  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     42   23.7%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     40   95.2%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     23   57.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     12   30.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5   12.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      2    4.8%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      2  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     15    8.5%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     15  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     15  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      5    2.7%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      5  100.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     96    7.1%    LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     96  100.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     49   51.0%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     30   61.2%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     30  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     19   38.8%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     19  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     31   32.3%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     31  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     17   54.8%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     11   35.5%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      3    9.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     16   16.7%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     16  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     16  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+
+    998    8.5%  LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+    998  100.0%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    463   46.4%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    462   99.8%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+    237   51.3%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    237  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    184   39.8%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+    184  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     40    8.7%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     40  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+    375   37.6%      LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+    179   47.7%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    179  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    179  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    154   41.1%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+    154  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    154  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     41   10.9%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     41  100.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     41  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    160   16.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+    160  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    160  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     95   59.4%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     48   30.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     17   10.6%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+
+    805    6.9%  Builtin: CallFunction_ReceiverIsNullOrUndefined
+    571   70.9%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    368   64.4%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    201   54.6%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    151   75.1%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     96   63.6%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     49   32.5%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      6    4.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     48   23.9%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     48  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     67   18.2%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     67  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     32   47.8%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     23   34.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     12   17.9%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     65   17.7%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     30   46.2%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     30  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     28   43.1%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     28  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      7   10.8%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      7  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     35    9.5%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     31   88.6%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     24   77.4%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      5   16.1%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      2    6.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      4   11.4%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      4  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     78   13.7%      LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     44   56.4%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     44  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     44  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     23   29.5%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     23  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     23  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     11   14.1%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     11  100.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     11  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     72   12.6%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     71   98.6%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     51   71.8%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     30   58.8%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     15   29.4%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      6   11.8%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     11   15.5%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     11  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      9   12.7%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      9  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1    1.4%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      1  100.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      1  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     53    9.3%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     53  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     23   43.4%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     18   78.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5   21.7%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     19   35.8%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     19  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     11   20.8%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     11  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     83   10.3%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     78   94.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     39   50.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     39  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     18   46.2%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     17   43.6%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      4   10.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     21   26.9%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     11   52.4%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     11  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      6   28.6%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      6  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      4   19.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      4  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     18   23.1%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     18  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     18  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      5    6.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      5  100.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     54    6.7%    LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     26   48.1%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     26  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     26  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     26  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     23   42.6%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     23  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     22   95.7%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     10   45.5%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      6   27.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      6   27.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      1    4.3%          LazyCompile: *runParser /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1640
+      1  100.0%            LazyCompile: ~parse /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:5062
+      5    9.3%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      5  100.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      4   80.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1   20.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     48    6.0%    LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     48  100.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     21   43.8%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     15   71.4%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     15  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5   23.8%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1    4.8%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      1  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     18   37.5%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     18  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      9   50.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      8   44.4%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1    5.6%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      9   18.8%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      9  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      9  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     18    2.2%    LazyCompile: *b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2394
+     18  100.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     18  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      9   50.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      9  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      9   50.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      9  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+
+    639    5.5%  LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+    328   51.3%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    328  100.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    328  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    328  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    311   94.8%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     17    5.2%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+    244   38.2%    LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+    244  100.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    244  100.0%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+    100   41.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+    100  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     80   32.8%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     80  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     63   25.8%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     63  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     67   10.5%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     67  100.0%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     67  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     55   82.1%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     55  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     12   17.9%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     12  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+
+    607    5.2%  LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:840
+    304   50.1%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    145   47.7%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    108   74.5%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     78   72.2%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     39   50.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     33   42.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      6    7.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     29   26.9%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     29  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     36   24.8%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     36  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     17   47.2%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     10   27.8%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      9   25.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     77   25.3%      LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     34   44.2%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     34  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     34  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     31   40.3%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     31  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     31  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     12   15.6%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     12  100.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     12  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     54   17.8%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     54  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     23   42.6%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     23  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     20   37.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     12   60.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      8   40.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     11   20.4%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     11  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     28    9.2%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     28  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     22   78.6%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     11   50.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     10   45.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1    4.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      6   21.4%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5   83.3%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      1   16.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+    157   25.9%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+    150   95.5%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     76   50.7%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     40   52.6%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     40  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     30   39.5%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     30  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      6    7.9%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      6  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     51   34.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     51  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     27   52.9%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     19   37.3%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5    9.8%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     23   15.3%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     23  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     23  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      7    4.5%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      7  100.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      7  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      6   85.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1   14.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     90   14.8%    LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     46   51.1%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     46  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     46  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     46  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     34   37.8%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     34  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     34  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     15   44.1%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     11   32.4%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      8   23.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     10   11.1%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     10  100.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     10  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     10  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     46    7.6%    LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     46  100.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     22   47.8%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     22  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     10   45.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      7   31.8%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5   22.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     15   32.6%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     13   86.7%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     13  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      2   13.3%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      2  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      9   19.6%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      9  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      9  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+
+    533    4.6%  Builtin: Call_ReceiverIsNullOrUndefined
+    403   75.6%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    268   66.5%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    153   57.1%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    123   80.4%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     86   69.9%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     34   27.6%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      3    2.4%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     30   19.6%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     30  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     49   18.3%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     49  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     29   59.2%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     18   36.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      2    4.1%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     38   14.2%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     20   52.6%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     20  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     15   39.5%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     15  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      3    7.9%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      3  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     28   10.4%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     20   71.4%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     17   85.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      3   15.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      8   28.6%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      8  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     67   16.6%      LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     29   43.3%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     29  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     29  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     27   40.3%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     27  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     27  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     11   16.4%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     11  100.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     11  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     43   10.7%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     41   95.3%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     30   73.2%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     18   60.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     10   33.3%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      2    6.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     10   24.4%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     10  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      1    2.4%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      1  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      2    4.7%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      2  100.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      2  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     25    6.2%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     25  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     14   56.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     14  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      9   36.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      5   55.6%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      4   44.4%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      2    8.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      2  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     50    9.4%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     50  100.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     21   42.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     19   90.5%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     11   57.9%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      7   36.8%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      1    5.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      2    9.5%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      2  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     16   32.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     16  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     16  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     13   26.0%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     10   76.9%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     10  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      3   23.1%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      3  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     46    8.6%    LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     23   50.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     23  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     23  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     23  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     19   41.3%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     19  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     19  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      7   36.8%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      7   36.8%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5   26.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      4    8.7%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      4  100.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      4  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      3   75.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1   25.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     14    2.6%    LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     14  100.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      8   57.1%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      4   50.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      4  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      3   37.5%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      3  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1   12.5%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      1  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5   35.7%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      2   40.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      2   40.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1   20.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      1    7.1%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      1  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     13    2.4%    LazyCompile: *b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2394
+     13  100.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     13  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     10   76.9%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     10  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      3   23.1%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      3  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+
+    487    4.2%  Builtin: ArgumentsAdaptorTrampoline
+    400   82.1%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    255   63.7%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    116   45.5%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     92   79.3%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     76   82.6%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     16   17.4%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     24   20.7%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     24  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     74   29.0%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     36   48.6%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     36  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     28   37.8%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     28  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     10   13.5%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     10  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     39   15.3%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     38   97.4%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     31   81.6%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      7   18.4%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1    2.6%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      1  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     26   10.2%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     26  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     13   50.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     10   38.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      3   11.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+    112   28.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+    111   99.1%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     57   51.4%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     26   45.6%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     25   43.9%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      6   10.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     35   31.5%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     35  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     19   17.1%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     19  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     20    5.0%      LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     10   50.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     10  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     10  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      5   25.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5   25.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      5  100.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     13    3.3%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     13  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     10   76.9%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      5   50.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5   50.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      2   15.4%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      2  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1    7.7%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     31    6.4%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     30   96.8%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     12   40.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     12  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      8   66.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      3   25.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      1    8.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     11   36.7%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     11  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     11  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      7   23.3%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      6   85.7%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      6  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1   14.3%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      1  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      1    3.2%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      1  100.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      1  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     22    4.5%    LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      9   40.9%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      9  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      9  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      9  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      8   36.4%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      8  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      8  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      4   50.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      2   25.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      2   25.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      5   22.7%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      5  100.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      3   60.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      2   40.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+
+    421    3.6%  T _setiopolicy_np
+
+    331    2.8%  UNKNOWN
+
+    321    2.7%  LazyCompile: *b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1090
+    279   86.9%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    221   79.2%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    120   54.3%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    115   95.8%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     85   73.9%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     28   24.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      2    1.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      5    4.2%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     51   23.1%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     26   51.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     26  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     19   37.3%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     19  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      6   11.8%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      6  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     50   22.6%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     49   98.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     32   65.3%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     12   24.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5   10.2%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      1    2.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      1  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     28   10.0%      LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     14   50.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     14  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     14  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     10   35.7%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     10  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     10  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      4   14.3%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      4  100.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      4  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     16    5.7%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     16  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     13   81.3%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      8   61.5%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5   38.5%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      2   12.5%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      2  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      1    6.3%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      1  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     14    5.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     14  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     14  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     10   71.4%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      4   28.6%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     42   13.1%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     42  100.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     30   71.4%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     30  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     13   43.3%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     13   43.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      4   13.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     12   28.6%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     12  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     12  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+
+    318    2.7%  LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+    298   93.7%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    134   45.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    128   95.5%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     60   46.9%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     60  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     56   43.8%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     56  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     12    9.4%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     12  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      6    4.5%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      6  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      6  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+    104   34.9%      LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     67   64.4%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     67  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     67  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     29   27.9%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     29  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     29  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      8    7.7%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      8  100.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      8  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     60   20.1%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     60  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     60  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     37   61.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     17   28.3%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      6   10.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     20    6.3%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     20  100.0%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     20  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     16   80.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     16  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      4   20.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      4  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+
+    230    2.0%  LazyCompile: *a.length.a /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2907
+    230  100.0%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    229   99.6%      LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+    109   47.6%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+    109  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    109  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     98   42.8%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     98  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     98  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     22    9.6%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     22  100.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     22  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+
+    223    1.9%  LazyCompile: *b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2394
+    223  100.0%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    223  100.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    155   69.5%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+    155  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+    137   88.4%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     12    7.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      6    3.9%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     68   30.5%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     68  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     68  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+
+    165    1.4%  t v8::internal::Scavenger::ScavengeObject(v8::internal::HeapObjectReference**, v8::internal::HeapObject*)
+
+    152    1.3%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:158
+    133   87.5%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     82   61.7%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     36   43.9%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     30   83.3%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     17   56.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     13   43.3%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5   13.9%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1    2.8%          LazyCompile: ~c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      1  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     24   29.3%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     11   45.8%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     11  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     10   41.7%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     10  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      3   12.5%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      3  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     13   15.9%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     13  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     10   76.9%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      2   15.4%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1    7.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      9   11.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      9  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5   55.6%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      4   44.4%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     45   33.8%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     45  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     24   53.3%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     13   54.2%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      9   37.5%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      2    8.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     17   37.8%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     17  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      4    8.9%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      4  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5    3.8%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      5  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      3   60.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      2   40.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      9    5.9%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      7   77.8%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      4   57.1%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      4  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      2   50.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      1   25.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1   25.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      3   42.9%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      3  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      3  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      2   22.2%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      2  100.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      2  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      2  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      9    5.9%    LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      4   44.4%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      4  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      4  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      4  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      3   33.3%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      3  100.0%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      3  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      2   66.7%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      1   33.3%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      2   22.2%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      2  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      2  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+      1   50.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      1   50.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+
+    140    1.2%  LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1006
+    137   97.9%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     62   45.3%      LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     30   48.4%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     30  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     30  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     22   35.5%        LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     22  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     22  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     10   16.1%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+     10  100.0%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     10  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     52   38.0%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     48   92.3%        LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     26   54.2%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     26  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     17   35.4%          LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     17  100.0%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      5   10.4%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      5  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      4    7.7%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+      4  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      4  100.0%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+     23   16.8%      LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1009
+     23  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+     23  100.0%          LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+     16   69.6%            LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      7   30.4%            LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      3    2.1%    LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:1478
+      3  100.0%      LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2669
+      3  100.0%        LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      3  100.0%          LazyCompile: *d /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:843
+      3  100.0%            LazyCompile: *c /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/babel/ast.js:1:2628
+
+    137    1.2%  /usr/lib/system/libsystem_kernel.dylib
+

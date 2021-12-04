@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -eo pipefail
 
 outDir="dist"
 
@@ -16,22 +17,25 @@ mv "$outDir/ast.js" "$outDir/ast.es2015.js"
 # Minify
 files=("dist/ast")
 for file in ${files[@]}; do
-  echo "$file"
+  echo "Minifying $file"
 
   # Custom babel
   echo " - Beta reduction"
   mkdir -p "$outDir/beta-reduction"
-  yarn --silent babel --presets babel-preset-minify --plugins babel-plugin-beta-reduction --minified --no-comments -o "$outDir/beta-reduction/${file##*/}.js" "$file.es2015.js"
+  yarn --silent babel --plugins babel-plugin-beta-reduction -o "$outDir/beta-reduction/${file##*/}.js" "$file.es2015.js"
+#  yarn --silent babel --presets minify --plugins babel-plugin-beta-reduction -o "$outDir/beta-reduction/${file##*/}.babel-min.js" "$file.es2015.js"
+#  yarn --silent terser "$outDir/beta-reduction/${file##*/}.js" -o "$outDir/beta-reduction/${file##*/}.terser.js" --compress --mangle
+#  yarn --silent terser "$outDir/beta-reduction/${file##*/}.babel-min.js" -o "$outDir/beta-reduction/${file##*/}.babel-min.terser.js" --compress --mangle
 
   # Uglify js
   echo " - Uglify"
   mkdir -p "$outDir/uglify"
-  yarn --silent uglifyjs "$file.es5.js" -o "$outDir/uglify/${file##*/}.js" --compress="pure_funcs=distance" --mangle
+  yarn --silent uglifyjs "$file.es5.js" -o "$outDir/uglify/${file##*/}.js" --compress --mangle
 
   # Terser
   echo " - Terser"
   mkdir -p "$outDir/terser"
-  yarn --silent terser "$file.es2015.js" -o "$outDir/terser/${file##*/}.js" --compress="pure_funcs=distance" --mangle
+  yarn --silent terser "$file.es2015.js" -o "$outDir/terser/${file##*/}.js" --compress --mangle
 
   # Babel minify
   echo " - Babel"

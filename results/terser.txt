@@ -1,0 +1,1309 @@
+Statistical profiling result from isolate-0x105800000-v8.log, (12322 ticks, 380 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    139    1.1%          /usr/lib/system/libsystem_kernel.dylib
+     26    0.2%          /usr/lib/system/libsystem_pthread.dylib
+     11    0.1%          /usr/lib/system/libsystem_platform.dylib
+      7    0.1%          /usr/lib/libc++abi.dylib
+      2    0.0%          /usr/lib/system/libsystem_malloc.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+   1697   13.8%   14.0%  Builtin: CompileLazy
+   1451   11.8%   12.0%  LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+   1014    8.2%    8.4%  LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+    908    7.4%    7.5%  Builtin: CallFunction_ReceiverIsNullOrUndefined
+    694    5.6%    5.7%  LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+    682    5.5%    5.6%  LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:840
+    518    4.2%    4.3%  Builtin: Call_ReceiverIsNullOrUndefined
+    460    3.7%    3.8%  Builtin: ArgumentsAdaptorTrampoline
+    343    2.8%    2.8%  LazyCompile: *n /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1090
+    338    2.7%    2.8%  LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+    258    2.1%    2.1%  LazyCompile: *e.length.e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2623
+    244    2.0%    2.0%  LazyCompile: *n /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2105
+    162    1.3%    1.3%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:103
+    121    1.0%    1.0%  LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1006
+    119    1.0%    1.0%  LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2546
+    105    0.9%    0.9%  LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1209
+     87    0.7%    0.7%  Builtin: ArrayPrototypeSlice
+     86    0.7%    0.7%  LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     86    0.7%    0.7%  LazyCompile: *n /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:780
+     86    0.7%    0.7%  LazyCompile: *bindResultA2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2459
+     67    0.5%    0.6%  LazyCompile: *n /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2336
+     53    0.4%    0.4%  Builtin: ExtractFastJSArray
+     48    0.4%    0.4%  Builtin: GrowFastSmiOrObjectElements
+     42    0.3%    0.3%  Builtin: StrictEqual
+     34    0.3%    0.3%  LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:138
+     33    0.3%    0.3%  LazyCompile: *e.reduce.liftA2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2742
+     33    0.3%    0.3%  LazyCompile: *e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:934
+     25    0.2%    0.2%  LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1468
+     24    0.2%    0.2%  Builtin: ObjectAssign
+     23    0.2%    0.2%  LazyCompile: *isNumberLiteral /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1855
+     22    0.2%    0.2%  LazyCompile: *numberLiteralExpression /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2948
+     18    0.1%    0.1%  LazyCompile: *n /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1822
+     16    0.1%    0.1%  Builtin: RecordWrite
+     13    0.1%    0.1%  LazyCompile: *fallbackExists /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:566
+     11    0.1%    0.1%  LazyCompile: *n /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:950
+      8    0.1%    0.1%  LazyCompile: *n /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1273
+      7    0.1%    0.1%  LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:796
+      6    0.0%    0.0%  LazyCompile: *lazy /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:4642
+      6    0.0%    0.0%  Builtin: StringEqual
+      5    0.0%    0.0%  LazyCompile: *operationExpression /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:3086
+      5    0.0%    0.0%  LazyCompile: *groupExpression /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:3260
+      5    0.0%    0.0%  Builtin: InterpreterEntryTrampoline
+      4    0.0%    0.0%  Script: ~<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/benchmark.js:1:11
+      4    0.0%    0.0%  LazyCompile: ~parse /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:5031
+      4    0.0%    0.0%  LazyCompile: *n /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:175
+      4    0.0%    0.0%  LazyCompile: *identifierExpression /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2816
+      4    0.0%    0.0%  Builtin: FastNewClosure
+      4    0.0%    0.0%  Builtin: CallFunction_ReceiverIsAny
+      4    0.0%    0.0%  Builtin: CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit
+      3    0.0%    0.0%  Builtin: RegExpPrototypeTestFast
+      2    0.0%    0.0%  LazyCompile: ~t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:138
+      2    0.0%    0.0%  LazyCompile: *bindResultA2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1349
+      2    0.0%    0.0%  Builtin: Call_ReceiverIsAny
+      1    0.0%    0.0%  RegExp: ^[0-9]+$
+      1    0.0%    0.0%  LazyCompile: ~setTokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1567
+      1    0.0%    0.0%  LazyCompile: ~runParser /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1633
+      1    0.0%    0.0%  LazyCompile: ~runMaybe /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:496
+      1    0.0%    0.0%  LazyCompile: ~operationExpression /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:3086
+      1    0.0%    0.0%  LazyCompile: ~now perf_hooks.js:369:6
+      1    0.0%    0.0%  LazyCompile: ~n /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1822
+      1    0.0%    0.0%  LazyCompile: ~lazy /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:4642
+      1    0.0%    0.0%  LazyCompile: ~hrtime internal/process/per_thread.js:102:18
+      1    0.0%    0.0%  LazyCompile: ~e.reduce /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2360
+      1    0.0%    0.0%  LazyCompile: ~e.length.e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2623
+      1    0.0%    0.0%  LazyCompile: ~createNothingResult /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1134
+      1    0.0%    0.0%  LazyCompile: *parse /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:5031
+      1    0.0%    0.0%  LazyCompile: *now perf_hooks.js:369:6
+      1    0.0%    0.0%  LazyCompile: *lazy /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:4854
+      1    0.0%    0.0%  Eval: ~<anonymous> net.js:1:1
+      1    0.0%    0.0%  Eval: ~<anonymous> internal/console/global.js:1:1
+      1    0.0%    0.0%  Builtin: StoreIC
+      1    0.0%    0.0%  Builtin: InterpreterPushUndefinedAndArgsThenCall
+      1    0.0%    0.0%  Builtin: ArrayMap
+      1    0.0%    0.0%  Builtin: AllocateInNewSpace
+
+ [C++]:
+   ticks  total  nonlib   name
+    414    3.4%    3.4%  T _setiopolicy_np
+    180    1.5%    1.5%  t v8::internal::Scavenger::ScavengeObject(v8::internal::HeapObjectReference**, v8::internal::HeapObject*)
+     87    0.7%    0.7%  T v8::internal::Scavenger::Process(v8::internal::OneshotBarrier*)
+     82    0.7%    0.7%  t void v8::internal::BodyDescriptorBase::IteratePointers<v8::internal::ScavengeVisitor>(v8::internal::HeapObject*, int, int, v8::internal::ScavengeVisitor*)
+     81    0.7%    0.7%  T __kernelrpc_mach_port_request_notification
+     65    0.5%    0.5%  T v8::internal::Bitmap::Clear()
+     43    0.3%    0.4%  T v8::internal::Heap::Scavenge()
+     39    0.3%    0.3%  T _thread_get_state
+     33    0.3%    0.3%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>::Pop(int, std::__1::pair<v8::internal::HeapObject*, int>*)
+     26    0.2%    0.2%  T node::native_module::NativeModuleLoader::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     26    0.2%    0.2%  T node::NodePlatform::MonotonicallyIncreasingTime()
+     25    0.2%    0.2%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>::Push(int, std::__1::pair<v8::internal::HeapObject*, int>)
+     23    0.2%    0.2%  t v8::internal::HeapObject::SizeFromMap(v8::internal::Map*) const
+     21    0.2%    0.2%  T ___pthread_init
+     20    0.2%    0.2%  t v8::internal::LocalAllocator::AllocateInLAB(int, v8::internal::AllocationAlignment)
+     19    0.2%    0.2%  t void v8::internal::BodyDescriptorApply<v8::internal::CallIterateBody, void, v8::internal::Map*, v8::internal::HeapObject*, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*>(v8::internal::InstanceType, v8::internal::Map*, v8::internal::HeapObject*, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*)
+     19    0.2%    0.2%  t _tiny_malloc_from_free_list
+     18    0.1%    0.1%  t _small_malloc_should_clear
+     14    0.1%    0.1%  t _tiny_malloc_should_clear
+     14    0.1%    0.1%  T v8::internal::RootScavengeVisitor::ScavengePointer(v8::internal::Object**)
+     13    0.1%    0.1%  t v8::internal::PagedSpace::Available()
+     12    0.1%    0.1%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>::Worklist(int)
+     12    0.1%    0.1%  T v8::internal::SerializerDeserializer::Iterate(v8::internal::Isolate*, v8::internal::RootVisitor*)
+     11    0.1%    0.1%  t ___vfprintf
+     11    0.1%    0.1%  T _getattrlistbulk
+     10    0.1%    0.1%  T v8::internal::NewSpace::UpdateLinearAllocationArea()
+     10    0.1%    0.1%  T v8::internal::ArrayBufferTracker::ProcessBuffers(v8::internal::Page*, v8::internal::ArrayBufferTracker::ProcessingMode)
+      9    0.1%    0.1%  t void v8::internal::BodyDescriptorBase::IterateBodyImpl<v8::internal::ScavengeVisitor>(v8::internal::Map*, v8::internal::HeapObject*, int, int, v8::internal::ScavengeVisitor*)
+      8    0.1%    0.1%  t v8::internal::SlotSet::FreeEmptyBuckets()
+      7    0.1%    0.1%  t _uv__hrtime
+      7    0.1%    0.1%  T v8::internal::Scavenger::IterateAndScavengePromotedObject(v8::internal::HeapObject*, int)
+      7    0.1%    0.1%  T v8::internal::RootScavengeVisitor::VisitRootPointer(v8::internal::Root, char const*, v8::internal::Object**)
+      7    0.1%    0.1%  T v8::internal::ItemParallelJob::Run(std::__1::shared_ptr<v8::internal::Counters>)
+      6    0.0%    0.0%  t v8::internal::FixStaleLeftTrimmedHandlesVisitor::VisitRootPointers(v8::internal::Root, char const*, v8::internal::Object**, v8::internal::Object**)
+      6    0.0%    0.0%  t _tiny_size
+      6    0.0%    0.0%  t _tiny_free_no_lock
+      6    0.0%    0.0%  t __malloc_initialize
+      6    0.0%    0.0%  T v8::internal::Heap::CreateFillerObjectAt(unsigned long, int, v8::internal::ClearRecordedSlots, v8::internal::ClearFreedMemoryMode)
+      6    0.0%    0.0%  T __pthread_exit_if_canceled
+      5    0.0%    0.0%  t v8::internal::NewSpace::AllocatedSinceLastGC()
+      5    0.0%    0.0%  t v8::internal::Heap::AllocateRaw(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
+      5    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::__unordered_map_hasher<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, v8::internal::LocalArrayBufferTracker::Hasher, true>, std::__1::__unordered_map_equal<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::equal_to<v8::internal::JSArrayBuffer*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation> > >::swap(std::__1::__hash_table<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::__unordered_map_hasher<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, v8::internal::LocalArrayBufferTracker::Hasher, true>, std::__1::__unordered_map_equal<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::equal_to<v8::internal::JSArrayBuffer*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation> > >&)
+      5    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<unsigned long, void*>*> std::__1::__hash_table<unsigned long, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long>, std::__1::allocator<unsigned long> >::find<unsigned long>(unsigned long const&)
+      5    0.0%    0.0%  T v8::internal::RootScavengeVisitor::VisitRootPointers(v8::internal::Root, char const*, v8::internal::Object**, v8::internal::Object**)
+      5    0.0%    0.0%  T v8::internal::NewSpace::UpdateInlineAllocationLimit(unsigned long)
+      5    0.0%    0.0%  T v8::internal::Heap::GetFillToAlign(unsigned long, v8::internal::AllocationAlignment)
+      5    0.0%    0.0%  T _fcntl
+      4    0.0%    0.0%  t void v8::internal::JSFunction::BodyDescriptor::IterateBody<v8::internal::IterateAndScavengePromotedObjectsVisitor>(v8::internal::Map*, v8::internal::HeapObject*, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*)
+      4    0.0%    0.0%  t v8::internal::ScavengingTask::RunInParallel()
+      4    0.0%    0.0%  t v8::internal::AllocationMemento* v8::internal::Heap::FindAllocationMemento<(v8::internal::Heap::FindMementoMode)1>(v8::internal::Map*, v8::internal::HeapObject*)
+      4    0.0%    0.0%  t _szone_size
+      4    0.0%    0.0%  t __pthread_mutex_check_init_slow
+      4    0.0%    0.0%  T v8::internal::V8::GetCurrentPlatform()
+      4    0.0%    0.0%  T v8::internal::SemiSpace::FixPagesFlags(long, long)
+      4    0.0%    0.0%  T v8::internal::Scavenger::ScavengePage(v8::internal::MemoryChunk*)
+      4    0.0%    0.0%  T v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    0.0%    0.0%  T v8::internal::Heap::GarbageCollectionEpilogue()
+      4    0.0%    0.0%  T node::NodePlatform::IdleTasksEnabled(v8::Isolate*)
+      3    0.0%    0.0%  t void v8::internal::BodyDescriptorBase::IteratePointers<v8::internal::IterateAndScavengePromotedObjectsVisitor>(v8::internal::HeapObject*, int, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*)
+      3    0.0%    0.0%  t v8::internal::ScavengingTask::~ScavengingTask()
+      3    0.0%    0.0%  t std::__1::unordered_map<unsigned long long, v8::internal::Cancelable*, std::__1::hash<unsigned long long>, std::__1::equal_to<unsigned long long>, std::__1::allocator<std::__1::pair<unsigned long long const, v8::internal::Cancelable*> > >::operator[](unsigned long long const&)
+      3    0.0%    0.0%  t _mvm_allocate_pages_securely
+      3    0.0%    0.0%  t _free_small
+      3    0.0%    0.0%  t __pthread_mutex_firstfit_unlock_slow
+      3    0.0%    0.0%  T v8::internal::Heap::CanExpandOldGeneration(unsigned long)
+      3    0.0%    0.0%  T v8::internal::GCTracer::Scope::~Scope()
+      3    0.0%    0.0%  T v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace)
+      3    0.0%    0.0%  T v8::internal::CancelableTask::CancelableTask(v8::internal::Isolate*)
+      3    0.0%    0.0%  T v8::base::Semaphore::Wait()
+      3    0.0%    0.0%  T _uv_hrtime
+      2    0.0%    0.0%  t void v8::internal::Worklist<v8::internal::HeapObject*, 64>::Segment::Update<v8::internal::IncrementalMarking::UpdateMarkingWorklistAfterScavenge()::$_0>(v8::internal::IncrementalMarking::UpdateMarkingWorklistAfterScavenge()::$_0)
+      2    0.0%    0.0%  t v8::internal::Worklist<v8::internal::TransitionArray*, 64>::Push(int, v8::internal::TransitionArray*)
+      2    0.0%    0.0%  t v8::internal::RememberedSet<(v8::internal::RememberedSetType)0>::FreeEmptyBuckets(v8::internal::MemoryChunk*)
+      2    0.0%    0.0%  t v8::internal::LargeObjectSpace::SizeOfObjects()
+      2    0.0%    0.0%  t v8::internal::IncrementalMarkingRootMarkingVisitor::~IncrementalMarkingRootMarkingVisitor()
+      2    0.0%    0.0%  t std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::resize(unsigned long)
+      2    0.0%    0.0%  t _tiny_free_list_add_ptr
+      2    0.0%    0.0%  t _small_malloc_from_free_list
+      2    0.0%    0.0%  t _malloc_print_configure
+      2    0.0%    0.0%  T v8::internal::Sweeper::FilterSweepingPagesScope::~FilterSweepingPagesScope()
+      2    0.0%    0.0%  T v8::internal::String::CalculateLineEnds(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, bool)
+      2    0.0%    0.0%  T v8::internal::StackFrameIteratorBase::StackFrameIteratorBase(v8::internal::Isolate*, bool)
+      2    0.0%    0.0%  T v8::internal::StackFrameIteratorBase::SingletonFor(v8::internal::StackFrame::Type)
+      2    0.0%    0.0%  T v8::internal::StackFrame::ComputeType(v8::internal::StackFrameIteratorBase const*, v8::internal::StackFrame::State*)
+      2    0.0%    0.0%  T v8::internal::SpaceWithLinearArea::ResumeAllocationObservers()
+      2    0.0%    0.0%  T v8::internal::SpaceWithLinearArea::InlineAllocationStep(unsigned long, unsigned long, unsigned long, unsigned long)
+      2    0.0%    0.0%  T v8::internal::Object* v8::internal::VisitWeakList<v8::internal::Context>(v8::internal::Heap*, v8::internal::Object*, v8::internal::WeakObjectRetainer*)
+      2    0.0%    0.0%  T v8::internal::NewSpace::EnsureAllocation(int, v8::internal::AllocationAlignment)
+      2    0.0%    0.0%  T v8::internal::JSObject::FastPropertyAt(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Representation, v8::internal::FieldIndex)
+      2    0.0%    0.0%  T v8::internal::InnerPointerToCodeCache::GetCacheEntry(unsigned long)
+      2    0.0%    0.0%  T v8::internal::IncrementalMarking::RecordWriteFromCode(v8::internal::HeapObject*, v8::internal::MaybeObject**, v8::internal::Isolate*)
+      2    0.0%    0.0%  T v8::internal::Heap::ProcessPretenuringFeedback()
+      2    0.0%    0.0%  T v8::internal::Heap::MonotonicallyIncreasingTimeInMs()
+      2    0.0%    0.0%  T v8::internal::Heap::IterateStrongRoots(v8::internal::RootVisitor*, v8::internal::VisitMode)
+      2    0.0%    0.0%  T v8::internal::Heap::AllocateRawWithLightRetry(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
+      2    0.0%    0.0%  T v8::internal::FreeListCategory::Free(unsigned long, unsigned long, v8::internal::FreeMode)
+      2    0.0%    0.0%  T v8::internal::FastGetOwnValuesOrEntries(v8::internal::Isolate*, v8::internal::Handle<v8::internal::JSReceiver>, bool, v8::internal::Handle<v8::internal::FixedArray>*)
+      2    0.0%    0.0%  T v8::internal::ArrayBufferTracker::PrepareToFreeDeadInNewSpace(v8::internal::Heap*)
+      2    0.0%    0.0%  T v8::internal::AllocationObserver::AllocationStep(int, unsigned long, unsigned long)
+      2    0.0%    0.0%  T v8::base::Mutex::Lock()
+      2    0.0%    0.0%  T v8::ArrayBuffer::GetContents()
+      2    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T _pthread_rwlock_destroy
+      2    0.0%    0.0%  T _pthread_kill
+      2    0.0%    0.0%  T ___gethex_D2A
+      2    0.0%    0.0%  T ___fread
+      2    0.0%    0.0%  T ___dtoa
+      1    0.0%    0.0%  t void std::__1::vector<v8::internal::Object*, std::__1::allocator<v8::internal::Object*> >::__push_back_slow_path<v8::internal::Object* const&>(v8::internal::Object* const&&&)
+      1    0.0%    0.0%  t void std::__1::vector<node::Environment::PromiseHookCallback, std::__1::allocator<node::Environment::PromiseHookCallback> >::__push_back_slow_path<node::Environment::PromiseHookCallback>(node::Environment::PromiseHookCallback&&)
+      1    0.0%    0.0%  t v8::internal::interpreter::BytecodeGenerator::VisitNoStackOverflowCheck(v8::internal::AstNode*)
+      1    0.0%    0.0%  t v8::internal::compiler::SpecialRPONumberer::ComputeAndInsertSpecialRPO(v8::internal::compiler::BasicBlock*, v8::internal::compiler::BasicBlock*)
+      1    0.0%    0.0%  t v8::internal::compiler::(anonymous namespace)::UpdateInLiveness(v8::internal::interpreter::Bytecode, v8::internal::compiler::BytecodeLivenessState&, v8::internal::interpreter::BytecodeArrayAccessor const&)
+      1    0.0%    0.0%  t v8::internal::compiler::(anonymous namespace)::SourcePositionWrapper::Reduce(v8::internal::compiler::Node*)
+      1    0.0%    0.0%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>::~Worklist()
+      1    0.0%    0.0%  t v8::internal::Space::CommittedMemory()
+      1    0.0%    0.0%  t v8::internal::SlotSet::FreeToBeFreedBuckets()
+      1    0.0%    0.0%  t v8::internal::ScavengeWeakObjectRetainer::RetainAs(v8::internal::Object*)
+      1    0.0%    0.0%  t v8::internal::Scanner::CombineSurrogatePair()
+      1    0.0%    0.0%  t v8::internal::PagedSpace::~PagedSpace()
+      1    0.0%    0.0%  t v8::internal::PageScavengingItem* v8::internal::ItemParallelJob::Task::GetItem<v8::internal::PageScavengingItem>()
+      1    0.0%    0.0%  t v8::internal::NewSpace::CommittedMemory()
+      1    0.0%    0.0%  t v8::internal::IdleScavengeObserver::Step(int, unsigned long, unsigned long)
+      1    0.0%    0.0%  t v8::internal::BinaryOperationSourceRanges::GetRange(v8::internal::SourceRangeKind)
+      1    0.0%    0.0%  t v8::base::Optional<v8::internal::AsyncTimedHistogram>::Init(v8::internal::AsyncTimedHistogram&&)
+      1    0.0%    0.0%  t v8::Platform::CallBlockingTaskOnWorkerThread(std::__1::unique_ptr<v8::Task, std::__1::default_delete<v8::Task> >)
+      1    0.0%    0.0%  t unsigned int v8::internal::StringHasher::HashSequentialString<unsigned char>(unsigned char const*, int, unsigned long long)
+      1    0.0%    0.0%  t std::__1::unordered_map<v8::internal::AllocationSite*, unsigned long, std::__1::hash<v8::internal::AllocationSite*>, std::__1::equal_to<v8::internal::AllocationSite*>, std::__1::allocator<std::__1::pair<v8::internal::AllocationSite* const, unsigned long> > >::operator[](v8::internal::AllocationSite*&&)
+      1    0.0%    0.0%  t std::__1::locale::__imp::install(std::__1::locale::facet*, long)
+      1    0.0%    0.0%  t std::__1::locale::__imp::__imp(unsigned long)
+      1    0.0%    0.0%  t std::__1::deque<std::__1::unique_ptr<node::inspector::Request, std::__1::default_delete<node::inspector::Request> >, std::__1::allocator<std::__1::unique_ptr<node::inspector::Request, std::__1::default_delete<node::inspector::Request> > > >::push_back(std::__1::unique_ptr<node::inspector::Request, std::__1::default_delete<node::inspector::Request> >&&)
+      1    0.0%    0.0%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      1    0.0%    0.0%  t std::__1::__hash_table<unsigned long long, std::__1::hash<unsigned long long>, std::__1::equal_to<unsigned long long>, std::__1::allocator<unsigned long long> >::__rehash(unsigned long)
+      1    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<nghttp2_rcbuf*, v8::Eternal<v8::String> >, std::__1::__unordered_map_hasher<nghttp2_rcbuf*, std::__1::__hash_value_type<nghttp2_rcbuf*, v8::Eternal<v8::String> >, std::__1::hash<nghttp2_rcbuf*>, true>, std::__1::__unordered_map_equal<nghttp2_rcbuf*, std::__1::__hash_value_type<nghttp2_rcbuf*, v8::Eternal<v8::String> >, std::__1::equal_to<nghttp2_rcbuf*>, true>, std::__1::allocator<std::__1::__hash_value_type<nghttp2_rcbuf*, v8::Eternal<v8::String> > > >::~__hash_table()
+      1    0.0%    0.0%  t std::__1::__hash_table<node::inspector::protocol::DispatcherBase::WeakPtr*, std::__1::hash<node::inspector::protocol::DispatcherBase::WeakPtr*>, std::__1::equal_to<node::inspector::protocol::DispatcherBase::WeakPtr*>, std::__1::allocator<node::inspector::protocol::DispatcherBase::WeakPtr*> >::clear()
+      1    0.0%    0.0%  t std::__1::__hash_table<node::Environment::CleanupHookCallback, node::Environment::CleanupHookCallback::Hash, node::Environment::CleanupHookCallback::Equal, std::__1::allocator<node::Environment::CleanupHookCallback> >::remove(std::__1::__hash_const_iterator<std::__1::__hash_node<node::Environment::CleanupHookCallback, void*>*>)
+      1    0.0%    0.0%  t std::__1::__hash_const_iterator<std::__1::__hash_node<std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, std::__1::__unordered_map_hasher<v8::internal::MemoryChunk*, std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, v8::internal::MemoryChunk::Hasher, true>, std::__1::__unordered_map_equal<v8::internal::MemoryChunk*, std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, std::__1::equal_to<v8::internal::MemoryChunk*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8::internal::MemoryChunk*, long> > >::find<v8::internal::MemoryChunk*>(v8::internal::MemoryChunk* const&) const
+      1    0.0%    0.0%  t std::__1::__function::__func<v8::internal::CodeStubAssembler::FillFixedArrayWithValue(v8::internal::ElementsKind, v8::internal::compiler::Node*, v8::internal::compiler::Node*, v8::internal::compiler::Node*, v8::internal::Heap::RootListIndex, v8::internal::CodeStubAssembler::ParameterMode)::$_19, std::__1::allocator<v8::internal::CodeStubAssembler::FillFixedArrayWithValue(v8::internal::ElementsKind, v8::internal::compiler::Node*, v8::internal::compiler::Node*, v8::internal::compiler::Node*, v8::internal::Heap::RootListIndex, v8::internal::CodeStubAssembler::ParameterMode)::$_19>, void (v8::internal::compiler::Node*, v8::internal::compiler::Node*)>::operator()(v8::internal::compiler::Node*&&, v8::internal::compiler::Node*&&)
+      1    0.0%    0.0%  t std::__1::__deque_base<void*, std::__1::allocator<void*> >::clear()
+      1    0.0%    0.0%  t std::__1::__deque_base<unsigned int*, std::__1::allocator<unsigned int*> >::~__deque_base()
+      1    0.0%    0.0%  t node::PosixSymbolDebuggingContext::~PosixSymbolDebuggingContext()
+      1    0.0%    0.0%  t node::Hrtime(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t _mprotect(void*, unsigned long, int)
+      1    0.0%    0.0%  t _map_images_nolock
+      1    0.0%    0.0%  t _free_tiny
+      1    0.0%    0.0%  t _create_scalable_szone
+      1    0.0%    0.0%  t __read_images
+      1    0.0%    0.0%  t __pthread_body
+      1    0.0%    0.0%  T void v8::internal::EvacuateVisitorBase::RawMigrateObject<(v8::internal::EvacuateVisitorBase::MigrationMode)1>(v8::internal::EvacuateVisitorBase*, v8::internal::HeapObject*, v8::internal::HeapObject*, int, v8::internal::AllocationSpace)
+      1    0.0%    0.0%  T v8::internal::wasm::WasmCodeManager::LookupNativeModule(unsigned long) const
+      1    0.0%    0.0%  T v8::internal::interpreter::InterpreterCompilationJob::InterpreterCompilationJob(v8::internal::ParseInfo*, v8::internal::FunctionLiteral*, v8::internal::AccountingAllocator*, v8::internal::ZoneVector<v8::internal::FunctionLiteral*>*)
+      1    0.0%    0.0%  T v8::internal::interpreter::BytecodeArrayRandomIterator::IsValid() const
+      1    0.0%    0.0%  T v8::internal::interpreter::BytecodeArrayBuilder::JumpIfNotNull(v8::internal::interpreter::BytecodeLabel*)
+      1    0.0%    0.0%  T v8::internal::compiler::SourcePositionTable::GetSourcePosition(v8::internal::compiler::Node*) const
+      1    0.0%    0.0%  T v8::internal::compiler::NodeProperties::GetTypeOrAny(v8::internal::compiler::Node*)
+      1    0.0%    0.0%  T v8::internal::compiler::Node::New(v8::internal::Zone*, unsigned int, v8::internal::compiler::Operator const*, int, v8::internal::compiler::Node* const*, bool)
+      1    0.0%    0.0%  T v8::internal::compiler::JSOperatorBuilder::CallRuntime(v8::internal::Runtime::Function const*, unsigned long)
+      1    0.0%    0.0%  T v8::internal::TimedHistogram::Start(v8::base::ElapsedTimer*, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::ThreadManager::Iterate(v8::internal::RootVisitor*)
+      1    0.0%    0.0%  T v8::internal::String::IsOneByteEqualTo(v8::internal::Vector<unsigned char const>)
+      1    0.0%    0.0%  T v8::internal::StandardFrame::IterateCompiledFrame(v8::internal::RootVisitor*) const
+      1    0.0%    0.0%  T v8::internal::StackFrameIterator::Advance()
+      1    0.0%    0.0%  T v8::internal::StackFrame::IteratePc(v8::internal::RootVisitor*, unsigned long*, unsigned long*, v8::internal::Code*)
+      1    0.0%    0.0%  T v8::internal::SpaceIterator::SpaceIterator(v8::internal::Heap*)
+      1    0.0%    0.0%  T v8::internal::Space::AllocationStep(int, unsigned long, int)
+      1    0.0%    0.0%  T v8::internal::SourcePositionTableIterator::SourcePositionTableIterator(v8::internal::ByteArray*)
+      1    0.0%    0.0%  T v8::internal::SourcePositionTableBuilder::AddEntry(v8::internal::PositionTableEntry const&)
+      1    0.0%    0.0%  T v8::internal::SharedFunctionInfo::SetExpectedNofPropertiesFromEstimate(v8::internal::FunctionLiteral*)
+      1    0.0%    0.0%  T v8::internal::ScopeInfo::ReceiverContextSlotIndex() const
+      1    0.0%    0.0%  T v8::internal::Scope::DeserializeScopeChain(v8::internal::Isolate*, v8::internal::Zone*, v8::internal::ScopeInfo*, v8::internal::DeclarationScope*, v8::internal::AstValueFactory*, v8::internal::Scope::DeserializationMode)
+      1    0.0%    0.0%  T v8::internal::Scavenger::AddPageToSweeperIfNecessary(v8::internal::MemoryChunk*)
+      1    0.0%    0.0%  T v8::internal::ScavengeJob::ScheduleIdleTaskIfNeeded(v8::internal::Heap*, int)
+      1    0.0%    0.0%  T v8::internal::ScavengeJob::ScheduleIdleTask(v8::internal::Heap*)
+      1    0.0%    0.0%  T v8::internal::Scanner::ScanIdentifierOrKeywordInner(v8::internal::Scanner::LiteralScope*)
+      1    0.0%    0.0%  T v8::internal::Scanner::Scan()
+      1    0.0%    0.0%  T v8::internal::Relocatable::PostGarbageCollectionProcessing(v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Relocatable::Iterate(v8::internal::Isolate*, v8::internal::RootVisitor*)
+      1    0.0%    0.0%  T v8::internal::PauseAllocationObserversScope::~PauseAllocationObserversScope()
+      1    0.0%    0.0%  T v8::internal::PagedSpace::TearDown()
+      1    0.0%    0.0%  T v8::internal::PagedSpace::FreeLinearAllocationArea()
+      1    0.0%    0.0%  T v8::internal::PagedSpace::AddPage(v8::internal::Page*)
+      1    0.0%    0.0%  T v8::internal::NewSpace::ResetLinearAllocationArea()
+      1    0.0%    0.0%  T v8::internal::ItemParallelJob::~ItemParallelJob()
+      1    0.0%    0.0%  T v8::internal::ItemParallelJob::Task::~Task()
+      1    0.0%    0.0%  T v8::internal::ItemParallelJob::Task::RunInternal()
+      1    0.0%    0.0%  T v8::internal::IncrementalMarking::WhiteToGreyAndPush(v8::internal::HeapObject*)
+      1    0.0%    0.0%  T v8::internal::IncrementalMarking::UpdateMarkedBytesAfterScavenge(unsigned long)
+      1    0.0%    0.0%  T v8::internal::IncrementalMarking::StepSizeToMakeProgress()
+      1    0.0%    0.0%  T v8::internal::IncrementalMarking::StartBlackAllocation()
+      1    0.0%    0.0%  T v8::internal::IncrementalMarking::RecordWriteSlow(v8::internal::HeapObject*, v8::internal::HeapObjectReference**, v8::internal::Object*)
+      1    0.0%    0.0%  T v8::internal::IncrementalMarking::Observer::Step(int, unsigned long, unsigned long)
+      1    0.0%    0.0%  T v8::internal::IncrementalMarking::AdvanceIncrementalMarkingOnAllocation()
+      1    0.0%    0.0%  T v8::internal::Heap::YoungGenerationMutatorUtilization()
+      1    0.0%    0.0%  T v8::internal::Heap::MergeAllocationSitePretenuringFeedback(std::__1::unordered_map<v8::internal::AllocationSite*, unsigned long, std::__1::hash<v8::internal::AllocationSite*>, std::__1::equal_to<v8::internal::AllocationSite*>, std::__1::allocator<std::__1::pair<v8::internal::AllocationSite* const, unsigned long> > > const&)
+      1    0.0%    0.0%  T v8::internal::Heap::GcSafeFindCodeForInnerPointer(unsigned long)
+      1    0.0%    0.0%  T v8::internal::Heap::ComputeFastPromotionMode()
+      1    0.0%    0.0%  T v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags)
+      1    0.0%    0.0%  T v8::internal::Heap::AddToRingBuffer(char const*)
+      1    0.0%    0.0%  T v8::internal::GlobalHandles::PostGarbageCollectionProcessing(v8::internal::GarbageCollector, v8::GCCallbackFlags)
+      1    0.0%    0.0%  T v8::internal::GlobalHandles::InvokeSecondPassPhantomCallbacks()
+      1    0.0%    0.0%  T v8::internal::GlobalHandles::DispatchPendingPhantomCallbacks(bool)
+      1    0.0%    0.0%  T v8::internal::GCTracer::Stop(v8::internal::GarbageCollector)
+      1    0.0%    0.0%  T v8::internal::GCTracer::Print() const
+      1    0.0%    0.0%  T v8::internal::GCTracer::CombinedMarkCompactSpeedInBytesPerMillisecond()
+      1    0.0%    0.0%  T v8::internal::GCTracer::AverageSurvivalRatio() const
+      1    0.0%    0.0%  T v8::internal::GCTracer::AverageSpeed(v8::base::RingBuffer<std::__1::pair<unsigned long long, double> > const&, std::__1::pair<unsigned long long, double> const&, double)
+      1    0.0%    0.0%  T v8::internal::GCTracer::AllocationThroughputInBytesPerMillisecond(double) const
+      1    0.0%    0.0%  T v8::internal::GCTracer::AddSurvivalRatio(double)
+      1    0.0%    0.0%  T v8::internal::FunctionCallbackArguments::FunctionCallbackArguments(v8::internal::Isolate*, v8::internal::Object*, v8::internal::HeapObject*, v8::internal::Object*, v8::internal::HeapObject*, v8::internal::Object**, int)
+      1    0.0%    0.0%  T v8::internal::FreeList::RemoveCategory(v8::internal::FreeListCategory*)
+      1    0.0%    0.0%  T v8::internal::FreeList::Free(unsigned long, unsigned long, v8::internal::FreeMode)
+      1    0.0%    0.0%  T v8::internal::FixedArray::ShrinkOrEmpty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::FixedArray>, int)
+      1    0.0%    0.0%  T v8::internal::FieldType::cast(v8::internal::Object*)
+      1    0.0%    0.0%  T v8::internal::Factory::TryNewCode(v8::internal::CodeDesc const&, v8::internal::Code::Kind, v8::internal::Handle<v8::internal::Object>, int, v8::internal::MaybeHandle<v8::internal::ByteArray>, v8::internal::MaybeHandle<v8::internal::DeoptimizationData>, v8::internal::Movability, unsigned int, bool, int, int, int)
+      1    0.0%    0.0%  T v8::internal::Factory::NewJSArrayWithElements(v8::internal::Handle<v8::internal::FixedArrayBase>, v8::internal::ElementsKind, int, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  T v8::internal::Factory::NewJSArray(v8::internal::ElementsKind, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  T v8::internal::Factory::NewFixedArrayWithFiller(v8::internal::Heap::RootListIndex, int, v8::internal::Object*, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  T v8::internal::Factory::AllocateRawArray(int, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  T v8::internal::Deserializer<v8::internal::BuiltinDeserializerAllocator>::ReadData(v8::internal::MaybeObject**, v8::internal::MaybeObject**, int, unsigned long)
+      1    0.0%    0.0%  T v8::internal::ConcurrentMarking::ClearLiveness(v8::internal::MemoryChunk*)
+      1    0.0%    0.0%  T v8::internal::Code::GetSafepointEntry(unsigned long)
+      1    0.0%    0.0%  T v8::internal::CancelableTaskManager::TryAbort(unsigned long long)
+      1    0.0%    0.0%  T v8::internal::BuiltinDeserializer::ExtractCodeObjectSize(int)
+      1    0.0%    0.0%  T v8::internal::ArrayBufferCollector::AddGarbageAllocations(std::__1::vector<v8::internal::JSArrayBuffer::Allocation, std::__1::allocator<v8::internal::JSArrayBuffer::Allocation> >)
+      1    0.0%    0.0%  T v8::base::OS::CommitPageSize()
+      1    0.0%    0.0%  T v8::base::Mutex::~Mutex()
+      1    0.0%    0.0%  T node::native_module::NativeModuleLoader::SourceObjectGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T _umask
+      1    0.0%    0.0%  T _swscanf
+      1    0.0%    0.0%  T _pthread_getname_np
+      1    0.0%    0.0%  T _pthread_get_stacksize_np
+      1    0.0%    0.0%  T _proc_pidinfo
+      1    0.0%    0.0%  T _mach_port_construct
+      1    0.0%    0.0%  T _free
+      1    0.0%    0.0%  T __pthread_qos_override_end_direct
+      1    0.0%    0.0%  T ___rec_search
+      1    0.0%    0.0%  T ___rec_ret
+      1    0.0%    0.0%  T ___rec_iput
+      1    0.0%    0.0%  T ___quorem_D2A
+
+ [Summary]:
+   ticks  total  nonlib   name
+  10021   81.3%   82.6%  JavaScript
+   1736   14.1%   14.3%  C++
+   1763   14.3%   14.5%  GC
+    185    1.5%          Shared libraries
+    380    3.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     50   35.0%    0.4%  T v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*)
+     31   21.7%    0.3%  T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     16   11.2%    0.1%  T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      9    6.3%    0.1%  T v8::internal::Runtime_ObjectValues(int, v8::internal::Object**, v8::internal::Isolate*)
+      8    5.6%    0.1%  T v8::internal::Runtime_StackGuard(int, v8::internal::Object**, v8::internal::Isolate*)
+      8    5.6%    0.1%  T v8::internal::Runtime_CompileOptimized_Concurrent(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    2.8%    0.0%  T v8::internal::IncrementalMarking::RecordWriteSlow(v8::internal::HeapObject*, v8::internal::HeapObjectReference**, v8::internal::Object*)
+      3    2.1%    0.0%  T v8::internal::Runtime_InterpreterDeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    1.4%    0.0%  T v8::internal::Runtime_NewObject(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    1.4%    0.0%  T v8::internal::Runtime_KeyedStoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    1.4%    0.0%  T v8::internal::IncrementalMarking::RecordWriteFromCode(v8::internal::HeapObject*, v8::internal::MaybeObject**, v8::internal::Isolate*)
+      2    1.4%    0.0%  T v8::ArrayBuffer::GetContents()
+      1    0.7%    0.0%  T v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.7%    0.0%  T v8::internal::Runtime_LoadPropertyWithInterceptor(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.7%    0.0%  T v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.7%    0.0%  T v8::internal::Runtime_KeyedLoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.7%    0.0%  T v8::internal::Runtime_DefineClass(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.7%    0.0%  T v8::internal::IncrementalMarking::WhiteToGreyAndPush(v8::internal::HeapObject*)
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   1697   13.8%  Builtin: CompileLazy
+   1218   71.8%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    637   52.3%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    263   41.3%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    180   68.4%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    119   66.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     55   30.6%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      6    3.3%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     80   30.4%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     80  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      3    1.1%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      3  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+    198   31.1%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     98   49.5%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     98  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     76   38.4%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     76  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     24   12.1%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     24  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+    114   17.9%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+    107   93.9%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     87   81.3%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     15   14.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      5    4.7%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      7    6.1%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      7  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     62    9.7%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     62  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     35   56.5%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     15   24.2%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     12   19.4%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+    287   23.6%      LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+    157   54.7%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    157  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    157  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    102   35.5%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+    102  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    102  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     28    9.8%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     28  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     28  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    235   19.3%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+    226   96.2%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    133   58.8%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     68   51.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     54   40.6%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     11    8.3%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     67   29.6%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     66   98.5%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      1    1.5%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     26   11.5%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     26  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      9    3.8%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      9  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      9  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     59    4.8%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     59  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     31   52.5%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     16   51.6%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     15   48.4%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     16   27.1%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     16  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     12   20.3%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     12  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    205   12.1%    LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+    111   54.1%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    111  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    111  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    111  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     77   37.6%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     77  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     77  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     40   51.9%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     23   29.9%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     14   18.2%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     17    8.3%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     17  100.0%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     17  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     14   82.4%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      3   17.6%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+    156    9.2%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+    147   94.2%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     86   58.5%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     44   51.2%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     44  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     32   37.2%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     32  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     10   11.6%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     10  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     38   25.9%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     37   97.4%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     19   51.4%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     11   29.7%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      7   18.9%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      1    2.6%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      1  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     23   15.6%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     23  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     23  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      9    5.8%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      9  100.0%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      9  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      8   88.9%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1   11.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     67    3.9%    LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     67  100.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     31   46.3%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     31  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     13   41.9%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     11   35.5%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      7   22.6%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     24   35.8%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     12   50.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     12  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     10   41.7%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     10  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2    8.3%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      2  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     12   17.9%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     12  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     12  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     31    1.8%    LazyCompile: *n /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:950
+     31  100.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     31  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     31  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     27   87.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      4   12.9%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+
+   1451   11.8%  LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    902   62.2%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    494   54.8%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    401   81.2%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    226   56.4%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    114   50.4%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     99   43.8%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     13    5.8%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+    158   39.4%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+    158  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     17    4.2%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     15   88.2%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      2   11.8%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     88   17.8%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     88  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     37   42.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     34   38.6%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     17   19.3%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      5    1.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      4   80.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      4  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      1   20.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    182   20.2%      LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     84   46.2%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     84  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     84  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     83   45.6%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     83  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     83  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     15    8.2%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     15  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     15  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    146   16.2%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+    146  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     62   42.5%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     40   64.5%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     22   35.5%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     56   38.4%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     56  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     28   19.2%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     28  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     80    8.9%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     57   71.3%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     49   86.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     24   49.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     18   36.7%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      7   14.3%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      5    8.8%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      5  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      3    5.3%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      3  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     23   28.7%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     23  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     23  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    239   16.5%    LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+    109   45.6%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    109  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    109  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    109  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    101   42.3%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+    101  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    101  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     44   43.6%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     33   32.7%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     24   23.8%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     29   12.1%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     29  100.0%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     29  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     23   79.3%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      6   20.7%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+    172   11.9%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+    162   94.2%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    111   68.5%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     59   53.2%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     59  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     41   36.9%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     41  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     11    9.9%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     11  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     33   20.4%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     32   97.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     15   46.9%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     13   40.6%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      4   12.5%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      1    3.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      1  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     18   11.1%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     18  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     18  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     10    5.8%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     10  100.0%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     10  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     10  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    135    9.3%    LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+    135  100.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     69   51.1%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     43   62.3%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     43  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     26   37.7%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     26  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     53   39.3%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     53  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     26   49.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     25   47.2%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2    3.8%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     13    9.6%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     13  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     13  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+
+   1014    8.2%  LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+   1014  100.0%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    432   42.6%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    432  100.0%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+    212   49.1%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    212  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    172   39.8%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+    172  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     48   11.1%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     48  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+    374   36.9%      LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+    181   48.4%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    181  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    181  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    158   42.2%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+    158  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    158  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     34    9.1%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     34  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     34  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    208   20.5%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+    208  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    208  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+    127   61.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     65   31.3%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     16    7.7%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+
+    908    7.4%  Builtin: CallFunction_ReceiverIsNullOrUndefined
+    630   69.4%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    398   63.2%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    212   53.3%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    175   82.5%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    119   68.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     52   29.7%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      4    2.3%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     34   16.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     34  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      3    1.4%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      3  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     76   19.1%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     76  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     32   42.1%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     28   36.8%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     16   21.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     69   17.3%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     35   50.7%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     35  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     26   37.7%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     26  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      8   11.6%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      8  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     41   10.3%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     34   82.9%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     25   73.5%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      5   14.7%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      4   11.8%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      7   17.1%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      7  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     89   14.1%      LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     43   48.3%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     43  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     43  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     41   46.1%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     41  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     41  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      5    5.6%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      5  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      5  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     85   13.5%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     79   92.9%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     51   64.6%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     25   49.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     19   37.3%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      7   13.7%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     22   27.8%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     22  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      6    7.6%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      6  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      6    7.1%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      6  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      6  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     58    9.2%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     58  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     27   46.6%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     16   59.3%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     11   40.7%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     18   31.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     18  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     13   22.4%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     13  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     96   10.6%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     94   97.9%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     44   46.8%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     43   97.7%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     17   39.5%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     15   34.9%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     11   25.6%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      1    2.3%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      1  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     34   36.2%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     15   44.1%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     15  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     15   44.1%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     15  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      4   11.8%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      4  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     16   17.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     16  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     16  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      2    2.1%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      2  100.0%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     57    6.3%    LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     33   57.9%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     33  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     33  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     33  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     21   36.8%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     21  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     21  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     14   66.7%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      4   19.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      3   14.3%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      3    5.3%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      3  100.0%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      3  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      3  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     55    6.1%    LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     55  100.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     26   47.3%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     15   57.7%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     15  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      9   34.6%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      9  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2    7.7%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      2  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     21   38.2%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     21  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     13   61.9%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      6   28.6%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2    9.5%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      8   14.5%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      8  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      8  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     32    3.5%    LazyCompile: *n /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2105
+     32  100.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     32  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     20   62.5%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     20  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     12   37.5%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     12  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     13    1.4%    LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:138
+     13  100.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     13  100.0%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     13  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      9   69.2%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      3   23.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1    7.7%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+
+    694    5.6%  LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+    350   50.4%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    350  100.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    350  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    350  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    338   96.6%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     11    3.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+    273   39.3%    LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+    273  100.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    273  100.0%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+    114   41.8%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+    114  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     94   34.4%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     94  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     64   23.4%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     64  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     69    9.9%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     69  100.0%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     69  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     51   73.9%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     51  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     18   26.1%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     18  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+
+    682    5.5%  LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:840
+    326   47.8%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    159   48.8%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    124   78.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     89   71.8%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     45   50.6%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     39   43.8%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      5    5.6%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     32   25.8%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     32  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      3    2.4%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      2   66.7%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1   33.3%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     33   20.8%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     33  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     23   69.7%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      7   21.2%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      3    9.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      2    1.3%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      2  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      2  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     73   22.4%      LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     37   50.7%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     37  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     37  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     28   38.4%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     28  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     28  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      8   11.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      8  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      8  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     65   19.9%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     65  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     29   44.6%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     29  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     19   29.2%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     12   63.2%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      7   36.8%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     17   26.2%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     17  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     29    8.9%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     29  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     25   86.2%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     11   44.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     11   44.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      3   12.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      4   13.8%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      4  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+    168   24.6%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+    159   94.6%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     64   40.3%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     30   46.9%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     30  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     27   42.2%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     27  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      7   10.9%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      7  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     64   40.3%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     64  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     33   51.6%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     22   34.4%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      9   14.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     31   19.5%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     31  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     31  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      9    5.4%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      9  100.0%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      9  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      7   77.8%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2   22.2%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+    106   15.5%    LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     49   46.2%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     49  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     49  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     27   55.1%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     11   22.4%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     11   22.4%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     42   39.6%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     42  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     42  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     42  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     15   14.2%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     15  100.0%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     15  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     14   93.3%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1    6.7%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     74   10.9%    LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     74  100.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     37   50.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     37  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     17   45.9%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     17   45.9%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      3    8.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     28   37.8%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     16   57.1%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     16  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     12   42.9%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     12  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      9   12.2%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      9  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      9  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      7    1.0%    LazyCompile: *n /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1822
+      6   85.7%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      4   66.7%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      4  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      4  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2   33.3%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      1   14.3%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      1  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+
+    518    4.2%  Builtin: Call_ReceiverIsNullOrUndefined
+    388   74.9%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    254   65.5%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    145   57.1%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    111   76.6%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     62   55.9%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     41   36.9%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      8    7.2%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     30   20.7%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     30  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      4    2.8%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      4  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     47   18.5%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     25   53.2%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     25  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     17   36.2%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     17  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      5   10.6%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      5  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     38   15.0%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     38  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     15   39.5%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     15   39.5%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      8   21.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     24    9.4%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     17   70.8%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     13   76.5%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      2   11.8%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2   11.8%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      7   29.2%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      7  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     56   14.4%      LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     24   42.9%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     24  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     24  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     23   41.1%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     23  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     22   95.7%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      1    4.3%            LazyCompile: *parse /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:5031
+      8   14.3%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      8  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      8  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1    1.8%        LazyCompile: ~r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      1  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      1  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     40   10.3%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     37   92.5%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     27   73.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     18   66.7%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      5   18.5%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      4   14.8%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     10   27.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     10  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      3    7.5%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      3  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      3  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     38    9.8%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     38  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     16   42.1%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     16  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     14   36.8%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     11   78.6%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      3   21.4%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      8   21.1%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      8  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     54   10.4%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     51   94.4%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     27   52.9%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     26   96.3%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     12   46.2%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     11   42.3%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      3   11.5%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      1    3.7%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      1  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     15   29.4%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      8   53.3%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      8  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      6   40.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      6  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1    6.7%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      1  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      9   17.6%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      9  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      9  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      3    5.6%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      3  100.0%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      3  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      3  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     41    7.9%    LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     20   48.8%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     20  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     20  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     20  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     12   29.3%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     12  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     12  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     10   83.3%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2   16.7%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      9   22.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      9  100.0%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      9  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      8   88.9%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1   11.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     21    4.1%    LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     21  100.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     11   52.4%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     11  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      6   54.5%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      4   36.4%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      1    9.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      7   33.3%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      3   42.9%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      3  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      3   42.9%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      3  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1   14.3%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      1  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      3   14.3%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      3  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      3  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+
+    460    3.7%  Builtin: ArgumentsAdaptorTrampoline
+    380   82.6%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    256   67.4%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    117   45.7%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     91   77.8%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     67   73.6%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     24   26.4%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     26   22.2%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     26  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     68   26.6%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     33   48.5%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     33  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     31   45.6%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     31  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      4    5.9%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      4  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     43   16.8%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     43  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     32   74.4%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      6   14.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      5   11.6%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     28   10.9%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     28  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     22   78.6%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      5   17.9%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1    3.6%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     96   25.3%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     94   97.9%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     42   44.7%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     42  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     39   41.5%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     23   59.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     11   28.2%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      5   12.8%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     13   13.8%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     13  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2    2.1%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      2  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     21    5.5%      LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     10   47.6%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     10  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     10  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      9   42.9%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      9  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      9  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2    9.5%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      2  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      7    1.8%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      7  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      6   85.7%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      4   66.7%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2   33.3%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      1   14.3%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      1  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     31    6.7%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     26   83.9%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     19   73.1%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     19  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     10   52.6%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      8   42.1%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      1    5.3%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      5   19.2%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      2   40.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2   40.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1   20.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      1  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2    7.7%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      2  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      5   16.1%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      5  100.0%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      5  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      5  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     17    3.7%    LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     13   76.5%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     13  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     13  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     13  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2   11.8%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      2  100.0%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      2   11.8%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      1   50.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1   50.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+
+    414    3.4%  T _setiopolicy_np
+
+    380    3.1%  UNKNOWN
+
+    343    2.8%  LazyCompile: *n /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1090
+    308   89.8%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    234   76.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    123   52.6%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    112   91.1%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     74   66.1%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     37   33.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     11    8.9%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     11  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     65   27.8%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     34   52.3%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     34  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     27   41.5%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     27  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      4    6.2%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      4  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     46   19.7%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     46  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     38   82.6%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      6   13.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2    4.3%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     34   11.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     34  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     34  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     24   70.6%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      8   23.5%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2    5.9%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     23    7.5%      LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     15   65.2%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     15  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     15  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      6   26.1%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      6  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      6  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      2    8.7%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      2  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     17    5.5%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     17  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     17  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     10   58.8%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      7   41.2%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     33    9.6%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     33  100.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     24   72.7%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     24  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     13   54.2%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      8   33.3%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      3   12.5%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      9   27.3%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      9  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      9  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+
+    338    2.7%  LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+    324   95.9%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    143   44.1%      LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     66   46.2%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     66  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     66  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     63   44.1%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     63  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     63  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     14    9.8%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     14  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     14  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    132   40.7%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    125   94.7%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     69   55.2%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     69  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     45   36.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     45  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     11    8.8%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     11  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      7    5.3%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      6   85.7%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      6  100.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      1   14.3%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     49   15.1%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     49  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     49  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     29   59.2%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     13   26.5%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      7   14.3%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     14    4.1%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     14  100.0%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     14  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     13   92.9%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     13  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      1    7.1%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      1  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+
+    258    2.1%  LazyCompile: *e.length.e /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2623
+    258  100.0%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    258  100.0%      LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+    138   53.5%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+    138  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    138  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+    100   38.8%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    100  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    100  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     20    7.8%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+     20  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     20  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+
+    244    2.0%  LazyCompile: *n /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2105
+    244  100.0%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    244  100.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    172   70.5%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+    172  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+    156   90.7%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      9    5.2%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      7    4.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     72   29.5%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     72  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     68   94.4%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      4    5.6%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+
+    180    1.5%  t v8::internal::Scavenger::ScavengeObject(v8::internal::HeapObjectReference**, v8::internal::HeapObject*)
+
+    162    1.3%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:103
+    140   86.4%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     89   63.6%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     47   52.8%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     34   72.3%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     19   55.9%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     14   41.2%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      1    2.9%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     13   27.7%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     13  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     23   25.8%        LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     16   69.6%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     16  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      7   30.4%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      7  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     13   14.6%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     13  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      7   53.8%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      3   23.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      3   23.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      6    6.7%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      6  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      5   83.3%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      1   16.7%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     45   32.1%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     44   97.8%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     17   38.6%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     17  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     14   31.8%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     14  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     13   29.5%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      6   46.2%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      4   30.8%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      3   23.1%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1    2.2%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      1  100.0%          LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      1  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      5    3.6%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      5  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      5  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      4   80.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1   20.0%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+     12    7.4%    LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+     12  100.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+     10   83.3%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      9   90.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      4   44.4%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      3   33.3%            LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2   22.2%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      1   10.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      1  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      2   16.7%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      2  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2  100.0%            LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+     10    6.2%    LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      6   60.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      6  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      6  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      6  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2   20.0%      LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1471
+      2  100.0%        LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2  100.0%          LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1   50.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      1   50.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:1009
+      2   20.0%      LazyCompile: *o /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2380
+      2  100.0%        LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+      2  100.0%          LazyCompile: *t /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:2339
+      2  100.0%            LazyCompile: *r /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/terser/ast.js:1:843
+
+    139    1.1%  /usr/lib/system/libsystem_kernel.dylib
+

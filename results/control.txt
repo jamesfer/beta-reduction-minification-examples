@@ -1,0 +1,1333 @@
+Statistical profiling result from isolate-0x104002800-v8.log, (11714 ticks, 310 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    146    1.2%          /usr/lib/system/libsystem_kernel.dylib
+     22    0.2%          /usr/lib/system/libsystem_pthread.dylib
+     13    0.1%          /usr/lib/system/libsystem_platform.dylib
+      6    0.1%          /usr/lib/libc++abi.dylib
+      3    0.0%          /usr/lib/system/libsystem_malloc.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+   1555   13.3%   13.5%  Builtin: CompileLazy
+   1377   11.8%   11.9%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+   1032    8.8%    9.0%  LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    859    7.3%    7.5%  Builtin: CallFunction_ReceiverIsNullOrUndefined
+    653    5.6%    5.7%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+    607    5.2%    5.3%  LazyCompile: *previousCalls /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:12
+    525    4.5%    4.6%  Builtin: Call_ReceiverIsNullOrUndefined
+    479    4.1%    4.2%  Builtin: ArgumentsAdaptorTrampoline
+    324    2.8%    2.8%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+    305    2.6%    2.6%  LazyCompile: *constant /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:112:21
+    261    2.2%    2.3%  LazyCompile: *matches.length.longest /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:265:13
+    240    2.0%    2.1%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:235:36
+    132    1.1%    1.1%  LazyCompile: *previousCalls /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:12
+    126    1.1%    1.1%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:13:12
+    104    0.9%    0.9%  LazyCompile: *matches /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:259:21
+     99    0.8%    0.9%  LazyCompile: *constant /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:126:21
+     91    0.8%    0.8%  LazyCompile: *bindResultA2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:256:9
+     89    0.8%    0.8%  LazyCompile: *a /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:84:51
+     71    0.6%    0.6%  Builtin: ArrayPrototypeSlice
+     70    0.6%    0.6%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     62    0.5%    0.5%  LazyCompile: *fallbackList /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:12
+     60    0.5%    0.5%  Builtin: GrowFastSmiOrObjectElements
+     56    0.5%    0.5%  Builtin: ExtractFastJSArray
+     47    0.4%    0.4%  Builtin: StrictEqual
+     36    0.3%    0.3%  LazyCompile: *a /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:20:12
+     30    0.3%    0.3%  LazyCompile: *matchers.reduce.liftA2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:271:35
+     30    0.3%    0.3%  LazyCompile: *isNumberLiteral /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:207:25
+     26    0.2%    0.2%  LazyCompile: *previousCalls /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:12
+     25    0.2%    0.2%  LazyCompile: *value1 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:98:31
+     22    0.2%    0.2%  Builtin: RecordWrite
+     20    0.2%    0.2%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:201:12
+     19    0.2%    0.2%  LazyCompile: *fallbackExists /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:66:24
+     18    0.2%    0.2%  Builtin: ObjectAssign
+     14    0.1%    0.1%  LazyCompile: *operationExpression /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:315:29
+     11    0.1%    0.1%  LazyCompile: *numberLiteralExpression /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:303:33
+     10    0.1%    0.1%  LazyCompile: *value2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:98:60
+      9    0.1%    0.1%  LazyCompile: *recurse /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:133:28
+      8    0.1%    0.1%  LazyCompile: *groupExpression /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:329:25
+      8    0.1%    0.1%  Builtin: InterpreterEntryTrampoline
+      7    0.1%    0.1%  LazyCompile: *b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:84:75
+      6    0.1%    0.1%  LazyCompile: *lazy /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:345:41
+      5    0.0%    0.0%  LazyCompile: *args /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:24:12
+      5    0.0%    0.0%  Builtin: CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit
+      4    0.0%    0.0%  Script: ~<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/benchmark.js:1:11
+      4    0.0%    0.0%  Builtin: CallFunction_ReceiverIsAny
+      3    0.0%    0.0%  LazyCompile: ~groupExpression /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:329:25
+      3    0.0%    0.0%  LazyCompile: *lazy /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:351:68
+      3    0.0%    0.0%  LazyCompile: *bindResultA2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:134:98
+      2    0.0%    0.0%  LazyCompile: ~bindResultA2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:256:9
+      2    0.0%    0.0%  Builtin: StringEqual
+      2    0.0%    0.0%  Builtin: CallWithArrayLike
+      1    0.0%    0.0%  RegExp: ^[0-9]+$
+      1    0.0%    0.0%  LazyCompile: ~validateString internal/validators.js:123:24
+      1    0.0%    0.0%  LazyCompile: ~strings.map /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:360:32
+      1    0.0%    0.0%  LazyCompile: ~parse /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:358:15
+      1    0.0%    0.0%  LazyCompile: ~numberLiteralExpression /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:303:33
+      1    0.0%    0.0%  LazyCompile: ~numberLit /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:193:19
+      1    0.0%    0.0%  LazyCompile: ~now perf_hooks.js:133:13
+      1    0.0%    0.0%  LazyCompile: ~identifierExpression /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:291:30
+      1    0.0%    0.0%  LazyCompile: ~hrtime internal/process/per_thread.js:102:18
+      1    0.0%    0.0%  LazyCompile: ~fallbackIfNothing /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:88
+      1    0.0%    0.0%  LazyCompile: ~bindResultA2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:134:98
+      1    0.0%    0.0%  LazyCompile: ~bindResult /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:90:20
+      1    0.0%    0.0%  LazyCompile: ~b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:84:75
+      1    0.0%    0.0%  LazyCompile: ~askTokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:125:19
+      1    0.0%    0.0%  LazyCompile: *lazy /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:349:73
+      1    0.0%    0.0%  Builtin: RegExpPrototypeTestFast
+      1    0.0%    0.0%  Builtin: RegExpPrototypeTest
+      1    0.0%    0.0%  Builtin: KeyedStoreIC
+      1    0.0%    0.0%  Builtin: KeyedLoadIC
+      1    0.0%    0.0%  Builtin: HandleApiCall
+      1    0.0%    0.0%  Builtin: Call_ReceiverIsAny
+
+ [C++]:
+   ticks  total  nonlib   name
+    381    3.3%    3.3%  T _setiopolicy_np
+    176    1.5%    1.5%  t v8::internal::Scavenger::ScavengeObject(v8::internal::HeapObjectReference**, v8::internal::HeapObject*)
+     93    0.8%    0.8%  t void v8::internal::BodyDescriptorBase::IteratePointers<v8::internal::ScavengeVisitor>(v8::internal::HeapObject*, int, int, v8::internal::ScavengeVisitor*)
+     81    0.7%    0.7%  T __kernelrpc_mach_port_request_notification
+     62    0.5%    0.5%  T v8::internal::Scavenger::Process(v8::internal::OneshotBarrier*)
+     39    0.3%    0.3%  T v8::internal::Bitmap::Clear()
+     38    0.3%    0.3%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>::Pop(int, std::__1::pair<v8::internal::HeapObject*, int>*)
+     38    0.3%    0.3%  T _thread_get_state
+     37    0.3%    0.3%  T v8::internal::Heap::Scavenge()
+     30    0.3%    0.3%  T node::NodePlatform::MonotonicallyIncreasingTime()
+     28    0.2%    0.2%  t void v8::internal::BodyDescriptorApply<v8::internal::CallIterateBody, void, v8::internal::Map*, v8::internal::HeapObject*, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*>(v8::internal::InstanceType, v8::internal::Map*, v8::internal::HeapObject*, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*)
+     24    0.2%    0.2%  T node::native_module::NativeModuleLoader::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     18    0.2%    0.2%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>::Push(int, std::__1::pair<v8::internal::HeapObject*, int>)
+     18    0.2%    0.2%  t _tiny_malloc_from_free_list
+     17    0.1%    0.1%  t _tiny_malloc_should_clear
+     17    0.1%    0.1%  t _tiny_free_no_lock
+     17    0.1%    0.1%  T v8::internal::SerializerDeserializer::Iterate(v8::internal::Isolate*, v8::internal::RootVisitor*)
+     14    0.1%    0.1%  T v8::internal::RootScavengeVisitor::ScavengePointer(v8::internal::Object**)
+     13    0.1%    0.1%  t v8::internal::Worklist<std::__1::pair<v8::internal::HeapObject*, int>, 256>::Worklist(int)
+     13    0.1%    0.1%  t v8::internal::HeapObject::SizeFromMap(v8::internal::Map*) const
+     13    0.1%    0.1%  T v8::internal::NewSpace::UpdateLinearAllocationArea()
+     13    0.1%    0.1%  T _getattrlistbulk
+     13    0.1%    0.1%  T ___pthread_init
+     12    0.1%    0.1%  t v8::internal::LocalAllocator::AllocateInLAB(int, v8::internal::AllocationAlignment)
+     12    0.1%    0.1%  t _small_malloc_should_clear
+     12    0.1%    0.1%  T v8::internal::ArrayBufferTracker::ProcessBuffers(v8::internal::Page*, v8::internal::ArrayBufferTracker::ProcessingMode)
+     10    0.1%    0.1%  T v8::internal::ItemParallelJob::Run(std::__1::shared_ptr<v8::internal::Counters>)
+      8    0.1%    0.1%  t _tiny_size
+      8    0.1%    0.1%  t __malloc_initialize
+      8    0.1%    0.1%  T v8::internal::RootScavengeVisitor::VisitRootPointer(v8::internal::Root, char const*, v8::internal::Object**)
+      7    0.1%    0.1%  t __pthread_mutex_check_init_slow
+      7    0.1%    0.1%  t ___vfprintf
+      7    0.1%    0.1%  T v8::internal::StandardFrame::IterateCompiledFrame(v8::internal::RootVisitor*) const
+      7    0.1%    0.1%  T v8::internal::SemiSpace::FixPagesFlags(long, long)
+      7    0.1%    0.1%  T v8::internal::Heap::GetFillToAlign(unsigned long, v8::internal::AllocationAlignment)
+      7    0.1%    0.1%  T v8::internal::FastGetOwnValuesOrEntries(v8::internal::Isolate*, v8::internal::Handle<v8::internal::JSReceiver>, bool, v8::internal::Handle<v8::internal::FixedArray>*)
+      7    0.1%    0.1%  T ___fread
+      6    0.1%    0.1%  t void v8::internal::BodyDescriptorBase::IteratePointers<v8::internal::IterateAndScavengePromotedObjectsVisitor>(v8::internal::HeapObject*, int, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*)
+      6    0.1%    0.1%  t v8::internal::Heap::AllocateRaw(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
+      6    0.1%    0.1%  t _small_malloc_from_free_list
+      5    0.0%    0.0%  t v8::internal::PagedSpace::Available()
+      5    0.0%    0.0%  t v8::internal::FixStaleLeftTrimmedHandlesVisitor::VisitRootPointers(v8::internal::Root, char const*, v8::internal::Object**, v8::internal::Object**)
+      5    0.0%    0.0%  t _free_small
+      5    0.0%    0.0%  T v8::internal::Scavenger::IterateAndScavengePromotedObject(v8::internal::HeapObject*, int)
+      5    0.0%    0.0%  T v8::internal::IncrementalMarking::WhiteToGreyAndPush(v8::internal::HeapObject*)
+      5    0.0%    0.0%  T v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags)
+      5    0.0%    0.0%  T v8::internal::GCTracer::Scope::~Scope()
+      5    0.0%    0.0%  T v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace)
+      4    0.0%    0.0%  t void v8::internal::BodyDescriptorBase::IterateBodyImpl<v8::internal::ScavengeVisitor>(v8::internal::Map*, v8::internal::HeapObject*, int, int, v8::internal::ScavengeVisitor*)
+      4    0.0%    0.0%  t v8::internal::NewSpace::AllocatedSinceLastGC()
+      4    0.0%    0.0%  t std::__1::__hash_table<unsigned long long, std::__1::hash<unsigned long long>, std::__1::equal_to<unsigned long long>, std::__1::allocator<unsigned long long> >::__rehash(unsigned long)
+      4    0.0%    0.0%  T v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    0.0%    0.0%  T v8::internal::PagedSpace::TearDown()
+      4    0.0%    0.0%  T v8::internal::Heap::GarbageCollectionEpilogue()
+      4    0.0%    0.0%  T v8::internal::Heap::CanExpandOldGeneration(unsigned long)
+      4    0.0%    0.0%  T v8::base::Mutex::Lock()
+      4    0.0%    0.0%  T __pthread_exit_if_canceled
+      4    0.0%    0.0%  T ___gethex_D2A
+      3    0.0%    0.0%  t void v8::internal::JSFunction::BodyDescriptor::IterateBody<v8::internal::IterateAndScavengePromotedObjectsVisitor>(v8::internal::Map*, v8::internal::HeapObject*, int, v8::internal::IterateAndScavengePromotedObjectsVisitor*)
+      3    0.0%    0.0%  t v8::internal::LargeObjectSpace::SizeOfObjects()
+      3    0.0%    0.0%  t std::__1::deque<std::__1::unique_ptr<node::inspector::Request, std::__1::default_delete<node::inspector::Request> >, std::__1::allocator<std::__1::unique_ptr<node::inspector::Request, std::__1::default_delete<node::inspector::Request> > > >::push_back(std::__1::unique_ptr<node::inspector::Request, std::__1::default_delete<node::inspector::Request> >&&)
+      3    0.0%    0.0%  t std::__1::__hash_const_iterator<std::__1::__hash_node<std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, std::__1::__unordered_map_hasher<v8::internal::MemoryChunk*, std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, v8::internal::MemoryChunk::Hasher, true>, std::__1::__unordered_map_equal<v8::internal::MemoryChunk*, std::__1::__hash_value_type<v8::internal::MemoryChunk*, long>, std::__1::equal_to<v8::internal::MemoryChunk*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8::internal::MemoryChunk*, long> > >::find<v8::internal::MemoryChunk*>(v8::internal::MemoryChunk* const&) const
+      3    0.0%    0.0%  t _uv__hrtime
+      3    0.0%    0.0%  T v8::internal::V8::GetCurrentPlatform()
+      3    0.0%    0.0%  T v8::internal::String::CalculateLineEnds(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, bool)
+      3    0.0%    0.0%  T v8::internal::StackFrame::ComputeType(v8::internal::StackFrameIteratorBase const*, v8::internal::StackFrame::State*)
+      3    0.0%    0.0%  T v8::internal::SpaceWithLinearArea::ComputeLimit(unsigned long, unsigned long, unsigned long)
+      3    0.0%    0.0%  T v8::internal::RootScavengeVisitor::VisitRootPointers(v8::internal::Root, char const*, v8::internal::Object**, v8::internal::Object**)
+      3    0.0%    0.0%  T v8::internal::Object* v8::internal::VisitWeakList<v8::internal::Context>(v8::internal::Heap*, v8::internal::Object*, v8::internal::WeakObjectRetainer*)
+      3    0.0%    0.0%  T v8::internal::NewSpace::EnsureAllocation(int, v8::internal::AllocationAlignment)
+      3    0.0%    0.0%  T v8::internal::ItemParallelJob::~ItemParallelJob()
+      3    0.0%    0.0%  T v8::internal::ItemParallelJob::Task::RunInternal()
+      3    0.0%    0.0%  T v8::internal::Heap::CreateFillerObjectAt(unsigned long, int, v8::internal::ClearRecordedSlots, v8::internal::ClearFreedMemoryMode)
+      3    0.0%    0.0%  T v8::internal::CancelableTaskManager::TryAbort(unsigned long long)
+      3    0.0%    0.0%  T v8::internal::AllocationObserver::AllocationStep(int, unsigned long, unsigned long)
+      3    0.0%    0.0%  T v8::base::ConditionVariable::~ConditionVariable()
+      3    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  T _pthread_getname_np
+      2    0.0%    0.0%  t void v8::internal::Worklist<v8::internal::HeapObject*, 64>::Segment::Update<v8::internal::IncrementalMarking::UpdateMarkingWorklistAfterScavenge()::$_0>(v8::internal::IncrementalMarking::UpdateMarkingWorklistAfterScavenge()::$_0)
+      2    0.0%    0.0%  t v8::internal::SlotSet::FreeEmptyBuckets()
+      2    0.0%    0.0%  t v8::internal::PagedSpace::AllocateRaw(int, v8::internal::AllocationAlignment)
+      2    0.0%    0.0%  t std::__1::locale::__imp::__imp(unsigned long)
+      2    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::__unordered_map_hasher<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, v8::internal::LocalArrayBufferTracker::Hasher, true>, std::__1::__unordered_map_equal<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::equal_to<v8::internal::JSArrayBuffer*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation> > >::swap(std::__1::__hash_table<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::__unordered_map_hasher<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, v8::internal::LocalArrayBufferTracker::Hasher, true>, std::__1::__unordered_map_equal<v8::internal::JSArrayBuffer*, std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation>, std::__1::equal_to<v8::internal::JSArrayBuffer*>, true>, std::__1::allocator<std::__1::__hash_value_type<v8::internal::JSArrayBuffer*, v8::internal::JSArrayBuffer::Allocation> > >&)
+      2    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<unsigned long, void*>*> std::__1::__hash_table<unsigned long, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long>, std::__1::allocator<unsigned long> >::find<unsigned long>(unsigned long const&)
+      2    0.0%    0.0%  t __pthread_bsdthread_init
+      2    0.0%    0.0%  T v8::internal::StackFrame::IteratePc(v8::internal::RootVisitor*, unsigned long*, unsigned long*, v8::internal::Code*)
+      2    0.0%    0.0%  T v8::internal::SpaceWithLinearArea::ResumeAllocationObservers()
+      2    0.0%    0.0%  T v8::internal::Space::AllocationStep(int, unsigned long, int)
+      2    0.0%    0.0%  T v8::internal::Scavenger::Finalize()
+      2    0.0%    0.0%  T v8::internal::ItemParallelJob::Task::~Task()
+      2    0.0%    0.0%  T v8::internal::InnerPointerToCodeCache::GetCacheEntry(unsigned long)
+      2    0.0%    0.0%  T v8::internal::IncrementalMarking::RecordWriteSlow(v8::internal::HeapObject*, v8::internal::HeapObjectReference**, v8::internal::Object*)
+      2    0.0%    0.0%  T v8::internal::Histogram::AddSample(int)
+      2    0.0%    0.0%  T v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags)
+      2    0.0%    0.0%  T v8::internal::GCTracer::AverageSpeed(v8::base::RingBuffer<std::__1::pair<unsigned long long, double> > const&, std::__1::pair<unsigned long long, double> const&, double)
+      2    0.0%    0.0%  T v8::internal::Factory::NewCodeForDeserialization(unsigned int)
+      2    0.0%    0.0%  T v8::internal::ArrayBufferCollector::FreeAllocationsOnBackgroundThread()
+      2    0.0%    0.0%  T v8::base::Semaphore::Wait()
+      2    0.0%    0.0%  T v8::base::Semaphore::Signal()
+      2    0.0%    0.0%  T v8::ArrayBuffer::GetContents()
+      2    0.0%    0.0%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::NodePlatform::IdleTasksEnabled(v8::Isolate*)
+      2    0.0%    0.0%  T _pthread_rwlock_destroy
+      2    0.0%    0.0%  T _pthread_override_qos_class_start_np
+      2    0.0%    0.0%  T _pthread_get_stacksize_np
+      2    0.0%    0.0%  T ___rec_search
+      2    0.0%    0.0%  T ___rec_ret
+      1    0.0%    0.0%  t void v8::internal::LookupIterator::NextInternal<false>(v8::internal::Map*, v8::internal::JSReceiver*)
+      1    0.0%    0.0%  t void v8::internal::BodyDescriptorBase::IterateMaybeWeakPointers<v8::internal::MarkingVisitor<(v8::internal::FixedArrayVisitationMode)1, (v8::internal::TraceRetainingPathMode)1, v8::internal::IncrementalMarkingState> >(v8::internal::HeapObject*, int, int, v8::internal::MarkingVisitor<(v8::internal::FixedArrayVisitationMode)1, (v8::internal::TraceRetainingPathMode)1, v8::internal::IncrementalMarkingState>*)
+      1    0.0%    0.0%  t v8::internal::tracing::ScopedTracer::~ScopedTracer()
+      1    0.0%    0.0%  t v8::internal::compiler::LiveRangeBoundArray::FindConnectableSubranges(v8::internal::compiler::InstructionBlock const*, v8::internal::compiler::InstructionBlock const*, v8::internal::compiler::FindResult*) const
+      1    0.0%    0.0%  t v8::internal::compiler::Edge::UpdateTo(v8::internal::compiler::Node*)
+      1    0.0%    0.0%  t v8::internal::Worklist<v8::internal::TransitionArray*, 64>::Push(int, v8::internal::TransitionArray*)
+      1    0.0%    0.0%  t v8::internal::StatsCounter::Increment()
+      1    0.0%    0.0%  t v8::internal::SkipList::Update(unsigned long, int)
+      1    0.0%    0.0%  t v8::internal::Scope::LookupLocal(v8::internal::AstRawString const*)
+      1    0.0%    0.0%  t v8::internal::RememberedSet<(v8::internal::RememberedSetType)0>::FreeEmptyBuckets(v8::internal::MemoryChunk*)
+      1    0.0%    0.0%  t v8::internal::ParserBase<v8::internal::Parser>::ParseAndClassifyIdentifier(bool*)
+      1    0.0%    0.0%  t v8::internal::OneshotBarrier::Wait()
+      1    0.0%    0.0%  t v8::internal::IncrementalMarkingRootMarkingVisitor::~IncrementalMarkingRootMarkingVisitor()
+      1    0.0%    0.0%  t v8::internal::IdleScavengeObserver::Step(int, unsigned long, unsigned long)
+      1    0.0%    0.0%  t v8::internal::EvacuateNewSpacePageVisitor<(v8::internal::PageEvacuationMode)0>::~EvacuateNewSpacePageVisitor()
+      1    0.0%    0.0%  t v8::internal::DescriptorArray::Set(int, v8::internal::Name*, v8::internal::MaybeObject*, v8::internal::PropertyDetails)
+      1    0.0%    0.0%  t v8::base::TemplateHashMapImpl<int, v8::internal::compiler::BytecodeLiveness, v8::base::KeyEqualityMatcher<int>, v8::internal::ZoneAllocationPolicy>::FillEmptyEntry(v8::base::TemplateHashMapEntry<int, v8::internal::compiler::BytecodeLiveness>*, int const&, v8::internal::compiler::BytecodeLiveness const&, unsigned int, v8::internal::ZoneAllocationPolicy)
+      1    0.0%    0.0%  t v8::base::TemplateHashMapEntry<void*, void*>* v8::base::TemplateHashMapImpl<void*, void*, v8::base::HashEqualityThenKeyMatcher<void*, bool (*)(void*, void*)>, v8::base::DefaultAllocationPolicy>::LookupOrInsert<v8::base::TemplateHashMapImpl<void*, void*, v8::base::HashEqualityThenKeyMatcher<void*, bool (*)(void*, void*)>, v8::base::DefaultAllocationPolicy>::LookupOrInsert(void* const&, unsigned int, v8::base::DefaultAllocationPolicy)::'lambda'()>(void* const&, unsigned int, v8::base::TemplateHashMapImpl<void*, void*, v8::base::HashEqualityThenKeyMatcher<void*, bool (*)(void*, void*)>, v8::base::DefaultAllocationPolicy>::LookupOrInsert(void* const&, unsigned int, v8::base::DefaultAllocationPolicy)::'lambda'() const&, v8::base::DefaultAllocationPolicy)
+      1    0.0%    0.0%  t v8::CallGCCallbackWithoutData(v8::Isolate*, v8::GCType, v8::GCCallbackFlags, void*)
+      1    0.0%    0.0%  t std::__1::vector<v8::internal::GlobalHandles::Node*, std::__1::allocator<v8::internal::GlobalHandles::Node*> >::resize(unsigned long)
+      1    0.0%    0.0%  t std::__1::unordered_map<unsigned long long, v8::internal::Cancelable*, std::__1::hash<unsigned long long>, std::__1::equal_to<unsigned long long>, std::__1::allocator<std::__1::pair<unsigned long long const, v8::internal::Cancelable*> > >::operator[](unsigned long long const&)
+      1    0.0%    0.0%  t std::__1::deque<std::__1::pair<v8::internal::compiler::PendingAssessment const*, int>, v8::internal::RecyclingZoneAllocator<std::__1::pair<v8::internal::compiler::PendingAssessment const*, int> > >::push_back(std::__1::pair<v8::internal::compiler::PendingAssessment const*, int>&&)
+      1    0.0%    0.0%  t std::__1::__split_buffer<std::__1::unique_ptr<node::fs::FileHandleReadWrap, std::__1::default_delete<node::fs::FileHandleReadWrap> >, std::__1::allocator<std::__1::unique_ptr<node::fs::FileHandleReadWrap, std::__1::default_delete<node::fs::FileHandleReadWrap> > >&>::~__split_buffer()
+      1    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<char const*, v8::internal::NativeGroupRetainedObjectInfo*>, std::__1::__unordered_map_hasher<char const*, std::__1::__hash_value_type<char const*, v8::internal::NativeGroupRetainedObjectInfo*>, v8::internal::SeededStringHasher, false>, std::__1::__unordered_map_equal<char const*, std::__1::__hash_value_type<char const*, v8::internal::NativeGroupRetainedObjectInfo*>, v8::internal::StringEquals, true>, std::__1::allocator<std::__1::__hash_value_type<char const*, v8::internal::NativeGroupRetainedObjectInfo*> > >::~__hash_table()
+      1    0.0%    0.0%  t std::__1::__deque_base<void*, std::__1::allocator<void*> >::clear()
+      1    0.0%    0.0%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::TaskQueue<node::DelayedTask>::Push(std::__1::unique_ptr<node::DelayedTask, std::__1::default_delete<node::DelayedTask> >)
+      1    0.0%    0.0%  t _tiny_free_list_add_ptr
+      1    0.0%    0.0%  t _szone_calloc
+      1    0.0%    0.0%  t _nano_common_configure
+      1    0.0%    0.0%  t _mvm_allocate_pages_securely
+      1    0.0%    0.0%  t _malloc_print_configure
+      1    0.0%    0.0%  t __read_images
+      1    0.0%    0.0%  t __pthread_mutex_firstfit_unlock_slow
+      1    0.0%    0.0%  t __pthread_body
+      1    0.0%    0.0%  t ___vfwscanf
+      1    0.0%    0.0%  t __GBK_mbrtowc
+      1    0.0%    0.0%  t _WAITING_FOR_ANOTHER_THREAD_TO_FINISH_CALLING_+initialize
+      1    0.0%    0.0%  T v8::internal::wasm::WasmCodeManager::LookupCode(unsigned long) const
+      1    0.0%    0.0%  T v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterListFreeEvent(v8::internal::interpreter::RegisterList)
+      1    0.0%    0.0%  T v8::internal::interpreter::BytecodeRegisterOptimizer::PrepareOutputRegister(v8::internal::interpreter::Register)
+      1    0.0%    0.0%  T v8::internal::compiler::NodeProperties::GetOuterContext(v8::internal::compiler::Node*, unsigned long*)
+      1    0.0%    0.0%  T v8::internal::TimedHistogram::Stop(v8::base::ElapsedTimer*, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Sweeper::PauseOrCompleteScope::~PauseOrCompleteScope()
+      1    0.0%    0.0%  T v8::internal::StoreBuffer::MoveAllEntriesToRememberedSet()
+      1    0.0%    0.0%  T v8::internal::StackFrameIteratorBase::StackFrameIteratorBase(v8::internal::Isolate*, bool)
+      1    0.0%    0.0%  T v8::internal::SpaceWithLinearArea::StartNextInlineAllocationStep()
+      1    0.0%    0.0%  T v8::internal::SpaceWithLinearArea::InlineAllocationStep(unsigned long, unsigned long, unsigned long, unsigned long)
+      1    0.0%    0.0%  T v8::internal::Scavenger::ScavengePage(v8::internal::MemoryChunk*)
+      1    0.0%    0.0%  T v8::internal::ScavengeJob::ScheduleIdleTask(v8::internal::Heap*)
+      1    0.0%    0.0%  T v8::internal::Scanner::Scan()
+      1    0.0%    0.0%  T v8::internal::Runtime_ObjectValues(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_CreateObjectLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::PauseAllocationObserversScope::~PauseAllocationObserversScope()
+      1    0.0%    0.0%  T v8::internal::PauseAllocationObserversScope::PauseAllocationObserversScope(v8::internal::Heap*)
+      1    0.0%    0.0%  T v8::internal::PagedSpaces::next()
+      1    0.0%    0.0%  T v8::internal::PagedSpace::PagedSpace(v8::internal::Heap*, v8::internal::AllocationSpace, v8::internal::Executability)
+      1    0.0%    0.0%  T v8::internal::PagedSpace::MergeCompactionSpace(v8::internal::CompactionSpace*)
+      1    0.0%    0.0%  T v8::internal::PagedSpace::AddPage(v8::internal::Page*)
+      1    0.0%    0.0%  T v8::internal::OptimizedFrame::Iterate(v8::internal::RootVisitor*) const
+      1    0.0%    0.0%  T v8::internal::OFStreamBase::xsputn(char const*, long)
+      1    0.0%    0.0%  T v8::internal::NewSpace::UpdateInlineAllocationLimit(unsigned long)
+      1    0.0%    0.0%  T v8::internal::MemoryAllocator::AllocateChunk(unsigned long, unsigned long, v8::internal::Executability, v8::internal::Space*)
+      1    0.0%    0.0%  T v8::internal::Logger::ResourceEvent(char const*, char const*)
+      1    0.0%    0.0%  T v8::internal::Log::MessageBuilder::AppendCharacter(char)
+      1    0.0%    0.0%  T v8::internal::JSReceiver::GetOwnValues(v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::PropertyFilter, bool)
+      1    0.0%    0.0%  T v8::internal::IC::GetHostFunction() const
+      1    0.0%    0.0%  T v8::internal::Heap::UpdateSurvivalStatistics(int)
+      1    0.0%    0.0%  T v8::internal::Heap::GarbageCollectionPrologue()
+      1    0.0%    0.0%  T v8::internal::Heap::CallGCEpilogueCallbacks(v8::GCType, v8::GCCallbackFlags)
+      1    0.0%    0.0%  T v8::internal::GlobalHandles::UpdateListOfNewSpaceNodes()
+      1    0.0%    0.0%  T v8::internal::GlobalHandles::PostGarbageCollectionProcessing(v8::internal::GarbageCollector, v8::GCCallbackFlags)
+      1    0.0%    0.0%  T v8::internal::GCTracer::Stop(v8::internal::GarbageCollector)
+      1    0.0%    0.0%  T v8::internal::GCTracer::NewSpaceAllocationThroughputInBytesPerMillisecond(double) const
+      1    0.0%    0.0%  T v8::internal::GCTracer::AverageSurvivalRatio() const
+      1    0.0%    0.0%  T v8::internal::GCTracer::AddAllocation(double)
+      1    0.0%    0.0%  T v8::internal::FreeList::RemoveCategory(v8::internal::FreeListCategory*)
+      1    0.0%    0.0%  T v8::internal::Factory::TryNewCode(v8::internal::CodeDesc const&, v8::internal::Code::Kind, v8::internal::Handle<v8::internal::Object>, int, v8::internal::MaybeHandle<v8::internal::ByteArray>, v8::internal::MaybeHandle<v8::internal::DeoptimizationData>, v8::internal::Movability, unsigned int, bool, int, int, int)
+      1    0.0%    0.0%  T v8::internal::Factory::NewFixedArrayWithFiller(v8::internal::Heap::RootListIndex, int, v8::internal::Object*, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  T v8::internal::Factory::NewFeedbackVector(v8::internal::Handle<v8::internal::SharedFunctionInfo>, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  T v8::internal::Factory::InitializeJSObjectFromMap(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Map>)
+      1    0.0%    0.0%  T v8::internal::Factory::InitializeJSObjectBody(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Map>, int)
+      1    0.0%    0.0%  T v8::internal::EscapeRegExpSource(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>)
+      1    0.0%    0.0%  T v8::internal::Dictionary<v8::internal::GlobalDictionary, v8::internal::GlobalDictionaryShape>::Add(v8::internal::Isolate*, v8::internal::Handle<v8::internal::GlobalDictionary>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyDetails, int*)
+      1    0.0%    0.0%  T v8::internal::Deserializer<v8::internal::DefaultDeserializerAllocator>::ReadData(v8::internal::MaybeObject**, v8::internal::MaybeObject**, int, unsigned long)
+      1    0.0%    0.0%  T v8::internal::DependentCode::MarkCodeForDeoptimization(v8::internal::Isolate*, v8::internal::DependentCode::DependencyGroup)
+      1    0.0%    0.0%  T v8::internal::CompilationCache::LookupRegExp(v8::internal::Handle<v8::internal::String>, v8::base::Flags<v8::internal::JSRegExp::Flag, int>)
+      1    0.0%    0.0%  T v8::internal::CancelableTask::CancelableTask(v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Cancelable::~Cancelable()
+      1    0.0%    0.0%  T v8::internal::AstValueFactory::GetOneByteStringInternal(v8::internal::Vector<unsigned char const>)
+      1    0.0%    0.0%  T v8::internal::ArrayBufferTracker::PrepareToFreeDeadInNewSpace(v8::internal::Heap*)
+      1    0.0%    0.0%  T v8::internal::ArrayBufferCollector::AddGarbageAllocations(std::__1::vector<v8::internal::JSArrayBuffer::Allocation, std::__1::allocator<v8::internal::JSArrayBuffer::Allocation> >)
+      1    0.0%    0.0%  T v8::base::TimeTicks::Now()
+      1    0.0%    0.0%  T std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > std::__1::operator+<char, std::__1::char_traits<char>, std::__1::allocator<char> >(char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+      1    0.0%    0.0%  T node::performance::MarkGarbageCollectionEnd(v8::Isolate*, v8::GCType, v8::GCCallbackFlags, void*)
+      1    0.0%    0.0%  T node::options_parser::GetOptions(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::dtrace_gc_done(v8::Isolate*, v8::GCType, v8::GCCallbackFlags)
+      1    0.0%    0.0%  T _uv_mutex_lock
+      1    0.0%    0.0%  T _uv_hrtime
+      1    0.0%    0.0%  T _pthread_set_qos_class_self_np
+      1    0.0%    0.0%  T _pthread_kill
+      1    0.0%    0.0%  T _ioctl
+      1    0.0%    0.0%  T _free
+      1    0.0%    0.0%  T _fcntl
+      1    0.0%    0.0%  T __simple_getenv
+      1    0.0%    0.0%  T __kernelrpc_mach_port_guard_trap
+      1    0.0%    0.0%  T ___hldtoa
+      1    0.0%    0.0%  T ___gdtoa
+      1    0.0%    0.0%  A __objc_empty_vtable
+
+ [Summary]:
+   ticks  total  nonlib   name
+   9577   81.8%   83.1%  JavaScript
+   1637   14.0%   14.2%  C++
+   1647   14.1%   14.3%  GC
+    190    1.6%          Shared libraries
+    310    2.6%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     58   36.9%    0.5%  T v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*)
+     30   19.1%    0.3%  T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     12    7.6%    0.1%  T v8::internal::Runtime_ObjectValues(int, v8::internal::Object**, v8::internal::Isolate*)
+     11    7.0%    0.1%  T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      8    5.1%    0.1%  T v8::internal::Runtime_InterpreterDeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      7    4.5%    0.1%  T v8::internal::Runtime_StackGuard(int, v8::internal::Object**, v8::internal::Isolate*)
+      6    3.8%    0.1%  T v8::internal::Runtime_CompileOptimized_Concurrent(int, v8::internal::Object**, v8::internal::Isolate*)
+      5    3.2%    0.0%  T v8::internal::IncrementalMarking::WhiteToGreyAndPush(v8::internal::HeapObject*)
+      4    2.5%    0.0%  T v8::internal::IncrementalMarking::RecordWriteSlow(v8::internal::HeapObject*, v8::internal::HeapObjectReference**, v8::internal::Object*)
+      3    1.9%    0.0%  T v8::internal::Runtime_NewObject(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    1.3%    0.0%  T v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    1.3%    0.0%  T v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    1.3%    0.0%  T v8::ArrayBuffer::GetContents()
+      1    0.6%    0.0%  T v8::internal::Runtime_RegExpInitializeAndCompile(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.6%    0.0%  T v8::internal::Runtime_MapGrow(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.6%    0.0%  T v8::internal::Runtime_KeyedStoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.6%    0.0%  T v8::internal::Runtime_DeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.6%    0.0%  T v8::internal::Runtime_DefineClass(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.6%    0.0%  T v8::internal::Runtime_CreateRegExpLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.6%    0.0%  T v8::internal::Runtime_CreateObjectLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   1555   13.3%  Builtin: CompileLazy
+   1125   72.3%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    613   54.5%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    254   41.4%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    189   74.4%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    123   65.1%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     58   30.7%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      8    4.2%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     64   25.2%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     64  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    186   30.3%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     95   51.1%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     95  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     71   38.2%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     71  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     20   10.8%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     20  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    103   16.8%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+    101   98.1%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     74   73.3%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     17   16.8%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     10    9.9%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      2    1.9%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      2  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     70   11.4%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     70  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     39   55.7%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     21   30.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     10   14.3%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+    255   22.7%      LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+    125   49.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    125  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    125  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    113   44.3%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    113  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    113  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     17    6.7%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     17  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     17  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    201   17.9%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+    195   97.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    118   60.5%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     53   44.9%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     50   42.4%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     15   12.7%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     57   29.2%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     57  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     20   10.3%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     20  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      6    3.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      6  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      6  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     56    5.0%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     56  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     39   69.6%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     26   66.7%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     13   33.3%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     11   19.6%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     11  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      6   10.7%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      6  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    187   12.0%    LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     96   51.3%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     96  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     96  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     96  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     73   39.0%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     73  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     73  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     31   42.5%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     30   41.1%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     12   16.4%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     18    9.6%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     18  100.0%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     18  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     12   66.7%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      6   33.3%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+    136    8.7%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+    130   95.6%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     61   46.9%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     36   59.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     36  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     20   32.8%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     20  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5    8.2%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      5  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     41   31.5%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     39   95.1%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     19   48.7%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     17   43.6%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      3    7.7%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      2    4.9%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      1   50.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1   50.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     28   21.5%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     28  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     28  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      6    4.4%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      6  100.0%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      6  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5   83.3%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1   16.7%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     67    4.3%    LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     67  100.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     32   47.8%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     32  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     17   53.1%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     11   34.4%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      4   12.5%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     26   38.8%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     12   46.2%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     12  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     10   38.5%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     10  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4   15.4%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      4  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      9   13.4%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      9  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      9  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     25    1.6%    LazyCompile: *value2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:98:60
+     25  100.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     25  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     25  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     22   88.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      3   12.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+
+   1377   11.8%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    858   62.3%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    443   51.6%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    329   74.3%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    199   60.5%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    106   53.3%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     77   38.7%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     15    7.5%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+    123   37.4%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    123  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      7    2.1%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      6   85.7%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1   14.3%            LazyCompile: ~tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+    107   24.2%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    107  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     50   46.7%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     39   36.4%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     18   16.8%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      7    1.6%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      6   85.7%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      6  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      1   14.3%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    197   23.0%      LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     97   49.2%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     97  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     97  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     80   40.6%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     80  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     80  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     18    9.1%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     18  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     18  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    139   16.2%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    139  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     66   47.5%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     49   74.2%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     17   25.8%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     52   37.4%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     52  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     21   15.1%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     21  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     79    9.2%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     62   78.5%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     51   82.3%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     28   54.9%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     17   33.3%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      6   11.8%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      9   14.5%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      7   77.8%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      2   22.2%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      2    3.2%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      2  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     17   21.5%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     17  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     17  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    252   18.3%    LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+    123   48.8%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    123  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    123  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    123  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    106   42.1%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    106  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    105   99.1%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     45   42.9%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     30   28.6%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     30   28.6%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     23    9.1%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     23  100.0%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     23  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     18   78.3%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5   21.7%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+    158   11.5%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+    152   96.2%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    102   67.1%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     54   52.9%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     54  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     40   39.2%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     40  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      8    7.8%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      8  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     36   23.7%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     35   97.2%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     19   54.3%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     11   31.4%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      5   14.3%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1    2.8%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      1  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     14    9.2%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     14  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     14  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      6    3.8%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      6  100.0%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      6  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      6  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    107    7.8%    LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    107  100.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     51   47.7%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     29   56.9%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     29  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     22   43.1%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     22  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     37   34.6%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     37  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     20   54.1%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     15   40.5%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      2    5.4%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     19   17.8%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     19  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     19  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+
+   1032    8.8%  LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+   1032  100.0%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    432   41.9%      LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+    210   48.6%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    210  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    210  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    165   38.2%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    165  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    165  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     57   13.2%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     57  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     57  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    420   40.7%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    420  100.0%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+    190   45.2%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    190  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    172   41.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    172  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     57   13.6%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     57  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    180   17.4%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+    180  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    180  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+    103   57.2%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     50   27.8%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     27   15.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+
+    859    7.3%  Builtin: CallFunction_ReceiverIsNullOrUndefined
+    607   70.7%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    373   61.4%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    221   59.2%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    176   79.6%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    117   66.5%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     48   27.3%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     11    6.3%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     44   19.9%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     44  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     62   16.6%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     37   59.7%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     37  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     20   32.3%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     20  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4    6.5%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      4  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      1    1.6%          LazyCompile: ~runParser /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:159:19
+      1  100.0%            LazyCompile: ~parse /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:358:15
+     60   16.1%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     60  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     28   46.7%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     27   45.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5    8.3%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     30    8.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     29   96.7%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     24   82.8%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      5   17.2%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1    3.3%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    100   16.5%      LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     46   46.0%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     46  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     46  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     45   45.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     45  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     45  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      9    9.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      9  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      9  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     82   13.5%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     82  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     57   69.5%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     26   45.6%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     25   43.9%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      6   10.5%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     20   24.4%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     20  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      5    6.1%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      5  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     51    8.4%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     51  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     21   41.2%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     11   52.4%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     10   47.6%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     15   29.4%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     15  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     15   29.4%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     15  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     93   10.8%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     88   94.6%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     36   40.9%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     35   97.2%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     17   48.6%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     15   42.9%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      3    8.6%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1    2.8%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      1  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     34   38.6%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     16   47.1%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     16  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      9   26.5%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      9  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      9   26.5%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      9  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     18   20.5%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     18  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     18  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      5    5.4%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      5  100.0%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      5  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     57    6.6%    LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     32   56.1%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     32  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     32  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     32  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     21   36.8%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     21  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     21  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     11   52.4%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      9   42.9%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1    4.8%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4    7.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      4  100.0%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      4  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      3   75.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1   25.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     37    4.3%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:235:36
+     37  100.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     37  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     25   67.6%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     25  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     12   32.4%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     12  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     35    4.1%    LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     35  100.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     15   42.9%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      7   46.7%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      7  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      7   46.7%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      7  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1    6.7%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     13   37.1%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     13  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      6   46.2%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      5   38.5%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      2   15.4%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      7   20.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      7  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      7  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     10    1.2%    LazyCompile: *value2 /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:98:60
+     10  100.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     10  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     10  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     10  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+
+    653    5.6%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+    333   51.0%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    333  100.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    333  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    333  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    328   98.5%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5    1.5%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+    251   38.4%    LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    251  100.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    251  100.0%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     97   38.6%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     97  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     96   38.2%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     96  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     56   22.3%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     56  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     68   10.4%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     68  100.0%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     68  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     57   83.8%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     57  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     11   16.2%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     11  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+
+    607    5.2%  LazyCompile: *previousCalls /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:12
+    310   51.1%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    155   50.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    111   71.6%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     83   74.8%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     40   48.2%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     38   45.8%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      5    6.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     21   18.9%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     21  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      7    6.3%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      7  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     42   27.1%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     42  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     18   42.9%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     15   35.7%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      9   21.4%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      2    1.3%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      1   50.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1   50.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     86   27.7%      LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     43   50.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     43  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     43  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     32   37.2%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     32  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     32  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     11   12.8%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     11  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     11  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     47   15.2%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     47  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     27   57.4%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     27  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     13   27.7%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      8   61.5%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5   38.5%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      7   14.9%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      7  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     22    7.1%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     22  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     18   81.8%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      9   50.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      7   38.9%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      2   11.1%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      4   18.2%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+    145   23.9%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+    140   96.6%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     68   48.6%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     35   51.5%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     35  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     29   42.6%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     29  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4    5.9%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      4  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     47   33.6%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     46   97.9%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     35   76.1%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     10   21.7%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      1    2.2%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1    2.1%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      1  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     25   17.9%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     25  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     25  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      5    3.4%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      5  100.0%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      5  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4   80.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1   20.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     94   15.5%    LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     43   45.7%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     43  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     43  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     19   44.2%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     12   27.9%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     12   27.9%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     39   41.5%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     39  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     39  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     39  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     12   12.8%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     12  100.0%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     12  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      8   66.7%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4   33.3%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     56    9.2%    LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     56  100.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     25   44.6%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     25  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     14   56.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      9   36.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      2    8.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     17   30.4%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     12   70.6%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     12  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5   29.4%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      5  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     14   25.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     14  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     14  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+
+    525    4.5%  Builtin: Call_ReceiverIsNullOrUndefined
+    367   69.9%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    207   56.4%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    129   62.3%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    111   86.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     66   59.5%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     37   33.3%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      8    7.2%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     14   10.9%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     14  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4    3.1%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      4  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     41   19.8%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     41  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     25   61.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     12   29.3%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4    9.8%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     24   11.6%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     10   41.7%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     10  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      9   37.5%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      9  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5   20.8%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      5  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     13    6.3%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      8   61.5%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5   62.5%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      2   25.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1   12.5%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      5   38.5%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      5  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     68   18.5%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     68  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     31   45.6%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     31  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     22   32.4%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     11   50.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     11   50.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     15   22.1%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     15  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     47   12.8%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     45   95.7%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     29   64.4%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     14   48.3%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     13   44.8%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      2    6.9%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     14   31.1%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     14  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      2    4.4%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      2  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      2    4.3%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      2  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      2  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     45   12.3%      LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     22   48.9%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     22  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     22  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     17   37.8%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     17  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     17  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      6   13.3%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      6  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      6  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     66   12.6%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     61   92.4%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     31   50.8%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     29   93.5%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     16   55.2%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     11   37.9%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      2    6.9%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      2    6.5%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      2  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     22   36.1%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     10   45.5%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     10  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      6   27.3%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      6  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5   22.7%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      5  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      1    4.5%          LazyCompile: ~tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      8   13.1%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      8  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      8  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      5    7.6%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      5  100.0%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      5  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      3   60.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      2   40.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     46    8.8%    LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     20   43.5%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     20  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     20  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     20  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     18   39.1%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     18  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     18  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      9   50.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5   27.8%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      4   22.2%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      8   17.4%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      8  100.0%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      8  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      7   87.5%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1   12.5%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     24    4.6%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:235:36
+     24  100.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     24  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     20   83.3%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     20  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4   16.7%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      9    1.7%    LazyCompile: *b /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:84:75
+      9  100.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      9  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      9  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      9  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      8    1.5%    LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      8  100.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4   50.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      2   50.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      2   50.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      4   50.0%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      4  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      4  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+
+    479    4.1%  Builtin: ArgumentsAdaptorTrampoline
+    390   81.4%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    245   62.8%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    124   50.6%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     89   71.8%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     70   78.7%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     19   21.3%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     34   27.4%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     34  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     61   24.9%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     31   50.8%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     31  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     24   39.3%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     24  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      6    9.8%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      6  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     35   14.3%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     35  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     30   85.7%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      3    8.6%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      2    5.7%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     25   10.2%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     25  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     19   76.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      4   16.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      2    8.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+    120   30.8%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+    118   98.3%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     51   43.2%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     27   52.9%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     21   41.2%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      3    5.9%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     46   39.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     45   97.8%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      1    2.2%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     21   17.8%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     21  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      2    1.7%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      2  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      2  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     15    3.8%      LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     10   66.7%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     10  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     10  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4   26.7%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      4  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      1    6.7%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      1  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     10    2.6%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     10  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      9   90.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      5   55.6%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4   44.4%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      1   10.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     37    7.7%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     36   97.3%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     23   63.9%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     20   87.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      8   40.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      8   40.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      4   20.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      3   13.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      3  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     11   30.6%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     11  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     11  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      2    5.6%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      2  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      2  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1    2.7%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1  100.0%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      1  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     22    4.6%    LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     12   54.5%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     12  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     12  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     12  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5   22.7%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      5  100.0%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      5  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      3   60.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      2   40.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5   22.7%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      5  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      3   60.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      2   40.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+
+    381    3.3%  T _setiopolicy_np
+
+    324    2.8%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+    306   94.4%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    136   44.4%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    129   94.9%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     59   45.7%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     59  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     50   38.8%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     50  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     20   15.5%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     20  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      7    5.1%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      7  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      7  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    119   38.9%      LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     57   47.9%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     57  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     57  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     52   43.7%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     52  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     52  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     10    8.4%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     10  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     10  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     51   16.7%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     51  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     51  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     39   76.5%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     10   19.6%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      2    3.9%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     18    5.6%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     18  100.0%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     18  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     14   77.8%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     14  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      4   22.2%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      4  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+
+    310    2.6%  UNKNOWN
+
+    305    2.6%  LazyCompile: *constant /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:112:21
+    260   85.2%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    217   83.5%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    120   55.3%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    116   96.7%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     87   75.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     29   25.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4    3.3%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      4  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     49   22.6%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     28   57.1%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     28  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     17   34.7%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     17  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4    8.2%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      4  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     48   22.1%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     47   97.9%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     40   85.1%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      4    8.5%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      3    6.4%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      1    2.1%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     16    6.2%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     16  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     16  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      9   56.3%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      7   43.8%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     14    5.4%      LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      7   50.0%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      7  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      7  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      6   42.9%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      6  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      6  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1    7.1%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      1  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     13    5.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     13  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     13  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      7   53.8%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      3   23.1%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      3   23.1%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     44   14.4%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     44  100.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     23   52.3%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     23  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     23  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     21   47.7%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     20   95.2%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     12   60.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      8   40.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1    4.8%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      1  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+
+    261    2.2%  LazyCompile: *matches.length.longest /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:265:13
+    261  100.0%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    261  100.0%      LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+    120   46.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    120  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    120  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    116   44.4%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    116  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    116  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     23    8.8%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+     23  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     23  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+
+    240    2.0%  LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:235:36
+    240  100.0%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    240  100.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    158   65.8%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+    158  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+    143   90.5%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     10    6.3%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      5    3.2%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     82   34.2%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     82  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     80   97.6%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      2    2.4%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+
+    176    1.5%  t v8::internal::Scavenger::ScavengeObject(v8::internal::HeapObjectReference**, v8::internal::HeapObject*)
+
+    146    1.2%  /usr/lib/system/libsystem_kernel.dylib
+      3    2.1%    T v8::internal::Runtime_StackGuard(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   33.3%      LazyCompile: *previousCalls /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:12
+      1  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1   33.3%      LazyCompile: *constant /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:112:21
+      1  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      1  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1   33.3%      LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:13:12
+      1  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      3    2.1%    T v8::internal::Runtime_InterpreterDeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   33.3%      LazyCompile: ~_addListener events.js:208:22
+      1  100.0%        LazyCompile: ~addListener events.js:270:58
+      1  100.0%          LazyCompile: ~setupSignalHandlers internal/process/main_thread_only.js:108:29
+      1  100.0%            LazyCompile: ~startup internal/bootstrap/node.js:24:17
+      1   33.3%      Eval: ~<anonymous> internal/errors.js:1:1
+      1  100.0%        LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:330:42
+      1  100.0%          LazyCompile: ~NativeModule.require internal/bootstrap/loaders.js:187:32
+      1  100.0%            Eval: ~<anonymous> path.js:1:1
+      1   33.3%      Eval: ~<anonymous> _stream_writable.js:1:1
+      1  100.0%        LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:330:42
+      1  100.0%          LazyCompile: ~NativeModule.require internal/bootstrap/loaders.js:187:32
+      1  100.0%            Eval: ~<anonymous> stream.js:1:1
+
+    132    1.1%  LazyCompile: *previousCalls /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:12
+    128   97.0%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     61   47.7%      LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     30   49.2%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     30  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     30  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     23   37.7%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     23  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     23  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      7   11.5%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      7  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      7  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1    1.6%        LazyCompile: ~runParser /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:159:19
+      1  100.0%          LazyCompile: ~parse /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:358:15
+      1  100.0%            Script: ~<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/benchmark.js:1:11
+     44   34.4%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     44  100.0%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     19   43.2%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     19  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     18   40.9%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     18  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      7   15.9%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      7  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     23   18.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     23  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     23  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     16   69.6%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5   21.7%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      2    8.7%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      4    3.0%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      4  100.0%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      4  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      3   75.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      3  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      1   25.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      1  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+
+    126    1.1%  LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:13:12
+    112   88.9%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     76   67.9%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     34   44.7%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     29   85.3%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     24   82.8%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      5   17.2%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      5   14.7%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      5  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     18   23.7%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     18  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     10   55.6%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      7   38.9%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1    5.6%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     14   18.4%        LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      7   50.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      7  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      6   42.9%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      6  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1    7.1%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1  100.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+     10   13.2%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     10  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     10  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     35   31.3%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+     34   97.1%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     16   47.1%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+     16  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+     14   41.2%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      7   50.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      4   28.6%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      3   21.4%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      4   11.8%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      4  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1    2.9%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1  100.0%          LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      1  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      9    7.1%    LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      8   88.9%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      6   75.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      6  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      4   66.7%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      1   16.7%            LazyCompile: ~runParser /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:159:19
+      1   16.7%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      2   25.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      2  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      2  100.0%            LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      1   11.1%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1  100.0%        LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      1  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      1  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:105:29
+      5    4.0%    LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      3   60.0%      LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      3  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      3  100.0%          LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      3  100.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      2   40.0%      LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+      2  100.0%        LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:91:29
+      2  100.0%          LazyCompile: *<anonymous> /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:251:28
+      1   50.0%            LazyCompile: *tokens /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:143:29
+      1   50.0%            LazyCompile: *array /Users/james.ferguson/Projects/beta-reduction-minification-examples/dist/ast.es2015.js:252:78
+

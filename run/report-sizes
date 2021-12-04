@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+for file in $(find dist -name '*.js'); do
+  echo "$file   $(stat -f%z "$file")"
+done

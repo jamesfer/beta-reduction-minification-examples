@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+parsers=('/ast.es2015.js' 'terser/ast.js' 'babel/ast.js' 'beta-reduction/ast.terser.js')
+#parsers=('beta-reduction/ast.js')
+for parser in ${parsers[@]}; do
+  name="${parser%%/*}"
+  if [ -z "$name" ]; then
+    name="control"
+  fi
+
+  echo "Benchmarking $name"
+
+  # Profile
+  NODE_ENV=production node dist/benchmark.js "$parser"
+
+  # Parse
+#  node --prof-process $(ls | grep isolate) > "results/$name.txt"
+
+  # Clean up
+#  rm $(ls | grep isolate)
+done
+
+# Flame graph
+#yarn 0x dist/benchmark.js

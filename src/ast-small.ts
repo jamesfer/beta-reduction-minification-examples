@@ -107,7 +107,7 @@ function fallbackIfNothing<T>(monad: Maybe<T>, fallback: () => Maybe<T>): Maybe<
 
 /**
  * Converts a maybe monad value into a plain value, or null if the monad was nothing.
- */
+*/
 function runMaybe<T>(monad: Maybe<T>): T | null {
   return monad.maybeConstructor === MaybeConstructor.Nothing ? null : monad.value;
 }
@@ -159,7 +159,7 @@ function liftA2<A, B, T>(
 
 /**
  * Unwraps the result and passes its value to an operation. Returns the result of the operation.
- * @inline
+ * @2inline
  */
 function bindResult<T, U>(
   monad: ParseResult<T>,
@@ -215,7 +215,7 @@ function createNothingResult(): ParseResult<any> {
 
 /**
  * Returns a parse result that contains the current list of tokens.
- * @inline
+ * @2inline
  */
 function askTokens(): ParseResult<Token[]> {
   return constant((tokens: Token[]) => just<[Token[], Token[]]>([tokens, tokens]));
@@ -259,7 +259,7 @@ function leftRecurse<T, U>(baseCase: ParseResult<U>, matcher: ParseResult<T>): P
 
 /**
  * Returns a parse result that will set the remaining tokens.
- * @2inline
+ * @inline
  */
 function setTokens(tokens: Token[]): ParseResult<undefined> {
   return constant(constant(just<[Token[], undefined]>([tokens, undefined])));
@@ -314,7 +314,7 @@ export interface NumberLiteral {
 
 /**
  * Convenient constructor for producing a number literal object.
- * @2inline
+ * @inline
  */
 function numberLit(value: number): NumberLiteral {
   return { value, type: ArtifactType.Token };
@@ -330,7 +330,7 @@ export type Token =
 
 /**
  * Returns true if a token is a TokenSymbol.
- * @2inline
+ * @inline
  */
 function isSymbol(symbol: TokenSymbol): (token: Token) => token is TokenSymbol {
   return (token): token is TokenSymbol => token === symbol;
@@ -338,7 +338,7 @@ function isSymbol(symbol: TokenSymbol): (token: Token) => token is TokenSymbol {
 
 /**
  * Returns true if a token is a NumberLiteral
- * @2inline
+ * @inline
  */
 function isNumberLiteral(token: Token): token is NumberLiteral {
   return typeof token === 'object';
@@ -346,7 +346,7 @@ function isNumberLiteral(token: Token): token is NumberLiteral {
 
 /**
  * Returns true if the next token passes the predicate
- * @2inline
+ * @inline
  */
 function nextTokenIs(tokens: Token[], predicate: (token: Token) => boolean): boolean {
   return tokens.length > 0 && predicate(tokens[0]);
